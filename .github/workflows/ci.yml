@@ -1,0 +1,57 @@
+name: checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: '0.8.17'
+          enable-cache: true
+      - run: uv sync --frozen --extra dev
+      - run: uv run ruff format --check src tests scripts
+      - run: uv run ruff check src tests scripts
+      - run: uv run mypy src/policy_rag
+      - run: uv run pytest --cov-report=xml --cov-report=json:eval-results/coverage.json
+      - run: uv run policy-rag verify-corpus
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: checks
+          path: |
+            coverage.xml
+            eval-results/coverage.json
+  real-model-regression:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: '0.8.17'
+      - run: uv sync --frozen
+      - run: uv run policy-rag download-models
+      - run: uv run policy-rag index
+      - run: uv run policy-rag eval eval-results/cloud-run
+      - uses: actions/upload-artifact@v4
+        with:
+          name: real-model-regression
+          path: eval-results/cloud-run
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t ecommerce-policy-rag:ci .

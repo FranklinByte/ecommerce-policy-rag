@@ -1,0 +1,353 @@
+schema_version: '1'
+description: Provenance manifest for public-policy factual digests and clearly labelled
+  synthetic fixtures. Public original pages are not redistributed by this repository.
+sources:
+- local_path: data/policies/apple_store_returns.md
+  metadata:
+    doc_id: apple-store-returns-cn-current
+    title: Apple Store 中国大陆退货与退款政策事实摘要
+    source_url: https://www.apple.com.cn/shop/help/returns_refund
+    source_type: official_html_digest
+    platform: apple_store_cn
+    product_categories:
+    - phone
+    - tablet
+    - computer
+    - accessory
+    models:
+    - iPhone
+    - iPad
+    - Mac
+    version: snapshot-2026-09-06
+    effective_from: null
+    effective_to: null
+    retrieved_at: '2026-09-06T14:21:19.621284Z'
+    content_sha256: 5e74fb9100937231468daf391c23f387221c5474fbb7cac233ab9b28ecfeef55
+    source_content_sha256: 3c6e2a750ca0f58af4d5ee2a7a0861230c1b26c0239308896033b98fb7c8f580
+    redistribution_status: factual_digest_only_source_text_not_redistributed
+    license_note: Copyright status not declared for reuse; retain URL and fetch privately
+      for verification.
+    synthetic: false
+    annotation_note: AI-assisted factual digest of official public source; not human
+      legal review. Effective interval unknown. Retrieved timestamp is digest verification
+      time until fetch-sources records a byte download.
+    validity_basis: unknown; file and snapshot dates are not effective dates
+    supporting_sources: []
+    section_sources: {}
+- local_path: data/policies/apple_cn_hardware_warranty.md
+  metadata:
+    doc_id: apple-hardware-warranty-cn-current
+    title: Apple 产品在中国大陆的硬件保修政策事实摘要
+    source_url: https://www.apple.com.cn/support/warranties/index.html
+    source_type: official_html_digest
+    platform: apple_cn
+    product_categories:
+    - phone
+    - tablet
+    - computer
+    - accessory
+    models:
+    - iPhone
+    - iPad
+    - Mac
+    version: snapshot-2026-09-06
+    effective_from: null
+    effective_to: null
+    retrieved_at: '2026-09-06T14:21:20.311137Z'
+    content_sha256: 936e8ce223340c82a276fd56151e160ec6ade023009709d2256459061363307f
+    source_content_sha256: 9979e6f43c9b56ab78ef608b56685c82e537ac8f5620a69b61ca1d6c818c3e63
+    redistribution_status: factual_digest_only_source_text_not_redistributed
+    license_note: Copyright status not declared for reuse; retain URL and fetch privately
+      for verification.
+    synthetic: false
+    annotation_note: AI-assisted factual digest of official public source; not human
+      legal review. Effective interval unknown. Retrieved timestamp is digest verification
+      time until fetch-sources records a byte download.
+    validity_basis: unknown; file and snapshot dates are not effective dates
+    supporting_sources:
+    - url: https://www.apple.com.cn/legal/statutory-warranty/
+      sha256: 2aa761bdfd982fd09088c251570fe4ce81b1335e067429143acdc7e0a7a61b09
+      retrieved_at: '2026-09-06T14:21:20.885871+00:00'
+    - url: https://www.apple.com.cn/legal/warranty/products/warranty-china.html
+      sha256: 80bcd76715cef2f4147549adae19b5d1744d9d46f1343e8a25451cdd261bf5ec
+      retrieved_at: '2026-09-06T14:21:21.766444+00:00'
+    section_sources:
+      Mac 与地区差异: https://www.apple.com.cn/legal/statutory-warranty/
+      保障边界: https://www.apple.com.cn/legal/warranty/products/warranty-china.html
+- local_path: data/policies/huawei_phone_warranty.md
+  metadata:
+    doc_id: huawei-phone-warranty-cn-current
+    title: 华为中国大陆手机售后政策事实摘要
+    source_url: https://consumer.huawei.com/cn/support/warranty-policy/smartphone/
+    source_type: official_html_digest
+    platform: huawei_cn
+    product_categories:
+    - phone
+    - accessory
+    models:
+    - HUAWEI smartphone
+    version: snapshot-2026-09-06
+    effective_from: null
+    effective_to: null
+    retrieved_at: '2026-09-06T14:21:22.082277Z'
+    content_sha256: 0844818b9e3dec5f00b284f6e4b80352b312f1e9e86eea44bd01a486fbfad441
+    source_content_sha256: 0dafdf714ad8e2a65d03c76ececd59cc5b3bd301d699c8fd33f473d7a82918f5
+    redistribution_status: factual_digest_only_source_text_not_redistributed
+    license_note: Copyright status not declared for reuse; retain URL and fetch privately
+      for verification.
+    synthetic: false
+    annotation_note: AI-assisted factual digest of official public source; not human
+      legal review. Effective interval unknown. Retrieved timestamp is digest verification
+      time until fetch-sources records a byte download.
+    validity_basis: unknown; file and snapshot dates are not effective dates
+    supporting_sources: []
+    section_sources: {}
+- local_path: data/policies/huawei_accessory_warranty.md
+  metadata:
+    doc_id: huawei-accessory-warranty-cn-current
+    title: 华为配件保修政策事实摘要
+    source_url: https://consumer.huawei.com/cn/support/warranty-policy/accessories/
+    source_type: official_html_digest
+    platform: huawei_cn
+    product_categories:
+    - accessory
+    - wearable
+    - computer
+    - tablet
+    models:
+    - AM115
+    - AM116
+    - AM12
+    - AM12 plus
+    - AM13
+    - CM115
+    - CM116
+    version: snapshot-2026-09-06
+    effective_from: null
+    effective_to: null
+    retrieved_at: '2026-09-06T14:21:23.210991Z'
+    content_sha256: 48b7a50efd4a1a25d21850bc92ba5c4fe498ac690cc2fada788aa41726c5d58d
+    source_content_sha256: 8b7378db65d98fb8d7d31356fb055131004efbee7b319a3ad3c47a1d40844e8d
+    redistribution_status: factual_digest_only_source_text_not_redistributed
+    license_note: Copyright status not declared for reuse; retain URL and fetch privately
+      for verification.
+    synthetic: false
+    annotation_note: AI-assisted factual digest of official public source; not human
+      legal review. Effective interval unknown. Retrieved timestamp is digest verification
+      time until fetch-sources records a byte download.
+    validity_basis: unknown; file and snapshot dates are not effective dates
+    supporting_sources: []
+    section_sources: {}
+- local_path: data/policies/xiaomi_phone_service.md
+  metadata:
+    doc_id: xiaomi-phone-service-cn-current
+    title: 小米手机售后三包服务政策事实摘要
+    source_url: https://order.mi.com/service/security
+    source_type: official_html_digest
+    platform: xiaomi_cn
+    product_categories:
+    - phone
+    - accessory
+    models:
+    - Xiaomi phone
+    - Redmi phone
+    version: snapshot-2026-09-06
+    effective_from: null
+    effective_to: null
+    retrieved_at: '2026-09-06T14:21:23.643373Z'
+    content_sha256: 839078a4028b306f993e9f2be55f9eb8a8a11cbcf4a87fcca959fff2599b7820
+    source_content_sha256: 4f0d8d1511349b20c6469afd11d8bb411aa3a81290be8048133c06f580109c31
+    redistribution_status: factual_digest_only_source_text_not_redistributed
+    license_note: Copyright status not declared for reuse; retain URL and fetch privately
+      for verification.
+    synthetic: false
+    annotation_note: AI-assisted factual digest of official public source; not human
+      legal review. Effective interval unknown. Retrieved timestamp is digest verification
+      time until fetch-sources records a byte download.
+    validity_basis: unknown; file and snapshot dates are not effective dates
+    supporting_sources: []
+    section_sources: {}
+- local_path: data/policies/applecare_plus_v23.md
+  metadata:
+    doc_id: applecare-plus-cn-v2.3
+    title: AppleCare+ 中国大陆条款 v2.3 事实摘要
+    source_url: https://www.apple.com.cn/legal/sales-support/applecare/applecareplus/2309/230912_applecareplusch.pdf
+    source_type: official_pdf_digest
+    platform: apple_cn
+    product_categories:
+    - phone
+    - tablet
+    - wearable
+    - accessory
+    models:
+    - iPhone
+    - iPad
+    - Apple Watch
+    - HomePod
+    - Beats
+    version: v2.3
+    effective_from: null
+    effective_to: null
+    retrieved_at: '2026-09-06T14:21:25.254613Z'
+    content_sha256: 3cad43e3f25c12b71bc4de6bcbe17ef85194816f99925b1b9839fec7d5b1202a
+    source_content_sha256: f913c12748c010b6e8d73ee2864e383968b6825b41f47ffea2cc20ba6496ddba
+    redistribution_status: factual_digest_only_source_pdf_not_redistributed
+    license_note: Copyright status not declared for reuse; downloader stores the official
+      PDF only in ignored local cache.
+    synthetic: false
+    annotation_note: AI-assisted factual digest of official public source; not human
+      legal review. Effective interval unknown. Retrieved timestamp is digest verification
+      time until fetch-sources records a byte download.
+    validity_basis: unknown; file and snapshot dates are not effective dates
+    supporting_sources: []
+    section_sources: {}
+    policy_family: applecare-plus-cn
+- local_path: data/policies/applecare_plus_v24.md
+  metadata:
+    doc_id: applecare-plus-cn-v2.4
+    title: AppleCare+ 中国大陆条款 v2.4 事实摘要
+    source_url: https://www.apple.com.cn/legal/sales-support/applecare/applecareplus/2310/231017_applecareplusch.pdf
+    source_type: official_pdf_digest
+    platform: apple_cn
+    product_categories:
+    - phone
+    - tablet
+    - wearable
+    - accessory
+    models:
+    - iPhone
+    - iPad
+    - Apple Watch
+    - HomePod
+    - iPod
+    - Beats
+    version: v2.4
+    effective_from: null
+    effective_to: null
+    retrieved_at: '2026-09-06T14:21:27.378395Z'
+    content_sha256: d06271b56dc9a8ec133d9fd77b00cd69f29e5873abf1f35830d21ea54584467a
+    source_content_sha256: 184d9b676baca5b09619f7006859843234e8eb9b4bc5fed360709ab55889ae62
+    redistribution_status: factual_digest_only_source_pdf_not_redistributed
+    license_note: Copyright status not declared for reuse; downloader stores the official
+      PDF only in ignored local cache.
+    synthetic: false
+    annotation_note: AI-assisted factual digest of official public source; not human
+      legal review. Effective interval unknown. Retrieved timestamp is digest verification
+      time until fetch-sources records a byte download.
+    validity_basis: unknown; file and snapshot dates are not effective dates
+    supporting_sources: []
+    section_sources: {}
+    policy_family: applecare-plus-cn
+- local_path: data/fixtures/starmall_electronics_v1.html
+  metadata:
+    doc_id: synthetic-starmall-electronics-v1
+    title: 星云商城电子产品售后规则 v1
+    source_url: urn:synthetic:ecommerce-policy-rag:starmall-electronics-v1
+    source_type: synthetic_html_fixture
+    platform: starmall
+    product_categories:
+    - phone
+    - tablet
+    models:
+    - NEBULA-P1
+    - NEBULA-T1
+    version: v1
+    effective_from: '2024-01-01'
+    effective_to: '2024-12-31'
+    retrieved_at: '2026-09-06T22:05:00+08:00'
+    content_sha256: 3b46ddf40f68feca65b25463277110ab4648f182df27a3b79b36e8f5600ff138
+    source_content_sha256: null
+    redistribution_status: project_owned_synthetic_fixture
+    license_note: Project-authored synthetic fixture under repository license.
+    synthetic: true
+    annotation_note: AI-generated fictional policy for temporal conflict and negative-case
+      evaluation; not a real platform policy.
+    validity_basis: explicit synthetic fixture dates
+    supporting_sources: []
+    section_sources: {}
+    policy_family: synthetic-starmall-electronics
+- local_path: data/fixtures/starmall_electronics_v2.md
+  metadata:
+    doc_id: synthetic-starmall-electronics-v2
+    title: 星云商城电子产品售后规则 v2
+    source_url: urn:synthetic:ecommerce-policy-rag:starmall-electronics-v2
+    source_type: synthetic_markdown_fixture
+    platform: starmall
+    product_categories:
+    - phone
+    - tablet
+    - wearable
+    models:
+    - NEBULA-P2
+    - NEBULA-T2
+    - NEBULA-W1
+    version: v2
+    effective_from: '2025-01-01'
+    effective_to: null
+    retrieved_at: '2026-09-06T22:10:00+08:00'
+    content_sha256: 22c6adac7e0a96e637a1b9cb0d96de73ff6fcce33ef8043ccb4e30131e54082c
+    source_content_sha256: null
+    redistribution_status: project_owned_synthetic_fixture
+    license_note: Project-authored synthetic fixture under repository license.
+    synthetic: true
+    annotation_note: AI-generated fictional policy for temporal conflict and negative-case
+      evaluation; not a real platform policy.
+    validity_basis: explicit synthetic fixture dates
+    supporting_sources: []
+    section_sources: {}
+    policy_family: synthetic-starmall-electronics
+- local_path: data/fixtures/starmall_appliance.md
+  metadata:
+    doc_id: synthetic-starmall-appliance-v1
+    title: 星云商城大型家电售后规则
+    source_url: urn:synthetic:ecommerce-policy-rag:starmall-appliance-v1
+    source_type: synthetic_markdown_fixture
+    platform: starmall
+    product_categories:
+    - appliance
+    models:
+    - HOME-REF-520
+    - HOME-WASH-10
+    - HOME-AC-35
+    version: v1
+    effective_from: '2025-01-01'
+    effective_to: null
+    retrieved_at: '2026-09-06T22:15:00+08:00'
+    content_sha256: 6ef253ac4d5119f0333e0a7349190ff89a85ceeb959fbde5ef7880a7e4a7badc
+    source_content_sha256: null
+    redistribution_status: project_owned_synthetic_fixture
+    license_note: Project-authored synthetic fixture under repository license.
+    synthetic: true
+    annotation_note: AI-generated fictional policy for category and multi-condition
+      evaluation; not a real platform policy.
+    validity_basis: explicit synthetic fixture dates
+    supporting_sources: []
+    section_sources: {}
+- local_path: data/fixtures/starmall_consumables.md
+  metadata:
+    doc_id: synthetic-starmall-consumables-v1
+    title: 星云商城耗材与定制商品规则
+    source_url: urn:synthetic:ecommerce-policy-rag:starmall-consumables-v1
+    source_type: synthetic_markdown_fixture
+    platform: starmall
+    product_categories:
+    - consumable
+    - custom
+    models:
+    - INK-XL-62
+    - FILTER-A7
+    - AUDIO-CUSTOM-9
+    version: v1
+    effective_from: '2025-01-01'
+    effective_to: null
+    retrieved_at: '2026-09-06T22:20:00+08:00'
+    content_sha256: 36abba1383a331871943f58c5b757ff37f181aeac5d6425f416847135377e777
+    source_content_sha256: null
+    redistribution_status: project_owned_synthetic_fixture
+    license_note: Project-authored synthetic fixture under repository license.
+    synthetic: true
+    annotation_note: AI-generated fictional policy for exact identifiers and hard
+      negatives; not a real platform policy.
+    validity_basis: explicit synthetic fixture dates
+    supporting_sources: []
+    section_sources: {}

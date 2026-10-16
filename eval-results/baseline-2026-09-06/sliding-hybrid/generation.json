@@ -1,0 +1,3738 @@
+[
+  {
+    "id": "Q001",
+    "category": "exact",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.010199961252510548,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q002",
+    "category": "exact",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "huawei-accessory-warranty-cn-current",
+      "huawei-accessory-warranty-cn-current",
+      "huawei-phone-warranty-cn-current"
+    ],
+    "latency_ms": 0.10930001735687256,
+    "citation_precision": 0.5,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 手机随包装配件\n可拆卸电池的保修期为 6 个月。 具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件\n二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。 PC 电源适配器及其数据线为 24 个月，PC 扩展坞为 12 个月。 普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 耳机与线缆的精确型号\n独立销售的蓝牙耳机一般为 12 个月。 指定有线耳机型号 AM115、AM116、AM12、AM12 plus、AM13、CM115、CM116 为 90 天； 未列入指定范围的其他有线耳机为 12 个月。 独立销售线缆和转接头通常为 12 个月。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 [C1]\n> 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 磁吸车载支架和 VR 体验盒无维保，折叠手机车载支架为 15 天。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。 [C2]\n## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 渠道与范围\n政策适用于中国大陆官方渠道销售的华为手机及随机配件。 华为授权第三方平台销售的产品，华为提供保内维修，退换货应联系实际经销商处理。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 七日与十五日规则\n线上购买从签收次日起计算。 7 日内手机主机出现经检测确认的非人为性能故障，可选择退货、换同型号同规格产品或免费维修。 第 8 日至第 15 日内出现同类故障，可换货或免费维修，但摘要中的该阶段不含退货选项。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证\n手机主机通常保修 1 年； 随包装数据线和充电头为 1 年，有线耳机为 90 天。 发票、电子三包凭证或签收记录可作为凭证。 无法提供有效凭证时，页面说明可按出厂日期顺延 90 日推定起算日。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形 [C3]",
+      "applicable_conditions": [
+        "具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 [C1]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 渠道与范围\n政策适用于中国大陆官方渠道销售的华为手机及随机配件。 [C3]",
+        "华为授权第三方平台销售的产品，华为提供保内维修，退换货应联系实际经销商处理。 [C3]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证\n手机主机通常保修 1 年； [C3]",
+        "发票、电子三包凭证或签收记录可作为凭证。 [C3]"
+      ],
+      "inapplicable_conditions": [
+        "具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 [C1]",
+        "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件\n二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。 [C1]",
+        "普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。 [C1]",
+        "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。 [C2]",
+        "7 日内手机主机出现经检测确认的非人为性能故障，可选择退货、换同型号同规格产品或免费维修。 [C3]"
+      ],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_f3eac7082ae305b7a41e",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "document": "华为配件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_5db9895da511480803f9",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "document": "华为配件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_ebf10adc745ed9240f22",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "document": "华为中国大陆手机售后政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q003",
+    "category": "exact",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "huawei-accessory-warranty-cn-current",
+      "applecare-plus-cn-v2.4",
+      "huawei-accessory-warranty-cn-current"
+    ],
+    "latency_ms": 0.11829996947199106,
+    "citation_precision": 0.5,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 手机随包装配件\n可拆卸电池的保修期为 6 个月。 具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件\n二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。 PC 电源适配器及其数据线为 24 个月，PC 扩展坞为 12 个月。 普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 耳机与线缆的精确型号\n独立销售的蓝牙耳机一般为 12 个月。 指定有线耳机型号 AM115、AM116、AM12、AM12 plus、AM13、CM115、CM116 为 90 天； 未列入指定范围的其他有线耳机为 12 个月。 独立销售线缆和转接头通常为 12 个月。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 [C1]\n## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 231017_applecareplusch. pdf，版本标识为 v2. 仅凭该 URL 不能确定适用起止日期，也不能推定它自动取代所有 v2. 须核对购买时的计划凭证； 未确认适用日期的版本不参与明确日期的检索。 ## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 适用设备与法定权益\n条款涉及 Apple Watch、iPad、iPhone、HomePod、iPod 以及 Apple 或 Beats 品牌耳机等受保障设备。 计划权益是适用法律权利、生产商硬件保修和免费技术支持的补充。 ## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 判断所需信息\n处理请求前至少需要设备型号、计划凭证、购买或计划生效日期、事故日期、故障或意外类型以及已使用服务次数。 [C2]\n> 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 磁吸车载支架和 VR 体验盒无维保，折叠手机车载支架为 15 天。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。 [C3]",
+      "applicable_conditions": [
+        "具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 [C1]",
+        "4 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 231017_applecareplusch. [C2]",
+        "仅凭该 URL 不能确定适用起止日期，也不能推定它自动取代所有 v2. [C2]",
+        "须核对购买时的计划凭证； [C2]",
+        "未确认适用日期的版本不参与明确日期的检索。 [C2]"
+      ],
+      "inapplicable_conditions": [
+        "具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 [C1]",
+        "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件\n二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。 [C1]",
+        "普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。 [C1]",
+        "仅凭该 URL 不能确定适用起止日期，也不能推定它自动取代所有 v2. [C2]",
+        "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。 [C3]"
+      ],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_f3eac7082ae305b7a41e",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "document": "华为配件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_c067bcf49fb61da4b836",
+          "doc_id": "applecare-plus-cn-v2.4",
+          "document": "AppleCare+ 中国大陆条款 v2.4 事实摘要",
+          "section": "滑动窗口",
+          "version": "v2.4",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/legal/sales-support/applecare/applecareplus/2310/231017_applecareplusch.pdf",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_5db9895da511480803f9",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "document": "华为配件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q004",
+    "category": "exact",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.009599956683814526,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q005",
+    "category": "exact",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "apple-hardware-warranty-cn-current",
+      "apple-hardware-warranty-cn-current",
+      "applecare-plus-cn-v2.4"
+    ],
+    "latency_ms": 0.11039990931749344,
+    "citation_precision": 0.5,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "依据中国三包规定，主要部件可有 2 年保修。 浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 ## Apple 产品在中国大陆的硬件保修政策事实摘要 > Apple 产品在中国大陆的硬件保修政策事实摘要 > 保障边界\n有限保修针对正常使用时出现的材料和工艺缺陷。 非 Apple 品牌硬件、软件以及未遵守使用说明造成的损坏不属于这项有限保修。 AppleCare+ 是可选额外保障，不等同于免费的一年有限保修。 [C1]\n## Apple 产品在中国大陆的硬件保修政策事实摘要 > Apple 产品在中国大陆的硬件保修政策事实摘要 > iPhone\niPhone 整机及包装内 Apple 品牌附件，自原始购买日起享有 1 年保修。 维修或更换后的部件、附件，适用原保修剩余期限或维修更换日起 90 天，以较长者为准。 ## Apple 产品在中国大陆的硬件保修政策事实摘要 > Apple 产品在中国大陆的硬件保修政策事实摘要 > iPad\niPad 整机和所含附件自原始购买日起享有 1 年保修。 iPad 的主要部件享有 2 年保修，主要部件包括主板 MLB、内存、硬盘 HDD 或 SSD、显示屏 LCD 和交流电源适配器。 ## Apple 产品在中国大陆的硬件保修政策事实摘要 > Apple 产品在中国大陆的硬件保修政策事实摘要 > Mac 与地区差异\nMac 整机和所含附件为 1 年有限保修； 依据中国三包规定，主要部件可有 2 年保修。 浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C2]\n## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 231017_applecareplusch. pdf，版本标识为 v2. 仅凭该 URL 不能确定适用起止日期，也不能推定它自动取代所有 v2. 须核对购买时的计划凭证； 未确认适用日期的版本不参与明确日期的检索。 ## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 适用设备与法定权益\n条款涉及 Apple Watch、iPad、iPhone、HomePod、iPod 以及 Apple 或 Beats 品牌耳机等受保障设备。 计划权益是适用法律权利、生产商硬件保修和免费技术支持的补充。 ## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 判断所需信息\n处理请求前至少需要设备型号、计划凭证、购买或计划生效日期、事故日期、故障或意外类型以及已使用服务次数。 [C3]",
+      "applicable_conditions": [
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C1]",
+        "维修或更换后的部件、附件，适用原保修剩余期限或维修更换日起 90 天，以较长者为准。 [C2]",
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C2]",
+        "4 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 231017_applecareplusch. [C3]",
+        "仅凭该 URL 不能确定适用起止日期，也不能推定它自动取代所有 v2. [C3]"
+      ],
+      "inapplicable_conditions": [
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C1]",
+        "非 Apple 品牌硬件、软件以及未遵守使用说明造成的损坏不属于这项有限保修。 [C1]",
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C2]",
+        "仅凭该 URL 不能确定适用起止日期，也不能推定它自动取代所有 v2. [C3]"
+      ],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_230731d2f9c471388a15",
+          "doc_id": "apple-hardware-warranty-cn-current",
+          "document": "Apple 产品在中国大陆的硬件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/support/warranties/index.html",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_94e1f1cb0a6e6ae77585",
+          "doc_id": "apple-hardware-warranty-cn-current",
+          "document": "Apple 产品在中国大陆的硬件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/support/warranties/index.html",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_c067bcf49fb61da4b836",
+          "doc_id": "applecare-plus-cn-v2.4",
+          "document": "AppleCare+ 中国大陆条款 v2.4 事实摘要",
+          "section": "滑动窗口",
+          "version": "v2.4",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/legal/sales-support/applecare/applecareplus/2310/231017_applecareplusch.pdf",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q006",
+    "category": "exact",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "apple-hardware-warranty-cn-current",
+      "apple-hardware-warranty-cn-current",
+      "huawei-phone-warranty-cn-current"
+    ],
+    "latency_ms": 0.09839993435889482,
+    "citation_precision": 0.5,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "依据中国三包规定，主要部件可有 2 年保修。 浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 ## Apple 产品在中国大陆的硬件保修政策事实摘要 > Apple 产品在中国大陆的硬件保修政策事实摘要 > 保障边界\n有限保修针对正常使用时出现的材料和工艺缺陷。 非 Apple 品牌硬件、软件以及未遵守使用说明造成的损坏不属于这项有限保修。 AppleCare+ 是可选额外保障，不等同于免费的一年有限保修。 [C1]\n## Apple 产品在中国大陆的硬件保修政策事实摘要 > Apple 产品在中国大陆的硬件保修政策事实摘要 > iPhone\niPhone 整机及包装内 Apple 品牌附件，自原始购买日起享有 1 年保修。 维修或更换后的部件、附件，适用原保修剩余期限或维修更换日起 90 天，以较长者为准。 ## Apple 产品在中国大陆的硬件保修政策事实摘要 > Apple 产品在中国大陆的硬件保修政策事实摘要 > iPad\niPad 整机和所含附件自原始购买日起享有 1 年保修。 iPad 的主要部件享有 2 年保修，主要部件包括主板 MLB、内存、硬盘 HDD 或 SSD、显示屏 LCD 和交流电源适配器。 ## Apple 产品在中国大陆的硬件保修政策事实摘要 > Apple 产品在中国大陆的硬件保修政策事实摘要 > Mac 与地区差异\nMac 整机和所含附件为 1 年有限保修； 依据中国三包规定，主要部件可有 2 年保修。 浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C2]\n证时，页面说明可按出厂日期顺延 90 日推定起算日。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 最终需经授权服务中心检测。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 维修后期限\n保内更换整机时按三包规则重新计算； 更换部件时延续主机原保修期，若主机剩余不足 30 天则按 30 天。 保外维修更换的部件或附件有 90 天有限保修。 [C3]",
+      "applicable_conditions": [
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C1]",
+        "维修或更换后的部件、附件，适用原保修剩余期限或维修更换日起 90 天，以较长者为准。 [C2]",
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C2]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 [C3]"
+      ],
+      "inapplicable_conditions": [
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C1]",
+        "非 Apple 品牌硬件、软件以及未遵守使用说明造成的损坏不属于这项有限保修。 [C1]",
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C2]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 [C3]"
+      ],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_230731d2f9c471388a15",
+          "doc_id": "apple-hardware-warranty-cn-current",
+          "document": "Apple 产品在中国大陆的硬件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/support/warranties/index.html",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_94e1f1cb0a6e6ae77585",
+          "doc_id": "apple-hardware-warranty-cn-current",
+          "document": "Apple 产品在中国大陆的硬件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/support/warranties/index.html",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_847c8f73a2e7522208d7",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "document": "华为中国大陆手机售后政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q007",
+    "category": "exact",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "xiaomi-phone-service-cn-current"
+    ],
+    "latency_ms": 0.07730000652372837,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 办理前提\n三包有效期内的修理、更换或退货，应提供发票和三包凭证，并由小米售后服务中心对性能故障进行检测确认。 ## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 收货后 7 日\n自购买收货日起 7 日内，移动电话主机出现规定性能故障并经检测确认，可根据消费者选择免费退货、换货或修理。 该条款针对性能故障，不应被解释为所有使用状态下都能无理由退货。 ## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 第 8 日至第 15 日\n自购买收货日起第 8 日至第 15 日内，主机出现规定性能故障并经检测确认，可免费换货或修理； 此阶段的故障处理摘要不包含退货。 ## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 十二个月维修\n自购买收货日起 12 个月内，移动电话主机出现规定性能故障并经检测确认，可免费修理。 电池、充电器、外接有线耳机和数据接口卡等附件另按附件性能故障及更换规则处理。 [C1]",
+      "applicable_conditions": [
+        "## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 办理前提\n三包有效期内的修理、更换或退货，应提供发票和三包凭证，并由小米售后服务中心对性能故障进行检测确认。 [C1]",
+        "## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 收货后 7 日\n自购买收货日起 7 日内，移动电话主机出现规定性能故障并经检测确认，可根据消费者选择免费退货、换货或修理。 [C1]",
+        "该条款针对性能故障，不应被解释为所有使用状态下都能无理由退货。 [C1]",
+        "## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 第 8 日至第 15 日\n自购买收货日起第 8 日至第 15 日内，主机出现规定性能故障并经检测确认，可免费换货或修理； [C1]",
+        "## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 十二个月维修\n自购买收货日起 12 个月内，移动电话主机出现规定性能故障并经检测确认，可免费修理。 [C1]"
+      ],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_2b5b3c1118ba2590d298",
+          "doc_id": "xiaomi-phone-service-cn-current",
+          "document": "小米手机售后三包服务政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://order.mi.com/service/security",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q008",
+    "category": "exact",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "huawei-accessory-warranty-cn-current",
+      "huawei-accessory-warranty-cn-current",
+      "huawei-phone-warranty-cn-current"
+    ],
+    "latency_ms": 0.1020999625325203,
+    "citation_precision": 0.5,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "> 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 磁吸车载支架和 VR 体验盒无维保，折叠手机车载支架为 15 天。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。 [C1]\n## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 手机随包装配件\n可拆卸电池的保修期为 6 个月。 具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件\n二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。 PC 电源适配器及其数据线为 24 个月，PC 扩展坞为 12 个月。 普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 耳机与线缆的精确型号\n独立销售的蓝牙耳机一般为 12 个月。 指定有线耳机型号 AM115、AM116、AM12、AM12 plus、AM13、CM115、CM116 为 90 天； 未列入指定范围的其他有线耳机为 12 个月。 独立销售线缆和转接头通常为 12 个月。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 [C2]\n证时，页面说明可按出厂日期顺延 90 日推定起算日。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 最终需经授权服务中心检测。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 维修后期限\n保内更换整机时按三包规则重新计算； 更换部件时延续主机原保修期，若主机剩余不足 30 天则按 30 天。 保外维修更换的部件或附件有 90 天有限保修。 [C3]",
+      "applicable_conditions": [
+        "具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 [C2]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 [C3]"
+      ],
+      "inapplicable_conditions": [
+        "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。 [C1]",
+        "具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 [C2]",
+        "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件\n二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。 [C2]",
+        "普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。 [C2]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 [C3]"
+      ],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_5db9895da511480803f9",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "document": "华为配件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_f3eac7082ae305b7a41e",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "document": "华为配件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_847c8f73a2e7522208d7",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "document": "华为中国大陆手机售后政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q009",
+    "category": "exact",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.009899958968162537,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q010",
+    "category": "exact",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.009400071576237679,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q011",
+    "category": "exact",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.009699957445263863,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q012",
+    "category": "exact",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "applecare-plus-cn-v2.3"
+    ],
+    "latency_ms": 0.06860005669295788,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## AppleCare+ 中国大陆条款 v2. 3 事实摘要 > AppleCare+ 中国大陆条款 v2. 3 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 230912_applecareplusch. pdf，版本标识为 v2. URL 文件名日期并不能确认每份合同的适用起止日期； 须核对购买时的计划凭证和条款，不能将此版本默认视为当前有效。 ## AppleCare+ 中国大陆条款 v2. 3 事实摘要 > AppleCare+ 中国大陆条款 v2. 3 事实摘要 > 硬件服务\n在计划期限内，受保障设备出现材料或工艺缺陷，或集成可充电电池容量低于原规格的 80%，可按条款获得维修或更换服务。 具体事故服务费、设备资格和次数必须以该版本完整条款为准。 ## AppleCare+ 中国大陆条款 v2. 3 事实摘要 > AppleCare+ 中国大陆条款 v2. 3 事实摘要 > 权益关系\nAppleCare+ 提供的权益是法定消费者权利和生产商硬件保修的补充，不替代法定三包或 Apple 一年有限保修。 [C1]",
+      "applicable_conditions": [
+        "3 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 230912_applecareplusch. [C1]",
+        "URL 文件名日期并不能确认每份合同的适用起止日期； [C1]",
+        "须核对购买时的计划凭证和条款，不能将此版本默认视为当前有效。 [C1]",
+        "3 事实摘要 > 硬件服务\n在计划期限内，受保障设备出现材料或工艺缺陷，或集成可充电电池容量低于原规格的 80%，可按条款获得维修或更换服务。 [C1]",
+        "具体事故服务费、设备资格和次数必须以该版本完整条款为准。 [C1]"
+      ],
+      "inapplicable_conditions": [
+        "URL 文件名日期并不能确认每份合同的适用起止日期； [C1]",
+        "须核对购买时的计划凭证和条款，不能将此版本默认视为当前有效。 [C1]"
+      ],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_734ed45f2d66797eb18a",
+          "doc_id": "applecare-plus-cn-v2.3",
+          "document": "AppleCare+ 中国大陆条款 v2.3 事实摘要",
+          "section": "滑动窗口",
+          "version": "v2.3",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/legal/sales-support/applecare/applecareplus/2309/230912_applecareplusch.pdf",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q013",
+    "category": "colloquial",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.010200077667832375,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q014",
+    "category": "colloquial",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "apple-store-returns-cn-current",
+      "apple-store-returns-cn-current",
+      "applecare-plus-cn-v2.4"
+    ],
+    "latency_ms": 0.11629995424300432,
+    "citation_precision": 0.5,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "与退款政策事实摘要 > 退款处理时间\n退款到账时间取决于原支付方式。 支付宝、微信支付和 Apple Pay 的页面说明均为 Apple 在 5 个工作日内处理； 国际信用卡为 2 周； 电汇为 6 个工作日。 银行或支付机构最终入账还可能有额外处理时间。 ## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > 不应混淆的权益\n14 日退货政策不替代中国大陆消费者依法享有的三包权利。 质量故障、无理由退货与硬件保修是不同问题，应分别检索销售与退款政策、法定权益和硬件保修条款。 [C1]\n## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > 适用渠道与期限\n本摘要针对 Apple Store 中国大陆官网或 Apple Store 零售店所售商品。 符合退货条件的商品，应在交付之日起 14 个自然日内申请。 其他授权经销商或第三方电商的退换货，应查询实际销售渠道规则，不能直接套用 Apple Store 规则。 ## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > iPhone 与 iPad 退货条件\niPhone 或 iPad 可在交付之日起 14 个自然日内退回，但设备须完好无损，并带有原包装、全部配件、手册和说明书。 是否激活、是否存在损坏及配件是否齐全都会影响受理判断，证据不足时应由 Apple 确认。 ## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > 退款处理时间\n退款到账时间取决于原支付方式。 支付宝、微信支付和 Apple Pay 的页面说明均为 Apple 在 5 个工作日内处理； [C2]\n## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 231017_applecareplusch. pdf，版本标识为 v2. 仅凭该 URL 不能确定适用起止日期，也不能推定它自动取代所有 v2. 须核对购买时的计划凭证； 未确认适用日期的版本不参与明确日期的检索。 ## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 适用设备与法定权益\n条款涉及 Apple Watch、iPad、iPhone、HomePod、iPod 以及 Apple 或 Beats 品牌耳机等受保障设备。 计划权益是适用法律权利、生产商硬件保修和免费技术支持的补充。 ## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 判断所需信息\n处理请求前至少需要设备型号、计划凭证、购买或计划生效日期、事故日期、故障或意外类型以及已使用服务次数。 [C3]",
+      "applicable_conditions": [
+        "## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > 不应混淆的权益\n14 日退货政策不替代中国大陆消费者依法享有的三包权利。 [C1]",
+        "质量故障、无理由退货与硬件保修是不同问题，应分别检索销售与退款政策、法定权益和硬件保修条款。 [C1]",
+        "## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > 适用渠道与期限\n本摘要针对 Apple Store 中国大陆官网或 Apple Store 零售店所售商品。 [C2]",
+        "符合退货条件的商品，应在交付之日起 14 个自然日内申请。 [C2]",
+        "其他授权经销商或第三方电商的退换货，应查询实际销售渠道规则，不能直接套用 Apple Store 规则。 [C2]"
+      ],
+      "inapplicable_conditions": [
+        "其他授权经销商或第三方电商的退换货，应查询实际销售渠道规则，不能直接套用 Apple Store 规则。 [C2]",
+        "仅凭该 URL 不能确定适用起止日期，也不能推定它自动取代所有 v2. [C3]"
+      ],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_2cb8defe4bfc85fc1ca6",
+          "doc_id": "apple-store-returns-cn-current",
+          "document": "Apple Store 中国大陆退货与退款政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/shop/help/returns_refund",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_e26f9f1190264174b4d7",
+          "doc_id": "apple-store-returns-cn-current",
+          "document": "Apple Store 中国大陆退货与退款政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/shop/help/returns_refund",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_c067bcf49fb61da4b836",
+          "doc_id": "applecare-plus-cn-v2.4",
+          "document": "AppleCare+ 中国大陆条款 v2.4 事实摘要",
+          "section": "滑动窗口",
+          "version": "v2.4",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/legal/sales-support/applecare/applecareplus/2310/231017_applecareplusch.pdf",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q015",
+    "category": "colloquial",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.0097999582067132,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q016",
+    "category": "colloquial",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "huawei-phone-warranty-cn-current",
+      "huawei-phone-warranty-cn-current",
+      "huawei-accessory-warranty-cn-current"
+    ],
+    "latency_ms": 0.1015000743791461,
+    "citation_precision": 0.5,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "证时，页面说明可按出厂日期顺延 90 日推定起算日。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 最终需经授权服务中心检测。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 维修后期限\n保内更换整机时按三包规则重新计算； 更换部件时延续主机原保修期，若主机剩余不足 30 天则按 30 天。 保外维修更换的部件或附件有 90 天有限保修。 [C1]\n## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 渠道与范围\n政策适用于中国大陆官方渠道销售的华为手机及随机配件。 华为授权第三方平台销售的产品，华为提供保内维修，退换货应联系实际经销商处理。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 七日与十五日规则\n线上购买从签收次日起计算。 7 日内手机主机出现经检测确认的非人为性能故障，可选择退货、换同型号同规格产品或免费维修。 第 8 日至第 15 日内出现同类故障，可换货或免费维修，但摘要中的该阶段不含退货选项。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证\n手机主机通常保修 1 年； 随包装数据线和充电头为 1 年，有线耳机为 90 天。 发票、电子三包凭证或签收记录可作为凭证。 无法提供有效凭证时，页面说明可按出厂日期顺延 90 日推定起算日。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形 [C2]\n> 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 磁吸车载支架和 VR 体验盒无维保，折叠手机车载支架为 15 天。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。 [C3]",
+      "applicable_conditions": [
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 [C1]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 渠道与范围\n政策适用于中国大陆官方渠道销售的华为手机及随机配件。 [C2]",
+        "华为授权第三方平台销售的产品，华为提供保内维修，退换货应联系实际经销商处理。 [C2]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证\n手机主机通常保修 1 年； [C2]",
+        "发票、电子三包凭证或签收记录可作为凭证。 [C2]"
+      ],
+      "inapplicable_conditions": [
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 [C1]",
+        "7 日内手机主机出现经检测确认的非人为性能故障，可选择退货、换同型号同规格产品或免费维修。 [C2]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形 [C2]",
+        "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。 [C3]"
+      ],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_847c8f73a2e7522208d7",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "document": "华为中国大陆手机售后政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_ebf10adc745ed9240f22",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "document": "华为中国大陆手机售后政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_5db9895da511480803f9",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "document": "华为配件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q017",
+    "category": "colloquial",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.009899958968162537,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q018",
+    "category": "colloquial",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.010599964298307896,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q019",
+    "category": "colloquial",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.009600073099136353,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q020",
+    "category": "colloquial",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "huawei-accessory-warranty-cn-current",
+      "huawei-phone-warranty-cn-current",
+      "huawei-accessory-warranty-cn-current"
+    ],
+    "latency_ms": 0.12919993605464697,
+    "citation_precision": 0.5,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 手机随包装配件\n可拆卸电池的保修期为 6 个月。 具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件\n二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。 PC 电源适配器及其数据线为 24 个月，PC 扩展坞为 12 个月。 普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 耳机与线缆的精确型号\n独立销售的蓝牙耳机一般为 12 个月。 指定有线耳机型号 AM115、AM116、AM12、AM12 plus、AM13、CM115、CM116 为 90 天； 未列入指定范围的其他有线耳机为 12 个月。 独立销售线缆和转接头通常为 12 个月。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 [C1]\n## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 渠道与范围\n政策适用于中国大陆官方渠道销售的华为手机及随机配件。 华为授权第三方平台销售的产品，华为提供保内维修，退换货应联系实际经销商处理。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 七日与十五日规则\n线上购买从签收次日起计算。 7 日内手机主机出现经检测确认的非人为性能故障，可选择退货、换同型号同规格产品或免费维修。 第 8 日至第 15 日内出现同类故障，可换货或免费维修，但摘要中的该阶段不含退货选项。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证\n手机主机通常保修 1 年； 随包装数据线和充电头为 1 年，有线耳机为 90 天。 发票、电子三包凭证或签收记录可作为凭证。 无法提供有效凭证时，页面说明可按出厂日期顺延 90 日推定起算日。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形 [C2]\n> 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 磁吸车载支架和 VR 体验盒无维保，折叠手机车载支架为 15 天。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。 [C3]",
+      "applicable_conditions": [
+        "具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 [C1]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 渠道与范围\n政策适用于中国大陆官方渠道销售的华为手机及随机配件。 [C2]",
+        "华为授权第三方平台销售的产品，华为提供保内维修，退换货应联系实际经销商处理。 [C2]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证\n手机主机通常保修 1 年； [C2]",
+        "发票、电子三包凭证或签收记录可作为凭证。 [C2]"
+      ],
+      "inapplicable_conditions": [
+        "具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 [C1]",
+        "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件\n二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。 [C1]",
+        "普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。 [C1]",
+        "7 日内手机主机出现经检测确认的非人为性能故障，可选择退货、换同型号同规格产品或免费维修。 [C2]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形 [C2]"
+      ],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_f3eac7082ae305b7a41e",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "document": "华为配件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_ebf10adc745ed9240f22",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "document": "华为中国大陆手机售后政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_5db9895da511480803f9",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "document": "华为配件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q021",
+    "category": "colloquial",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.010599964298307896,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q022",
+    "category": "colloquial",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.00970007386058569,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q023",
+    "category": "colloquial",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.009599956683814526,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q024",
+    "category": "colloquial",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.010399962775409222,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q025",
+    "category": "multi_condition",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "apple-store-returns-cn-current",
+      "apple-store-returns-cn-current",
+      "apple-hardware-warranty-cn-current"
+    ],
+    "latency_ms": 0.10279996786266565,
+    "citation_precision": 0.5,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "与退款政策事实摘要 > 退款处理时间\n退款到账时间取决于原支付方式。 支付宝、微信支付和 Apple Pay 的页面说明均为 Apple 在 5 个工作日内处理； 国际信用卡为 2 周； 电汇为 6 个工作日。 银行或支付机构最终入账还可能有额外处理时间。 ## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > 不应混淆的权益\n14 日退货政策不替代中国大陆消费者依法享有的三包权利。 质量故障、无理由退货与硬件保修是不同问题，应分别检索销售与退款政策、法定权益和硬件保修条款。 [C1]\n## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > 适用渠道与期限\n本摘要针对 Apple Store 中国大陆官网或 Apple Store 零售店所售商品。 符合退货条件的商品，应在交付之日起 14 个自然日内申请。 其他授权经销商或第三方电商的退换货，应查询实际销售渠道规则，不能直接套用 Apple Store 规则。 ## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > iPhone 与 iPad 退货条件\niPhone 或 iPad 可在交付之日起 14 个自然日内退回，但设备须完好无损，并带有原包装、全部配件、手册和说明书。 是否激活、是否存在损坏及配件是否齐全都会影响受理判断，证据不足时应由 Apple 确认。 ## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > 退款处理时间\n退款到账时间取决于原支付方式。 支付宝、微信支付和 Apple Pay 的页面说明均为 Apple 在 5 个工作日内处理； [C2]\n依据中国三包规定，主要部件可有 2 年保修。 浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 ## Apple 产品在中国大陆的硬件保修政策事实摘要 > Apple 产品在中国大陆的硬件保修政策事实摘要 > 保障边界\n有限保修针对正常使用时出现的材料和工艺缺陷。 非 Apple 品牌硬件、软件以及未遵守使用说明造成的损坏不属于这项有限保修。 AppleCare+ 是可选额外保障，不等同于免费的一年有限保修。 [C3]",
+      "applicable_conditions": [
+        "## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > 不应混淆的权益\n14 日退货政策不替代中国大陆消费者依法享有的三包权利。 [C1]",
+        "质量故障、无理由退货与硬件保修是不同问题，应分别检索销售与退款政策、法定权益和硬件保修条款。 [C1]",
+        "## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > 适用渠道与期限\n本摘要针对 Apple Store 中国大陆官网或 Apple Store 零售店所售商品。 [C2]",
+        "符合退货条件的商品，应在交付之日起 14 个自然日内申请。 [C2]",
+        "其他授权经销商或第三方电商的退换货，应查询实际销售渠道规则，不能直接套用 Apple Store 规则。 [C2]"
+      ],
+      "inapplicable_conditions": [
+        "其他授权经销商或第三方电商的退换货，应查询实际销售渠道规则，不能直接套用 Apple Store 规则。 [C2]",
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C3]",
+        "非 Apple 品牌硬件、软件以及未遵守使用说明造成的损坏不属于这项有限保修。 [C3]"
+      ],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_2cb8defe4bfc85fc1ca6",
+          "doc_id": "apple-store-returns-cn-current",
+          "document": "Apple Store 中国大陆退货与退款政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/shop/help/returns_refund",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_e26f9f1190264174b4d7",
+          "doc_id": "apple-store-returns-cn-current",
+          "document": "Apple Store 中国大陆退货与退款政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/shop/help/returns_refund",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_230731d2f9c471388a15",
+          "doc_id": "apple-hardware-warranty-cn-current",
+          "document": "Apple 产品在中国大陆的硬件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/support/warranties/index.html",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q026",
+    "category": "multi_condition",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.009899958968162537,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q027",
+    "category": "multi_condition",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.009899958968162537,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q028",
+    "category": "multi_condition",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.010500079952180386,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q029",
+    "category": "multi_condition",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "huawei-phone-warranty-cn-current",
+      "huawei-phone-warranty-cn-current",
+      "huawei-accessory-warranty-cn-current"
+    ],
+    "latency_ms": 0.10829989332705736,
+    "citation_precision": 0.5,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "证时，页面说明可按出厂日期顺延 90 日推定起算日。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 最终需经授权服务中心检测。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 维修后期限\n保内更换整机时按三包规则重新计算； 更换部件时延续主机原保修期，若主机剩余不足 30 天则按 30 天。 保外维修更换的部件或附件有 90 天有限保修。 [C1]\n## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 渠道与范围\n政策适用于中国大陆官方渠道销售的华为手机及随机配件。 华为授权第三方平台销售的产品，华为提供保内维修，退换货应联系实际经销商处理。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 七日与十五日规则\n线上购买从签收次日起计算。 7 日内手机主机出现经检测确认的非人为性能故障，可选择退货、换同型号同规格产品或免费维修。 第 8 日至第 15 日内出现同类故障，可换货或免费维修，但摘要中的该阶段不含退货选项。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证\n手机主机通常保修 1 年； 随包装数据线和充电头为 1 年，有线耳机为 90 天。 发票、电子三包凭证或签收记录可作为凭证。 无法提供有效凭证时，页面说明可按出厂日期顺延 90 日推定起算日。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形 [C2]\n> 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 磁吸车载支架和 VR 体验盒无维保，折叠手机车载支架为 15 天。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。 [C3]",
+      "applicable_conditions": [
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 [C1]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 渠道与范围\n政策适用于中国大陆官方渠道销售的华为手机及随机配件。 [C2]",
+        "华为授权第三方平台销售的产品，华为提供保内维修，退换货应联系实际经销商处理。 [C2]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证\n手机主机通常保修 1 年； [C2]",
+        "发票、电子三包凭证或签收记录可作为凭证。 [C2]"
+      ],
+      "inapplicable_conditions": [
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 [C1]",
+        "7 日内手机主机出现经检测确认的非人为性能故障，可选择退货、换同型号同规格产品或免费维修。 [C2]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形 [C2]",
+        "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。 [C3]"
+      ],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_847c8f73a2e7522208d7",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "document": "华为中国大陆手机售后政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_ebf10adc745ed9240f22",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "document": "华为中国大陆手机售后政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_5db9895da511480803f9",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "document": "华为配件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q030",
+    "category": "multi_condition",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.010899966582655907,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q031",
+    "category": "multi_condition",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "huawei-phone-warranty-cn-current",
+      "huawei-accessory-warranty-cn-current",
+      "huawei-phone-warranty-cn-current"
+    ],
+    "latency_ms": 0.13400008901953697,
+    "citation_precision": 0.5,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "证时，页面说明可按出厂日期顺延 90 日推定起算日。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 最终需经授权服务中心检测。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 维修后期限\n保内更换整机时按三包规则重新计算； 更换部件时延续主机原保修期，若主机剩余不足 30 天则按 30 天。 保外维修更换的部件或附件有 90 天有限保修。 [C1]\n> 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 磁吸车载支架和 VR 体验盒无维保，折叠手机车载支架为 15 天。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。 [C2]\n## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 渠道与范围\n政策适用于中国大陆官方渠道销售的华为手机及随机配件。 华为授权第三方平台销售的产品，华为提供保内维修，退换货应联系实际经销商处理。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 七日与十五日规则\n线上购买从签收次日起计算。 7 日内手机主机出现经检测确认的非人为性能故障，可选择退货、换同型号同规格产品或免费维修。 第 8 日至第 15 日内出现同类故障，可换货或免费维修，但摘要中的该阶段不含退货选项。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证\n手机主机通常保修 1 年； 随包装数据线和充电头为 1 年，有线耳机为 90 天。 发票、电子三包凭证或签收记录可作为凭证。 无法提供有效凭证时，页面说明可按出厂日期顺延 90 日推定起算日。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形 [C3]",
+      "applicable_conditions": [
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 [C1]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 渠道与范围\n政策适用于中国大陆官方渠道销售的华为手机及随机配件。 [C3]",
+        "华为授权第三方平台销售的产品，华为提供保内维修，退换货应联系实际经销商处理。 [C3]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证\n手机主机通常保修 1 年； [C3]",
+        "发票、电子三包凭证或签收记录可作为凭证。 [C3]"
+      ],
+      "inapplicable_conditions": [
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 [C1]",
+        "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。 [C2]",
+        "7 日内手机主机出现经检测确认的非人为性能故障，可选择退货、换同型号同规格产品或免费维修。 [C3]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形 [C3]"
+      ],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_847c8f73a2e7522208d7",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "document": "华为中国大陆手机售后政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_5db9895da511480803f9",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "document": "华为配件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_ebf10adc745ed9240f22",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "document": "华为中国大陆手机售后政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q032",
+    "category": "multi_condition",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "apple-hardware-warranty-cn-current",
+      "apple-hardware-warranty-cn-current",
+      "huawei-accessory-warranty-cn-current"
+    ],
+    "latency_ms": 0.1148999435827136,
+    "citation_precision": 0.5,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "依据中国三包规定，主要部件可有 2 年保修。 浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 ## Apple 产品在中国大陆的硬件保修政策事实摘要 > Apple 产品在中国大陆的硬件保修政策事实摘要 > 保障边界\n有限保修针对正常使用时出现的材料和工艺缺陷。 非 Apple 品牌硬件、软件以及未遵守使用说明造成的损坏不属于这项有限保修。 AppleCare+ 是可选额外保障，不等同于免费的一年有限保修。 [C1]\n## Apple 产品在中国大陆的硬件保修政策事实摘要 > Apple 产品在中国大陆的硬件保修政策事实摘要 > iPhone\niPhone 整机及包装内 Apple 品牌附件，自原始购买日起享有 1 年保修。 维修或更换后的部件、附件，适用原保修剩余期限或维修更换日起 90 天，以较长者为准。 ## Apple 产品在中国大陆的硬件保修政策事实摘要 > Apple 产品在中国大陆的硬件保修政策事实摘要 > iPad\niPad 整机和所含附件自原始购买日起享有 1 年保修。 iPad 的主要部件享有 2 年保修，主要部件包括主板 MLB、内存、硬盘 HDD 或 SSD、显示屏 LCD 和交流电源适配器。 ## Apple 产品在中国大陆的硬件保修政策事实摘要 > Apple 产品在中国大陆的硬件保修政策事实摘要 > Mac 与地区差异\nMac 整机和所含附件为 1 年有限保修； 依据中国三包规定，主要部件可有 2 年保修。 浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C2]\n## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 手机随包装配件\n可拆卸电池的保修期为 6 个月。 具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件\n二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。 PC 电源适配器及其数据线为 24 个月，PC 扩展坞为 12 个月。 普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 耳机与线缆的精确型号\n独立销售的蓝牙耳机一般为 12 个月。 指定有线耳机型号 AM115、AM116、AM12、AM12 plus、AM13、CM115、CM116 为 90 天； 未列入指定范围的其他有线耳机为 12 个月。 独立销售线缆和转接头通常为 12 个月。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 [C3]",
+      "applicable_conditions": [
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C1]",
+        "维修或更换后的部件、附件，适用原保修剩余期限或维修更换日起 90 天，以较长者为准。 [C2]",
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C2]",
+        "具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 [C3]"
+      ],
+      "inapplicable_conditions": [
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C1]",
+        "非 Apple 品牌硬件、软件以及未遵守使用说明造成的损坏不属于这项有限保修。 [C1]",
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C2]",
+        "具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 [C3]",
+        "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件\n二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。 [C3]"
+      ],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_230731d2f9c471388a15",
+          "doc_id": "apple-hardware-warranty-cn-current",
+          "document": "Apple 产品在中国大陆的硬件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/support/warranties/index.html",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_94e1f1cb0a6e6ae77585",
+          "doc_id": "apple-hardware-warranty-cn-current",
+          "document": "Apple 产品在中国大陆的硬件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/support/warranties/index.html",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_f3eac7082ae305b7a41e",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "document": "华为配件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q033",
+    "category": "multi_condition",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "synthetic-starmall-electronics-v2",
+      "synthetic-starmall-appliance-v1",
+      "synthetic-starmall-consumables-v1"
+    ],
+    "latency_ms": 0.11959997937083244,
+    "citation_precision": 0.3333333333333333,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 适用期与范围\n本合成规则自 2025 年 1 月 1 日起适用，覆盖星云商城自营手机、平板和智能手表，型号包括 NEBULA-P2、NEBULA-T2 和 NEBULA-W1。 ## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 无理由退货\n签收后 10 个自然日内，商品外观无损、配件齐全且账号已经退出时可以申请无理由退货。 设备允许完成首次激活，但累计使用时间不得超过 2 小时； 超过时需人工确认折损方案。 ## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 质量问题换货\n签收后 20 个自然日内，经授权检测点确认存在非人为硬件性能故障，可以申请同型号换货。 无库存时转人工选择维修或退款方案。 ## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 排除条件\n人为进液、跌落破损、刷入非官方系统、序列号被涂改或缺失关键配件，不适用无理由退货或免费换货。 [C1]\n## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 商品范围\n本合成规则适用于星云商城自营冰箱、洗衣机和空调，测试型号为 HOME-REF-520、HOME-WASH-10 和 HOME-AC-35。 ## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 签收与安装\n消费者应在签收时检查外包装。 大型家电安装后不适用普通无理由退货； 若安装服务人员确认到货破损，应在签收后 48 小时内提交照片和服务单号。 ## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 性能故障\n签收后 7 日内经上门检测确认关键性能故障，可申请退货； 15 日内可申请换货； 整机保修 1 年，主要部件保修 3 年。 安装不规范导致的问题需先核实施工责任。 ## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 必要信息\n判断时需要型号、签收时间、安装时间、故障现象、是否由授权人员安装以及检测工单。 缺少检测结论时不得直接承诺退换。 [C2]\n## 星云商城耗材与定制商品规则 > 星云商城耗材与定制商品规则 > 耗材\n本合成规则适用于打印机墨盒、滤芯和一次性清洁耗材。 密封包装拆开后，除检测确认的质量问题外，不支持无理由退货。 未拆封且包装完好的耗材可在签收后 7 日内申请。 ## 星云商城耗材与定制商品规则 > 星云商城耗材与定制商品规则 > 定制商品\n刻字耳机、定制尺寸保护膜和印有用户图片的商品，在制作开始后不支持无理由取消或退货。 商家制作错误、内容与确认稿不一致或商品存在质量问题时可转人工处理。 ## 星云商城耗材与定制商品规则 > 星云商城耗材与定制商品规则 > 精确标识\n测试墨盒型号为 INK-XL-62，滤芯型号为 FILTER-A7，刻字耳机型号为 AUDIO-CUSTOM-9。 型号不匹配时不得引用本规则作出确定结论。 [C3]",
+      "applicable_conditions": [
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 适用期与范围\n本合成规则自 2025 年 1 月 1 日起适用，覆盖星云商城自营手机、平板和智能手表，型号包括 NEBULA-P2、NEBULA-T2 和 NEBULA-W1。 [C1]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 无理由退货\n签收后 10 个自然日内，商品外观无损、配件齐全且账号已经退出时可以申请无理由退货。 [C1]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 质量问题换货\n签收后 20 个自然日内，经授权检测点确认存在非人为硬件性能故障，可以申请同型号换货。 [C1]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 排除条件\n人为进液、跌落破损、刷入非官方系统、序列号被涂改或缺失关键配件，不适用无理由退货或免费换货。 [C1]",
+        "## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 商品范围\n本合成规则适用于星云商城自营冰箱、洗衣机和空调，测试型号为 HOME-REF-520、HOME-WASH-10 和 HOME-AC-35。 [C2]"
+      ],
+      "inapplicable_conditions": [
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 质量问题换货\n签收后 20 个自然日内，经授权检测点确认存在非人为硬件性能故障，可以申请同型号换货。 [C1]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 排除条件\n人为进液、跌落破损、刷入非官方系统、序列号被涂改或缺失关键配件，不适用无理由退货或免费换货。 [C1]",
+        "大型家电安装后不适用普通无理由退货； [C2]"
+      ],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_66e6918aba959868a71b",
+          "doc_id": "synthetic-starmall-electronics-v2",
+          "document": "星云商城电子产品售后规则 v2",
+          "section": "滑动窗口",
+          "version": "v2",
+          "effective_from": "2025-01-01",
+          "effective_to": null,
+          "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-electronics-v2",
+          "synthetic": true
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_29769b1cb4f21caefdec",
+          "doc_id": "synthetic-starmall-appliance-v1",
+          "document": "星云商城大型家电售后规则",
+          "section": "滑动窗口",
+          "version": "v1",
+          "effective_from": "2025-01-01",
+          "effective_to": null,
+          "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-appliance-v1",
+          "synthetic": true
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_c9fdffe6317db908d809",
+          "doc_id": "synthetic-starmall-consumables-v1",
+          "document": "星云商城耗材与定制商品规则",
+          "section": "滑动窗口",
+          "version": "v1",
+          "effective_from": "2025-01-01",
+          "effective_to": null,
+          "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-consumables-v1",
+          "synthetic": true
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q034",
+    "category": "multi_condition",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.010699965059757233,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q035",
+    "category": "multi_condition",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "synthetic-starmall-consumables-v1",
+      "synthetic-starmall-appliance-v1",
+      "synthetic-starmall-electronics-v1"
+    ],
+    "latency_ms": 0.11470005847513676,
+    "citation_precision": 0.3333333333333333,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 星云商城耗材与定制商品规则 > 星云商城耗材与定制商品规则 > 耗材\n本合成规则适用于打印机墨盒、滤芯和一次性清洁耗材。 密封包装拆开后，除检测确认的质量问题外，不支持无理由退货。 未拆封且包装完好的耗材可在签收后 7 日内申请。 ## 星云商城耗材与定制商品规则 > 星云商城耗材与定制商品规则 > 定制商品\n刻字耳机、定制尺寸保护膜和印有用户图片的商品，在制作开始后不支持无理由取消或退货。 商家制作错误、内容与确认稿不一致或商品存在质量问题时可转人工处理。 ## 星云商城耗材与定制商品规则 > 星云商城耗材与定制商品规则 > 精确标识\n测试墨盒型号为 INK-XL-62，滤芯型号为 FILTER-A7，刻字耳机型号为 AUDIO-CUSTOM-9。 型号不匹配时不得引用本规则作出确定结论。 [C1]\n## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 商品范围\n本合成规则适用于星云商城自营冰箱、洗衣机和空调，测试型号为 HOME-REF-520、HOME-WASH-10 和 HOME-AC-35。 ## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 签收与安装\n消费者应在签收时检查外包装。 大型家电安装后不适用普通无理由退货； 若安装服务人员确认到货破损，应在签收后 48 小时内提交照片和服务单号。 ## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 性能故障\n签收后 7 日内经上门检测确认关键性能故障，可申请退货； 15 日内可申请换货； 整机保修 1 年，主要部件保修 3 年。 安装不规范导致的问题需先核实施工责任。 ## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 必要信息\n判断时需要型号、签收时间、安装时间、故障现象、是否由授权人员安装以及检测工单。 缺少检测结论时不得直接承诺退换。 [C2]\n## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 适用期\n本合成规则仅用于 2024 年版本过滤测试，适用于星云商城自营手机和平板。 ## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 无理由退货\n签收后 7 个自然日内，商品未激活、未拆除一次性封条、外观无损且配件齐全时，可以申请无理由退货。 ## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 质量问题换货\n签收后 15 个自然日内，型号 NEBULA-P1 或 NEBULA-T1 经检测存在硬件性能故障，可以申请换货。 ## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 排除条件\n激活设备、缺少序列号标签、人为进液或擅自拆机不适用无理由退货。 [C3]",
+      "applicable_conditions": [
+        "## 星云商城耗材与定制商品规则 > 星云商城耗材与定制商品规则 > 耗材\n本合成规则适用于打印机墨盒、滤芯和一次性清洁耗材。 [C1]",
+        "## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 商品范围\n本合成规则适用于星云商城自营冰箱、洗衣机和空调，测试型号为 HOME-REF-520、HOME-WASH-10 和 HOME-AC-35。 [C2]",
+        "## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 签收与安装\n消费者应在签收时检查外包装。 [C2]",
+        "大型家电安装后不适用普通无理由退货； [C2]",
+        "若安装服务人员确认到货破损，应在签收后 48 小时内提交照片和服务单号。 [C2]"
+      ],
+      "inapplicable_conditions": [
+        "大型家电安装后不适用普通无理由退货； [C2]",
+        "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 排除条件\n激活设备、缺少序列号标签、人为进液或擅自拆机不适用无理由退货。 [C3]"
+      ],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_c9fdffe6317db908d809",
+          "doc_id": "synthetic-starmall-consumables-v1",
+          "document": "星云商城耗材与定制商品规则",
+          "section": "滑动窗口",
+          "version": "v1",
+          "effective_from": "2025-01-01",
+          "effective_to": null,
+          "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-consumables-v1",
+          "synthetic": true
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_29769b1cb4f21caefdec",
+          "doc_id": "synthetic-starmall-appliance-v1",
+          "document": "星云商城大型家电售后规则",
+          "section": "滑动窗口",
+          "version": "v1",
+          "effective_from": "2025-01-01",
+          "effective_to": null,
+          "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-appliance-v1",
+          "synthetic": true
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_7166f4acd3e6414b0411",
+          "doc_id": "synthetic-starmall-electronics-v1",
+          "document": "星云商城电子产品售后规则 v1",
+          "section": "滑动窗口",
+          "version": "v1",
+          "effective_from": "2024-01-01",
+          "effective_to": "2024-12-31",
+          "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-electronics-v1",
+          "synthetic": true
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q036",
+    "category": "multi_condition",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.009299954399466515,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q037",
+    "category": "cross_document",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "apple-hardware-warranty-cn-current",
+      "apple-store-returns-cn-current",
+      "apple-store-returns-cn-current"
+    ],
+    "latency_ms": 0.1039999770000577,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "依据中国三包规定，主要部件可有 2 年保修。 浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 ## Apple 产品在中国大陆的硬件保修政策事实摘要 > Apple 产品在中国大陆的硬件保修政策事实摘要 > 保障边界\n有限保修针对正常使用时出现的材料和工艺缺陷。 非 Apple 品牌硬件、软件以及未遵守使用说明造成的损坏不属于这项有限保修。 AppleCare+ 是可选额外保障，不等同于免费的一年有限保修。 [C1]\n## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > 适用渠道与期限\n本摘要针对 Apple Store 中国大陆官网或 Apple Store 零售店所售商品。 符合退货条件的商品，应在交付之日起 14 个自然日内申请。 其他授权经销商或第三方电商的退换货，应查询实际销售渠道规则，不能直接套用 Apple Store 规则。 ## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > iPhone 与 iPad 退货条件\niPhone 或 iPad 可在交付之日起 14 个自然日内退回，但设备须完好无损，并带有原包装、全部配件、手册和说明书。 是否激活、是否存在损坏及配件是否齐全都会影响受理判断，证据不足时应由 Apple 确认。 ## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > 退款处理时间\n退款到账时间取决于原支付方式。 支付宝、微信支付和 Apple Pay 的页面说明均为 Apple 在 5 个工作日内处理； [C2]\n与退款政策事实摘要 > 退款处理时间\n退款到账时间取决于原支付方式。 支付宝、微信支付和 Apple Pay 的页面说明均为 Apple 在 5 个工作日内处理； 国际信用卡为 2 周； 电汇为 6 个工作日。 银行或支付机构最终入账还可能有额外处理时间。 ## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > 不应混淆的权益\n14 日退货政策不替代中国大陆消费者依法享有的三包权利。 质量故障、无理由退货与硬件保修是不同问题，应分别检索销售与退款政策、法定权益和硬件保修条款。 [C3]",
+      "applicable_conditions": [
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C1]",
+        "## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > 适用渠道与期限\n本摘要针对 Apple Store 中国大陆官网或 Apple Store 零售店所售商品。 [C2]",
+        "符合退货条件的商品，应在交付之日起 14 个自然日内申请。 [C2]",
+        "其他授权经销商或第三方电商的退换货，应查询实际销售渠道规则，不能直接套用 Apple Store 规则。 [C2]",
+        "## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > iPhone 与 iPad 退货条件\niPhone 或 iPad 可在交付之日起 14 个自然日内退回，但设备须完好无损，并带有原包装、全部配件、手册和说明书。 [C2]"
+      ],
+      "inapplicable_conditions": [
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C1]",
+        "非 Apple 品牌硬件、软件以及未遵守使用说明造成的损坏不属于这项有限保修。 [C1]",
+        "其他授权经销商或第三方电商的退换货，应查询实际销售渠道规则，不能直接套用 Apple Store 规则。 [C2]"
+      ],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_230731d2f9c471388a15",
+          "doc_id": "apple-hardware-warranty-cn-current",
+          "document": "Apple 产品在中国大陆的硬件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/support/warranties/index.html",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_e26f9f1190264174b4d7",
+          "doc_id": "apple-store-returns-cn-current",
+          "document": "Apple Store 中国大陆退货与退款政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/shop/help/returns_refund",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_2cb8defe4bfc85fc1ca6",
+          "doc_id": "apple-store-returns-cn-current",
+          "document": "Apple Store 中国大陆退货与退款政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/shop/help/returns_refund",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q038",
+    "category": "cross_document",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "huawei-accessory-warranty-cn-current",
+      "huawei-phone-warranty-cn-current",
+      "huawei-accessory-warranty-cn-current"
+    ],
+    "latency_ms": 0.12520002201199532,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 手机随包装配件\n可拆卸电池的保修期为 6 个月。 具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件\n二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。 PC 电源适配器及其数据线为 24 个月，PC 扩展坞为 12 个月。 普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 耳机与线缆的精确型号\n独立销售的蓝牙耳机一般为 12 个月。 指定有线耳机型号 AM115、AM116、AM12、AM12 plus、AM13、CM115、CM116 为 90 天； 未列入指定范围的其他有线耳机为 12 个月。 独立销售线缆和转接头通常为 12 个月。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 [C1]\n## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 渠道与范围\n政策适用于中国大陆官方渠道销售的华为手机及随机配件。 华为授权第三方平台销售的产品，华为提供保内维修，退换货应联系实际经销商处理。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 七日与十五日规则\n线上购买从签收次日起计算。 7 日内手机主机出现经检测确认的非人为性能故障，可选择退货、换同型号同规格产品或免费维修。 第 8 日至第 15 日内出现同类故障，可换货或免费维修，但摘要中的该阶段不含退货选项。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证\n手机主机通常保修 1 年； 随包装数据线和充电头为 1 年，有线耳机为 90 天。 发票、电子三包凭证或签收记录可作为凭证。 无法提供有效凭证时，页面说明可按出厂日期顺延 90 日推定起算日。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形 [C2]\n> 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 磁吸车载支架和 VR 体验盒无维保，折叠手机车载支架为 15 天。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。 [C3]",
+      "applicable_conditions": [
+        "具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 [C1]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 渠道与范围\n政策适用于中国大陆官方渠道销售的华为手机及随机配件。 [C2]",
+        "华为授权第三方平台销售的产品，华为提供保内维修，退换货应联系实际经销商处理。 [C2]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证\n手机主机通常保修 1 年； [C2]",
+        "发票、电子三包凭证或签收记录可作为凭证。 [C2]"
+      ],
+      "inapplicable_conditions": [
+        "具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 [C1]",
+        "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件\n二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。 [C1]",
+        "普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。 [C1]",
+        "7 日内手机主机出现经检测确认的非人为性能故障，可选择退货、换同型号同规格产品或免费维修。 [C2]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形 [C2]"
+      ],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_f3eac7082ae305b7a41e",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "document": "华为配件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_ebf10adc745ed9240f22",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "document": "华为中国大陆手机售后政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_5db9895da511480803f9",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "document": "华为配件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q039",
+    "category": "cross_document",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.010599964298307896,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q040",
+    "category": "cross_document",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "xiaomi-phone-service-cn-current",
+      "apple-store-returns-cn-current",
+      "apple-store-returns-cn-current"
+    ],
+    "latency_ms": 0.11939997784793377,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 办理前提\n三包有效期内的修理、更换或退货，应提供发票和三包凭证，并由小米售后服务中心对性能故障进行检测确认。 ## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 收货后 7 日\n自购买收货日起 7 日内，移动电话主机出现规定性能故障并经检测确认，可根据消费者选择免费退货、换货或修理。 该条款针对性能故障，不应被解释为所有使用状态下都能无理由退货。 ## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 第 8 日至第 15 日\n自购买收货日起第 8 日至第 15 日内，主机出现规定性能故障并经检测确认，可免费换货或修理； 此阶段的故障处理摘要不包含退货。 ## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 十二个月维修\n自购买收货日起 12 个月内，移动电话主机出现规定性能故障并经检测确认，可免费修理。 电池、充电器、外接有线耳机和数据接口卡等附件另按附件性能故障及更换规则处理。 [C1]\n与退款政策事实摘要 > 退款处理时间\n退款到账时间取决于原支付方式。 支付宝、微信支付和 Apple Pay 的页面说明均为 Apple 在 5 个工作日内处理； 国际信用卡为 2 周； 电汇为 6 个工作日。 银行或支付机构最终入账还可能有额外处理时间。 ## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > 不应混淆的权益\n14 日退货政策不替代中国大陆消费者依法享有的三包权利。 质量故障、无理由退货与硬件保修是不同问题，应分别检索销售与退款政策、法定权益和硬件保修条款。 [C2]\n## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > 适用渠道与期限\n本摘要针对 Apple Store 中国大陆官网或 Apple Store 零售店所售商品。 符合退货条件的商品，应在交付之日起 14 个自然日内申请。 其他授权经销商或第三方电商的退换货，应查询实际销售渠道规则，不能直接套用 Apple Store 规则。 ## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > iPhone 与 iPad 退货条件\niPhone 或 iPad 可在交付之日起 14 个自然日内退回，但设备须完好无损，并带有原包装、全部配件、手册和说明书。 是否激活、是否存在损坏及配件是否齐全都会影响受理判断，证据不足时应由 Apple 确认。 ## Apple Store 中国大陆退货与退款政策事实摘要 > Apple Store 中国大陆退货与退款政策事实摘要 > 退款处理时间\n退款到账时间取决于原支付方式。 支付宝、微信支付和 Apple Pay 的页面说明均为 Apple 在 5 个工作日内处理； [C3]",
+      "applicable_conditions": [
+        "## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 办理前提\n三包有效期内的修理、更换或退货，应提供发票和三包凭证，并由小米售后服务中心对性能故障进行检测确认。 [C1]",
+        "## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 收货后 7 日\n自购买收货日起 7 日内，移动电话主机出现规定性能故障并经检测确认，可根据消费者选择免费退货、换货或修理。 [C1]",
+        "该条款针对性能故障，不应被解释为所有使用状态下都能无理由退货。 [C1]",
+        "## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 第 8 日至第 15 日\n自购买收货日起第 8 日至第 15 日内，主机出现规定性能故障并经检测确认，可免费换货或修理； [C1]",
+        "## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 十二个月维修\n自购买收货日起 12 个月内，移动电话主机出现规定性能故障并经检测确认，可免费修理。 [C1]"
+      ],
+      "inapplicable_conditions": [
+        "其他授权经销商或第三方电商的退换货，应查询实际销售渠道规则，不能直接套用 Apple Store 规则。 [C3]"
+      ],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_2b5b3c1118ba2590d298",
+          "doc_id": "xiaomi-phone-service-cn-current",
+          "document": "小米手机售后三包服务政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://order.mi.com/service/security",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_2cb8defe4bfc85fc1ca6",
+          "doc_id": "apple-store-returns-cn-current",
+          "document": "Apple Store 中国大陆退货与退款政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/shop/help/returns_refund",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_e26f9f1190264174b4d7",
+          "doc_id": "apple-store-returns-cn-current",
+          "document": "Apple Store 中国大陆退货与退款政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/shop/help/returns_refund",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q041",
+    "category": "cross_document",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "applecare-plus-cn-v2.3",
+      "applecare-plus-cn-v2.4",
+      "apple-hardware-warranty-cn-current"
+    ],
+    "latency_ms": 0.13020006008446217,
+    "citation_precision": 0.6666666666666666,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## AppleCare+ 中国大陆条款 v2. 3 事实摘要 > AppleCare+ 中国大陆条款 v2. 3 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 230912_applecareplusch. pdf，版本标识为 v2. URL 文件名日期并不能确认每份合同的适用起止日期； 须核对购买时的计划凭证和条款，不能将此版本默认视为当前有效。 ## AppleCare+ 中国大陆条款 v2. 3 事实摘要 > AppleCare+ 中国大陆条款 v2. 3 事实摘要 > 硬件服务\n在计划期限内，受保障设备出现材料或工艺缺陷，或集成可充电电池容量低于原规格的 80%，可按条款获得维修或更换服务。 具体事故服务费、设备资格和次数必须以该版本完整条款为准。 ## AppleCare+ 中国大陆条款 v2. 3 事实摘要 > AppleCare+ 中国大陆条款 v2. 3 事实摘要 > 权益关系\nAppleCare+ 提供的权益是法定消费者权利和生产商硬件保修的补充，不替代法定三包或 Apple 一年有限保修。 [C1]\n## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 231017_applecareplusch. pdf，版本标识为 v2. 仅凭该 URL 不能确定适用起止日期，也不能推定它自动取代所有 v2. 须核对购买时的计划凭证； 未确认适用日期的版本不参与明确日期的检索。 ## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 适用设备与法定权益\n条款涉及 Apple Watch、iPad、iPhone、HomePod、iPod 以及 Apple 或 Beats 品牌耳机等受保障设备。 计划权益是适用法律权利、生产商硬件保修和免费技术支持的补充。 ## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 判断所需信息\n处理请求前至少需要设备型号、计划凭证、购买或计划生效日期、事故日期、故障或意外类型以及已使用服务次数。 [C2]\n依据中国三包规定，主要部件可有 2 年保修。 浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 ## Apple 产品在中国大陆的硬件保修政策事实摘要 > Apple 产品在中国大陆的硬件保修政策事实摘要 > 保障边界\n有限保修针对正常使用时出现的材料和工艺缺陷。 非 Apple 品牌硬件、软件以及未遵守使用说明造成的损坏不属于这项有限保修。 AppleCare+ 是可选额外保障，不等同于免费的一年有限保修。 [C3]",
+      "applicable_conditions": [
+        "3 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 230912_applecareplusch. [C1]",
+        "URL 文件名日期并不能确认每份合同的适用起止日期； [C1]",
+        "须核对购买时的计划凭证和条款，不能将此版本默认视为当前有效。 [C1]",
+        "3 事实摘要 > 硬件服务\n在计划期限内，受保障设备出现材料或工艺缺陷，或集成可充电电池容量低于原规格的 80%，可按条款获得维修或更换服务。 [C1]",
+        "具体事故服务费、设备资格和次数必须以该版本完整条款为准。 [C1]"
+      ],
+      "inapplicable_conditions": [
+        "URL 文件名日期并不能确认每份合同的适用起止日期； [C1]",
+        "须核对购买时的计划凭证和条款，不能将此版本默认视为当前有效。 [C1]",
+        "仅凭该 URL 不能确定适用起止日期，也不能推定它自动取代所有 v2. [C2]",
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C3]",
+        "非 Apple 品牌硬件、软件以及未遵守使用说明造成的损坏不属于这项有限保修。 [C3]"
+      ],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_734ed45f2d66797eb18a",
+          "doc_id": "applecare-plus-cn-v2.3",
+          "document": "AppleCare+ 中国大陆条款 v2.3 事实摘要",
+          "section": "滑动窗口",
+          "version": "v2.3",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/legal/sales-support/applecare/applecareplus/2309/230912_applecareplusch.pdf",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_c067bcf49fb61da4b836",
+          "doc_id": "applecare-plus-cn-v2.4",
+          "document": "AppleCare+ 中国大陆条款 v2.4 事实摘要",
+          "section": "滑动窗口",
+          "version": "v2.4",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/legal/sales-support/applecare/applecareplus/2310/231017_applecareplusch.pdf",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_230731d2f9c471388a15",
+          "doc_id": "apple-hardware-warranty-cn-current",
+          "document": "Apple 产品在中国大陆的硬件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/support/warranties/index.html",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q042",
+    "category": "cross_document",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "huawei-accessory-warranty-cn-current",
+      "huawei-phone-warranty-cn-current",
+      "huawei-accessory-warranty-cn-current"
+    ],
+    "latency_ms": 0.11169991921633482,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 手机随包装配件\n可拆卸电池的保修期为 6 个月。 具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件\n二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。 PC 电源适配器及其数据线为 24 个月，PC 扩展坞为 12 个月。 普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 耳机与线缆的精确型号\n独立销售的蓝牙耳机一般为 12 个月。 指定有线耳机型号 AM115、AM116、AM12、AM12 plus、AM13、CM115、CM116 为 90 天； 未列入指定范围的其他有线耳机为 12 个月。 独立销售线缆和转接头通常为 12 个月。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 [C1]\n证时，页面说明可按出厂日期顺延 90 日推定起算日。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 最终需经授权服务中心检测。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 维修后期限\n保内更换整机时按三包规则重新计算； 更换部件时延续主机原保修期，若主机剩余不足 30 天则按 30 天。 保外维修更换的部件或附件有 90 天有限保修。 [C2]\n> 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 磁吸车载支架和 VR 体验盒无维保，折叠手机车载支架为 15 天。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。 [C3]",
+      "applicable_conditions": [
+        "具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 [C1]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 [C2]"
+      ],
+      "inapplicable_conditions": [
+        "具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 [C1]",
+        "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件\n二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。 [C1]",
+        "普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。 [C1]",
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 [C2]",
+        "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。 [C3]"
+      ],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_f3eac7082ae305b7a41e",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "document": "华为配件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_847c8f73a2e7522208d7",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "document": "华为中国大陆手机售后政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_5db9895da511480803f9",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "document": "华为配件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q043",
+    "category": "cross_document",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "huawei-phone-warranty-cn-current",
+      "apple-hardware-warranty-cn-current",
+      "huawei-accessory-warranty-cn-current"
+    ],
+    "latency_ms": 0.09739992674440145,
+    "citation_precision": 0.6666666666666666,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "证时，页面说明可按出厂日期顺延 90 日推定起算日。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 最终需经授权服务中心检测。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 维修后期限\n保内更换整机时按三包规则重新计算； 更换部件时延续主机原保修期，若主机剩余不足 30 天则按 30 天。 保外维修更换的部件或附件有 90 天有限保修。 [C1]\n依据中国三包规定，主要部件可有 2 年保修。 浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 ## Apple 产品在中国大陆的硬件保修政策事实摘要 > Apple 产品在中国大陆的硬件保修政策事实摘要 > 保障边界\n有限保修针对正常使用时出现的材料和工艺缺陷。 非 Apple 品牌硬件、软件以及未遵守使用说明造成的损坏不属于这项有限保修。 AppleCare+ 是可选额外保障，不等同于免费的一年有限保修。 [C2]\n> 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 磁吸车载支架和 VR 体验盒无维保，折叠手机车载支架为 15 天。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。 [C3]",
+      "applicable_conditions": [
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 [C1]",
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C2]"
+      ],
+      "inapplicable_conditions": [
+        "## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形\n未经授权的改装、拆卸或维修造成的损坏，进液、摔损、挤压等人为或意外损坏，超期、标识无法识别、凭证与型号不符，以及未按说明使用造成的故障，不属于免费退换修范围。 [C1]",
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C2]",
+        "非 Apple 品牌硬件、软件以及未遵守使用说明造成的损坏不属于这项有限保修。 [C2]",
+        "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。 [C3]"
+      ],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_847c8f73a2e7522208d7",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "document": "华为中国大陆手机售后政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_230731d2f9c471388a15",
+          "doc_id": "apple-hardware-warranty-cn-current",
+          "document": "Apple 产品在中国大陆的硬件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/support/warranties/index.html",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_5db9895da511480803f9",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "document": "华为配件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q044",
+    "category": "cross_document",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "synthetic-starmall-appliance-v1",
+      "synthetic-starmall-electronics-v2",
+      "synthetic-starmall-consumables-v1"
+    ],
+    "latency_ms": 0.13910001143813133,
+    "citation_precision": 0.6666666666666666,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 商品范围\n本合成规则适用于星云商城自营冰箱、洗衣机和空调，测试型号为 HOME-REF-520、HOME-WASH-10 和 HOME-AC-35。 ## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 签收与安装\n消费者应在签收时检查外包装。 大型家电安装后不适用普通无理由退货； 若安装服务人员确认到货破损，应在签收后 48 小时内提交照片和服务单号。 ## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 性能故障\n签收后 7 日内经上门检测确认关键性能故障，可申请退货； 15 日内可申请换货； 整机保修 1 年，主要部件保修 3 年。 安装不规范导致的问题需先核实施工责任。 ## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 必要信息\n判断时需要型号、签收时间、安装时间、故障现象、是否由授权人员安装以及检测工单。 缺少检测结论时不得直接承诺退换。 [C1]\n## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 适用期与范围\n本合成规则自 2025 年 1 月 1 日起适用，覆盖星云商城自营手机、平板和智能手表，型号包括 NEBULA-P2、NEBULA-T2 和 NEBULA-W1。 ## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 无理由退货\n签收后 10 个自然日内，商品外观无损、配件齐全且账号已经退出时可以申请无理由退货。 设备允许完成首次激活，但累计使用时间不得超过 2 小时； 超过时需人工确认折损方案。 ## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 质量问题换货\n签收后 20 个自然日内，经授权检测点确认存在非人为硬件性能故障，可以申请同型号换货。 无库存时转人工选择维修或退款方案。 ## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 排除条件\n人为进液、跌落破损、刷入非官方系统、序列号被涂改或缺失关键配件，不适用无理由退货或免费换货。 [C2]\n## 星云商城耗材与定制商品规则 > 星云商城耗材与定制商品规则 > 耗材\n本合成规则适用于打印机墨盒、滤芯和一次性清洁耗材。 密封包装拆开后，除检测确认的质量问题外，不支持无理由退货。 未拆封且包装完好的耗材可在签收后 7 日内申请。 ## 星云商城耗材与定制商品规则 > 星云商城耗材与定制商品规则 > 定制商品\n刻字耳机、定制尺寸保护膜和印有用户图片的商品，在制作开始后不支持无理由取消或退货。 商家制作错误、内容与确认稿不一致或商品存在质量问题时可转人工处理。 ## 星云商城耗材与定制商品规则 > 星云商城耗材与定制商品规则 > 精确标识\n测试墨盒型号为 INK-XL-62，滤芯型号为 FILTER-A7，刻字耳机型号为 AUDIO-CUSTOM-9。 型号不匹配时不得引用本规则作出确定结论。 [C3]",
+      "applicable_conditions": [
+        "## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 商品范围\n本合成规则适用于星云商城自营冰箱、洗衣机和空调，测试型号为 HOME-REF-520、HOME-WASH-10 和 HOME-AC-35。 [C1]",
+        "## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 签收与安装\n消费者应在签收时检查外包装。 [C1]",
+        "大型家电安装后不适用普通无理由退货； [C1]",
+        "若安装服务人员确认到货破损，应在签收后 48 小时内提交照片和服务单号。 [C1]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 适用期与范围\n本合成规则自 2025 年 1 月 1 日起适用，覆盖星云商城自营手机、平板和智能手表，型号包括 NEBULA-P2、NEBULA-T2 和 NEBULA-W1。 [C2]"
+      ],
+      "inapplicable_conditions": [
+        "大型家电安装后不适用普通无理由退货； [C1]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 质量问题换货\n签收后 20 个自然日内，经授权检测点确认存在非人为硬件性能故障，可以申请同型号换货。 [C2]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 排除条件\n人为进液、跌落破损、刷入非官方系统、序列号被涂改或缺失关键配件，不适用无理由退货或免费换货。 [C2]"
+      ],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_29769b1cb4f21caefdec",
+          "doc_id": "synthetic-starmall-appliance-v1",
+          "document": "星云商城大型家电售后规则",
+          "section": "滑动窗口",
+          "version": "v1",
+          "effective_from": "2025-01-01",
+          "effective_to": null,
+          "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-appliance-v1",
+          "synthetic": true
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_66e6918aba959868a71b",
+          "doc_id": "synthetic-starmall-electronics-v2",
+          "document": "星云商城电子产品售后规则 v2",
+          "section": "滑动窗口",
+          "version": "v2",
+          "effective_from": "2025-01-01",
+          "effective_to": null,
+          "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-electronics-v2",
+          "synthetic": true
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_c9fdffe6317db908d809",
+          "doc_id": "synthetic-starmall-consumables-v1",
+          "document": "星云商城耗材与定制商品规则",
+          "section": "滑动窗口",
+          "version": "v1",
+          "effective_from": "2025-01-01",
+          "effective_to": null,
+          "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-consumables-v1",
+          "synthetic": true
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q045",
+    "category": "version_conflict",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "synthetic-starmall-electronics-v1"
+    ],
+    "latency_ms": 0.05880009848624468,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 适用期\n本合成规则仅用于 2024 年版本过滤测试，适用于星云商城自营手机和平板。 ## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 无理由退货\n签收后 7 个自然日内，商品未激活、未拆除一次性封条、外观无损且配件齐全时，可以申请无理由退货。 ## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 质量问题换货\n签收后 15 个自然日内，型号 NEBULA-P1 或 NEBULA-T1 经检测存在硬件性能故障，可以申请换货。 ## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 排除条件\n激活设备、缺少序列号标签、人为进液或擅自拆机不适用无理由退货。 [C1]",
+      "applicable_conditions": [
+        "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 适用期\n本合成规则仅用于 2024 年版本过滤测试，适用于星云商城自营手机和平板。 [C1]",
+        "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 无理由退货\n签收后 7 个自然日内，商品未激活、未拆除一次性封条、外观无损且配件齐全时，可以申请无理由退货。 [C1]",
+        "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 质量问题换货\n签收后 15 个自然日内，型号 NEBULA-P1 或 NEBULA-T1 经检测存在硬件性能故障，可以申请换货。 [C1]",
+        "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 排除条件\n激活设备、缺少序列号标签、人为进液或擅自拆机不适用无理由退货。 [C1]"
+      ],
+      "inapplicable_conditions": [
+        "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 排除条件\n激活设备、缺少序列号标签、人为进液或擅自拆机不适用无理由退货。 [C1]"
+      ],
+      "missing_information": [
+        "具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_7166f4acd3e6414b0411",
+          "doc_id": "synthetic-starmall-electronics-v1",
+          "document": "星云商城电子产品售后规则 v1",
+          "section": "滑动窗口",
+          "version": "v1",
+          "effective_from": "2024-01-01",
+          "effective_to": "2024-12-31",
+          "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-electronics-v1",
+          "synthetic": true
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q046",
+    "category": "version_conflict",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "synthetic-starmall-electronics-v2"
+    ],
+    "latency_ms": 0.06719992961734533,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 适用期与范围\n本合成规则自 2025 年 1 月 1 日起适用，覆盖星云商城自营手机、平板和智能手表，型号包括 NEBULA-P2、NEBULA-T2 和 NEBULA-W1。 ## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 无理由退货\n签收后 10 个自然日内，商品外观无损、配件齐全且账号已经退出时可以申请无理由退货。 设备允许完成首次激活，但累计使用时间不得超过 2 小时； 超过时需人工确认折损方案。 ## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 质量问题换货\n签收后 20 个自然日内，经授权检测点确认存在非人为硬件性能故障，可以申请同型号换货。 无库存时转人工选择维修或退款方案。 ## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 排除条件\n人为进液、跌落破损、刷入非官方系统、序列号被涂改或缺失关键配件，不适用无理由退货或免费换货。 [C1]",
+      "applicable_conditions": [
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 适用期与范围\n本合成规则自 2025 年 1 月 1 日起适用，覆盖星云商城自营手机、平板和智能手表，型号包括 NEBULA-P2、NEBULA-T2 和 NEBULA-W1。 [C1]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 无理由退货\n签收后 10 个自然日内，商品外观无损、配件齐全且账号已经退出时可以申请无理由退货。 [C1]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 质量问题换货\n签收后 20 个自然日内，经授权检测点确认存在非人为硬件性能故障，可以申请同型号换货。 [C1]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 排除条件\n人为进液、跌落破损、刷入非官方系统、序列号被涂改或缺失关键配件，不适用无理由退货或免费换货。 [C1]"
+      ],
+      "inapplicable_conditions": [
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 质量问题换货\n签收后 20 个自然日内，经授权检测点确认存在非人为硬件性能故障，可以申请同型号换货。 [C1]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 排除条件\n人为进液、跌落破损、刷入非官方系统、序列号被涂改或缺失关键配件，不适用无理由退货或免费换货。 [C1]"
+      ],
+      "missing_information": [
+        "具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_66e6918aba959868a71b",
+          "doc_id": "synthetic-starmall-electronics-v2",
+          "document": "星云商城电子产品售后规则 v2",
+          "section": "滑动窗口",
+          "version": "v2",
+          "effective_from": "2025-01-01",
+          "effective_to": null,
+          "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-electronics-v2",
+          "synthetic": true
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q047",
+    "category": "version_conflict",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "synthetic-starmall-electronics-v1"
+    ],
+    "latency_ms": 0.062700011767447,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 适用期\n本合成规则仅用于 2024 年版本过滤测试，适用于星云商城自营手机和平板。 ## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 无理由退货\n签收后 7 个自然日内，商品未激活、未拆除一次性封条、外观无损且配件齐全时，可以申请无理由退货。 ## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 质量问题换货\n签收后 15 个自然日内，型号 NEBULA-P1 或 NEBULA-T1 经检测存在硬件性能故障，可以申请换货。 ## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 排除条件\n激活设备、缺少序列号标签、人为进液或擅自拆机不适用无理由退货。 [C1]",
+      "applicable_conditions": [
+        "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 适用期\n本合成规则仅用于 2024 年版本过滤测试，适用于星云商城自营手机和平板。 [C1]",
+        "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 无理由退货\n签收后 7 个自然日内，商品未激活、未拆除一次性封条、外观无损且配件齐全时，可以申请无理由退货。 [C1]",
+        "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 质量问题换货\n签收后 15 个自然日内，型号 NEBULA-P1 或 NEBULA-T1 经检测存在硬件性能故障，可以申请换货。 [C1]",
+        "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 排除条件\n激活设备、缺少序列号标签、人为进液或擅自拆机不适用无理由退货。 [C1]"
+      ],
+      "inapplicable_conditions": [
+        "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 排除条件\n激活设备、缺少序列号标签、人为进液或擅自拆机不适用无理由退货。 [C1]"
+      ],
+      "missing_information": [
+        "具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_7166f4acd3e6414b0411",
+          "doc_id": "synthetic-starmall-electronics-v1",
+          "document": "星云商城电子产品售后规则 v1",
+          "section": "滑动窗口",
+          "version": "v1",
+          "effective_from": "2024-01-01",
+          "effective_to": "2024-12-31",
+          "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-electronics-v1",
+          "synthetic": true
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q048",
+    "category": "version_conflict",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "synthetic-starmall-electronics-v2"
+    ],
+    "latency_ms": 0.06999995093792677,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 适用期与范围\n本合成规则自 2025 年 1 月 1 日起适用，覆盖星云商城自营手机、平板和智能手表，型号包括 NEBULA-P2、NEBULA-T2 和 NEBULA-W1。 ## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 无理由退货\n签收后 10 个自然日内，商品外观无损、配件齐全且账号已经退出时可以申请无理由退货。 设备允许完成首次激活，但累计使用时间不得超过 2 小时； 超过时需人工确认折损方案。 ## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 质量问题换货\n签收后 20 个自然日内，经授权检测点确认存在非人为硬件性能故障，可以申请同型号换货。 无库存时转人工选择维修或退款方案。 ## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 排除条件\n人为进液、跌落破损、刷入非官方系统、序列号被涂改或缺失关键配件，不适用无理由退货或免费换货。 [C1]",
+      "applicable_conditions": [
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 适用期与范围\n本合成规则自 2025 年 1 月 1 日起适用，覆盖星云商城自营手机、平板和智能手表，型号包括 NEBULA-P2、NEBULA-T2 和 NEBULA-W1。 [C1]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 无理由退货\n签收后 10 个自然日内，商品外观无损、配件齐全且账号已经退出时可以申请无理由退货。 [C1]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 质量问题换货\n签收后 20 个自然日内，经授权检测点确认存在非人为硬件性能故障，可以申请同型号换货。 [C1]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 排除条件\n人为进液、跌落破损、刷入非官方系统、序列号被涂改或缺失关键配件，不适用无理由退货或免费换货。 [C1]"
+      ],
+      "inapplicable_conditions": [
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 质量问题换货\n签收后 20 个自然日内，经授权检测点确认存在非人为硬件性能故障，可以申请同型号换货。 [C1]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 排除条件\n人为进液、跌落破损、刷入非官方系统、序列号被涂改或缺失关键配件，不适用无理由退货或免费换货。 [C1]"
+      ],
+      "missing_information": [
+        "具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_66e6918aba959868a71b",
+          "doc_id": "synthetic-starmall-electronics-v2",
+          "document": "星云商城电子产品售后规则 v2",
+          "section": "滑动窗口",
+          "version": "v2",
+          "effective_from": "2025-01-01",
+          "effective_to": null,
+          "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-electronics-v2",
+          "synthetic": true
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q049",
+    "category": "version_conflict",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "synthetic-starmall-electronics-v1"
+    ],
+    "latency_ms": 0.06019999273121357,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 适用期\n本合成规则仅用于 2024 年版本过滤测试，适用于星云商城自营手机和平板。 ## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 无理由退货\n签收后 7 个自然日内，商品未激活、未拆除一次性封条、外观无损且配件齐全时，可以申请无理由退货。 ## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 质量问题换货\n签收后 15 个自然日内，型号 NEBULA-P1 或 NEBULA-T1 经检测存在硬件性能故障，可以申请换货。 ## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 排除条件\n激活设备、缺少序列号标签、人为进液或擅自拆机不适用无理由退货。 [C1]",
+      "applicable_conditions": [
+        "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 适用期\n本合成规则仅用于 2024 年版本过滤测试，适用于星云商城自营手机和平板。 [C1]",
+        "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 无理由退货\n签收后 7 个自然日内，商品未激活、未拆除一次性封条、外观无损且配件齐全时，可以申请无理由退货。 [C1]",
+        "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 质量问题换货\n签收后 15 个自然日内，型号 NEBULA-P1 或 NEBULA-T1 经检测存在硬件性能故障，可以申请换货。 [C1]",
+        "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 排除条件\n激活设备、缺少序列号标签、人为进液或擅自拆机不适用无理由退货。 [C1]"
+      ],
+      "inapplicable_conditions": [
+        "## 星云商城电子产品售后规则 v1 > 星云商城电子产品售后规则 v1 > 排除条件\n激活设备、缺少序列号标签、人为进液或擅自拆机不适用无理由退货。 [C1]"
+      ],
+      "missing_information": [
+        "具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_7166f4acd3e6414b0411",
+          "doc_id": "synthetic-starmall-electronics-v1",
+          "document": "星云商城电子产品售后规则 v1",
+          "section": "滑动窗口",
+          "version": "v1",
+          "effective_from": "2024-01-01",
+          "effective_to": "2024-12-31",
+          "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-electronics-v1",
+          "synthetic": true
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q050",
+    "category": "version_conflict",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.013399985618889332,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q051",
+    "category": "version_conflict",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.013200100511312485,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q052",
+    "category": "version_conflict",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.013399985618889332,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q053",
+    "category": "version_conflict",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "applecare-plus-cn-v2.3"
+    ],
+    "latency_ms": 0.07730000652372837,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## AppleCare+ 中国大陆条款 v2. 3 事实摘要 > AppleCare+ 中国大陆条款 v2. 3 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 230912_applecareplusch. pdf，版本标识为 v2. URL 文件名日期并不能确认每份合同的适用起止日期； 须核对购买时的计划凭证和条款，不能将此版本默认视为当前有效。 ## AppleCare+ 中国大陆条款 v2. 3 事实摘要 > AppleCare+ 中国大陆条款 v2. 3 事实摘要 > 硬件服务\n在计划期限内，受保障设备出现材料或工艺缺陷，或集成可充电电池容量低于原规格的 80%，可按条款获得维修或更换服务。 具体事故服务费、设备资格和次数必须以该版本完整条款为准。 ## AppleCare+ 中国大陆条款 v2. 3 事实摘要 > AppleCare+ 中国大陆条款 v2. 3 事实摘要 > 权益关系\nAppleCare+ 提供的权益是法定消费者权利和生产商硬件保修的补充，不替代法定三包或 Apple 一年有限保修。 [C1]",
+      "applicable_conditions": [
+        "3 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 230912_applecareplusch. [C1]",
+        "URL 文件名日期并不能确认每份合同的适用起止日期； [C1]",
+        "须核对购买时的计划凭证和条款，不能将此版本默认视为当前有效。 [C1]",
+        "3 事实摘要 > 硬件服务\n在计划期限内，受保障设备出现材料或工艺缺陷，或集成可充电电池容量低于原规格的 80%，可按条款获得维修或更换服务。 [C1]",
+        "具体事故服务费、设备资格和次数必须以该版本完整条款为准。 [C1]"
+      ],
+      "inapplicable_conditions": [
+        "URL 文件名日期并不能确认每份合同的适用起止日期； [C1]",
+        "须核对购买时的计划凭证和条款，不能将此版本默认视为当前有效。 [C1]"
+      ],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_734ed45f2d66797eb18a",
+          "doc_id": "applecare-plus-cn-v2.3",
+          "document": "AppleCare+ 中国大陆条款 v2.3 事实摘要",
+          "section": "滑动窗口",
+          "version": "v2.3",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/legal/sales-support/applecare/applecareplus/2309/230912_applecareplusch.pdf",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q054",
+    "category": "version_conflict",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "applecare-plus-cn-v2.4",
+      "applecare-plus-cn-v2.4"
+    ],
+    "latency_ms": 0.1039999770000577,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 231017_applecareplusch. pdf，版本标识为 v2. 仅凭该 URL 不能确定适用起止日期，也不能推定它自动取代所有 v2. 须核对购买时的计划凭证； 未确认适用日期的版本不参与明确日期的检索。 ## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 适用设备与法定权益\n条款涉及 Apple Watch、iPad、iPhone、HomePod、iPod 以及 Apple 或 Beats 品牌耳机等受保障设备。 计划权益是适用法律权利、生产商硬件保修和免费技术支持的补充。 ## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 判断所需信息\n处理请求前至少需要设备型号、计划凭证、购买或计划生效日期、事故日期、故障或意外类型以及已使用服务次数。 [C1]\ne+ 中国大陆条款 v2. 4 事实摘要 > 判断所需信息\n处理请求前至少需要设备型号、计划凭证、购买或计划生效日期、事故日期、故障或意外类型以及已使用服务次数。 缺少这些信息时只能给出条款方向，不能确认赔付或服务资格。 [C2]",
+      "applicable_conditions": [
+        "4 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 231017_applecareplusch. [C1]",
+        "仅凭该 URL 不能确定适用起止日期，也不能推定它自动取代所有 v2. [C1]",
+        "须核对购买时的计划凭证； [C1]",
+        "未确认适用日期的版本不参与明确日期的检索。 [C1]",
+        "4 事实摘要 > 适用设备与法定权益\n条款涉及 Apple Watch、iPad、iPhone、HomePod、iPod 以及 Apple 或 Beats 品牌耳机等受保障设备。 [C1]"
+      ],
+      "inapplicable_conditions": [
+        "仅凭该 URL 不能确定适用起止日期，也不能推定它自动取代所有 v2. [C1]",
+        "缺少这些信息时只能给出条款方向，不能确认赔付或服务资格。 [C2]"
+      ],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_c067bcf49fb61da4b836",
+          "doc_id": "applecare-plus-cn-v2.4",
+          "document": "AppleCare+ 中国大陆条款 v2.4 事实摘要",
+          "section": "滑动窗口",
+          "version": "v2.4",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/legal/sales-support/applecare/applecareplus/2310/231017_applecareplusch.pdf",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_65dd72c4426d13666dc6",
+          "doc_id": "applecare-plus-cn-v2.4",
+          "document": "AppleCare+ 中国大陆条款 v2.4 事实摘要",
+          "section": "滑动窗口",
+          "version": "v2.4",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/legal/sales-support/applecare/applecareplus/2310/231017_applecareplusch.pdf",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q055",
+    "category": "no_answer",
+    "answerable": false,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 1.0,
+    "cited_docs": [],
+    "latency_ms": 0.013199984095990658,
+    "citation_precision": null,
+    "citation_recall": null,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q056",
+    "category": "no_answer",
+    "answerable": false,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 1.0,
+    "cited_docs": [],
+    "latency_ms": 0.017399899661540985,
+    "citation_precision": null,
+    "citation_recall": null,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q057",
+    "category": "no_answer",
+    "answerable": false,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 1.0,
+    "cited_docs": [],
+    "latency_ms": 0.011999974958598614,
+    "citation_precision": null,
+    "citation_recall": null,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q058",
+    "category": "no_answer",
+    "answerable": false,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 1.0,
+    "cited_docs": [],
+    "latency_ms": 0.012599979527294636,
+    "citation_precision": null,
+    "citation_recall": null,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "没有检索到满足元数据条件的政策证据。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q059",
+    "category": "no_answer",
+    "answerable": false,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 1.0,
+    "cited_docs": [],
+    "latency_ms": 0.01079996582120657,
+    "citation_precision": null,
+    "citation_recall": null,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "没有检索到满足元数据条件的政策证据。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q060",
+    "category": "no_answer",
+    "answerable": false,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 1.0,
+    "cited_docs": [],
+    "latency_ms": 0.011199968867003918,
+    "citation_precision": null,
+    "citation_recall": null,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "没有检索到满足元数据条件的政策证据。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q061",
+    "category": "no_answer",
+    "answerable": false,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 1.0,
+    "cited_docs": [],
+    "latency_ms": 0.012500095181167126,
+    "citation_precision": null,
+    "citation_recall": null,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "没有检索到满足元数据条件的政策证据。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q062",
+    "category": "no_answer",
+    "answerable": false,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 1.0,
+    "cited_docs": [],
+    "latency_ms": 0.012499978765845299,
+    "citation_precision": null,
+    "citation_recall": null,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "没有检索到满足元数据条件的政策证据。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q063",
+    "category": "no_answer",
+    "answerable": false,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 1.0,
+    "cited_docs": [],
+    "latency_ms": 0.012999982573091984,
+    "citation_precision": null,
+    "citation_recall": null,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "没有检索到满足元数据条件的政策证据。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q064",
+    "category": "no_answer",
+    "answerable": false,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 1.0,
+    "cited_docs": [],
+    "latency_ms": 0.01100008375942707,
+    "citation_precision": null,
+    "citation_recall": null,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q065",
+    "category": "no_answer",
+    "answerable": false,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 1.0,
+    "cited_docs": [],
+    "latency_ms": 0.014599994756281376,
+    "citation_precision": null,
+    "citation_recall": null,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "没有检索到满足元数据条件的政策证据。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q066",
+    "category": "no_answer",
+    "answerable": false,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 1.0,
+    "cited_docs": [],
+    "latency_ms": 0.013899989426136017,
+    "citation_precision": null,
+    "citation_recall": null,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q067",
+    "category": "hard_negative",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "huawei-accessory-warranty-cn-current",
+      "applecare-plus-cn-v2.4",
+      "huawei-phone-warranty-cn-current"
+    ],
+    "latency_ms": 0.14789996203035116,
+    "citation_precision": 0.3333333333333333,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 手机随包装配件\n可拆卸电池的保修期为 6 个月。 具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件\n二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。 PC 电源适配器及其数据线为 24 个月，PC 扩展坞为 12 个月。 普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 耳机与线缆的精确型号\n独立销售的蓝牙耳机一般为 12 个月。 指定有线耳机型号 AM115、AM116、AM12、AM12 plus、AM13、CM115、CM116 为 90 天； 未列入指定范围的其他有线耳机为 12 个月。 独立销售线缆和转接头通常为 12 个月。 ## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 [C1]\n## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 231017_applecareplusch. pdf，版本标识为 v2. 仅凭该 URL 不能确定适用起止日期，也不能推定它自动取代所有 v2. 须核对购买时的计划凭证； 未确认适用日期的版本不参与明确日期的检索。 ## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 适用设备与法定权益\n条款涉及 Apple Watch、iPad、iPhone、HomePod、iPod 以及 Apple 或 Beats 品牌耳机等受保障设备。 计划权益是适用法律权利、生产商硬件保修和免费技术支持的补充。 ## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 判断所需信息\n处理请求前至少需要设备型号、计划凭证、购买或计划生效日期、事故日期、故障或意外类型以及已使用服务次数。 [C2]\n## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 渠道与范围\n政策适用于中国大陆官方渠道销售的华为手机及随机配件。 华为授权第三方平台销售的产品，华为提供保内维修，退换货应联系实际经销商处理。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 七日与十五日规则\n线上购买从签收次日起计算。 7 日内手机主机出现经检测确认的非人为性能故障，可选择退货、换同型号同规格产品或免费维修。 第 8 日至第 15 日内出现同类故障，可换货或免费维修，但摘要中的该阶段不含退货选项。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证\n手机主机通常保修 1 年； 随包装数据线和充电头为 1 年，有线耳机为 90 天。 发票、电子三包凭证或签收记录可作为凭证。 无法提供有效凭证时，页面说明可按出厂日期顺延 90 日推定起算日。 ## 华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 不属于免费保障的情形 [C3]",
+      "applicable_conditions": [
+        "具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 [C1]",
+        "4 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 231017_applecareplusch. [C2]",
+        "仅凭该 URL 不能确定适用起止日期，也不能推定它自动取代所有 v2. [C2]",
+        "须核对购买时的计划凭证； [C2]",
+        "未确认适用日期的版本不参与明确日期的检索。 [C2]"
+      ],
+      "inapplicable_conditions": [
+        "具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 [C1]",
+        "## 华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件\n二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。 [C1]",
+        "普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。 [C1]",
+        "仅凭该 URL 不能确定适用起止日期，也不能推定它自动取代所有 v2. [C2]",
+        "7 日内手机主机出现经检测确认的非人为性能故障，可选择退货、换同型号同规格产品或免费维修。 [C3]"
+      ],
+      "missing_information": [
+        "实际购买平台或销售渠道",
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_f3eac7082ae305b7a41e",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "document": "华为配件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_c067bcf49fb61da4b836",
+          "doc_id": "applecare-plus-cn-v2.4",
+          "document": "AppleCare+ 中国大陆条款 v2.4 事实摘要",
+          "section": "滑动窗口",
+          "version": "v2.4",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/legal/sales-support/applecare/applecareplus/2310/231017_applecareplusch.pdf",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_ebf10adc745ed9240f22",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "document": "华为中国大陆手机售后政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q068",
+    "category": "hard_negative",
+    "answerable": true,
+    "degraded": false,
+    "generator": "refusal-policy-v1",
+    "refused": true,
+    "correct_refusal": 0.0,
+    "cited_docs": [],
+    "latency_ms": 0.012999982573091984,
+    "citation_precision": null,
+    "citation_recall": 0.0,
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  {
+    "id": "Q069",
+    "category": "hard_negative",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "apple-hardware-warranty-cn-current",
+      "applecare-plus-cn-v2.3",
+      "applecare-plus-cn-v2.4"
+    ],
+    "latency_ms": 0.12939993757754564,
+    "citation_precision": 0.6666666666666666,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "依据中国三包规定，主要部件可有 2 年保修。 浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 ## Apple 产品在中国大陆的硬件保修政策事实摘要 > Apple 产品在中国大陆的硬件保修政策事实摘要 > 保障边界\n有限保修针对正常使用时出现的材料和工艺缺陷。 非 Apple 品牌硬件、软件以及未遵守使用说明造成的损坏不属于这项有限保修。 AppleCare+ 是可选额外保障，不等同于免费的一年有限保修。 [C1]\n## AppleCare+ 中国大陆条款 v2. 3 事实摘要 > AppleCare+ 中国大陆条款 v2. 3 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 230912_applecareplusch. pdf，版本标识为 v2. URL 文件名日期并不能确认每份合同的适用起止日期； 须核对购买时的计划凭证和条款，不能将此版本默认视为当前有效。 ## AppleCare+ 中国大陆条款 v2. 3 事实摘要 > AppleCare+ 中国大陆条款 v2. 3 事实摘要 > 硬件服务\n在计划期限内，受保障设备出现材料或工艺缺陷，或集成可充电电池容量低于原规格的 80%，可按条款获得维修或更换服务。 具体事故服务费、设备资格和次数必须以该版本完整条款为准。 ## AppleCare+ 中国大陆条款 v2. 3 事实摘要 > AppleCare+ 中国大陆条款 v2. 3 事实摘要 > 权益关系\nAppleCare+ 提供的权益是法定消费者权利和生产商硬件保修的补充，不替代法定三包或 Apple 一年有限保修。 [C2]\n## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 231017_applecareplusch. pdf，版本标识为 v2. 仅凭该 URL 不能确定适用起止日期，也不能推定它自动取代所有 v2. 须核对购买时的计划凭证； 未确认适用日期的版本不参与明确日期的检索。 ## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 适用设备与法定权益\n条款涉及 Apple Watch、iPad、iPhone、HomePod、iPod 以及 Apple 或 Beats 品牌耳机等受保障设备。 计划权益是适用法律权利、生产商硬件保修和免费技术支持的补充。 ## AppleCare+ 中国大陆条款 v2. 4 事实摘要 > AppleCare+ 中国大陆条款 v2. 4 事实摘要 > 判断所需信息\n处理请求前至少需要设备型号、计划凭证、购买或计划生效日期、事故日期、故障或意外类型以及已使用服务次数。 [C3]",
+      "applicable_conditions": [
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C1]",
+        "3 事实摘要 > 版本标识\n本摘要对应官方 PDF 文件名 230912_applecareplusch. [C2]",
+        "URL 文件名日期并不能确认每份合同的适用起止日期； [C2]",
+        "须核对购买时的计划凭证和条款，不能将此版本默认视为当前有效。 [C2]",
+        "3 事实摘要 > 硬件服务\n在计划期限内，受保障设备出现材料或工艺缺陷，或集成可充电电池容量低于原规格的 80%，可按条款获得维修或更换服务。 [C2]"
+      ],
+      "inapplicable_conditions": [
+        "浙江省销售和维修的 Mac 台式电脑存在整机 3 年的地方规则，不能把该期限直接应用到其他地区或便携式 Mac。 [C1]",
+        "非 Apple 品牌硬件、软件以及未遵守使用说明造成的损坏不属于这项有限保修。 [C1]",
+        "URL 文件名日期并不能确认每份合同的适用起止日期； [C2]",
+        "须核对购买时的计划凭证和条款，不能将此版本默认视为当前有效。 [C2]",
+        "仅凭该 URL 不能确定适用起止日期，也不能推定它自动取代所有 v2. [C3]"
+      ],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_230731d2f9c471388a15",
+          "doc_id": "apple-hardware-warranty-cn-current",
+          "document": "Apple 产品在中国大陆的硬件保修政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/support/warranties/index.html",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C2",
+          "chunk_id": "chk_734ed45f2d66797eb18a",
+          "doc_id": "applecare-plus-cn-v2.3",
+          "document": "AppleCare+ 中国大陆条款 v2.3 事实摘要",
+          "section": "滑动窗口",
+          "version": "v2.3",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/legal/sales-support/applecare/applecareplus/2309/230912_applecareplusch.pdf",
+          "synthetic": false
+        },
+        {
+          "citation_id": "C3",
+          "chunk_id": "chk_c067bcf49fb61da4b836",
+          "doc_id": "applecare-plus-cn-v2.4",
+          "document": "AppleCare+ 中国大陆条款 v2.4 事实摘要",
+          "section": "滑动窗口",
+          "version": "v2.4",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://www.apple.com.cn/legal/sales-support/applecare/applecareplus/2310/231017_applecareplusch.pdf",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q070",
+    "category": "hard_negative",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "synthetic-starmall-appliance-v1"
+    ],
+    "latency_ms": 0.0673000467941165,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 商品范围\n本合成规则适用于星云商城自营冰箱、洗衣机和空调，测试型号为 HOME-REF-520、HOME-WASH-10 和 HOME-AC-35。 ## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 签收与安装\n消费者应在签收时检查外包装。 大型家电安装后不适用普通无理由退货； 若安装服务人员确认到货破损，应在签收后 48 小时内提交照片和服务单号。 ## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 性能故障\n签收后 7 日内经上门检测确认关键性能故障，可申请退货； 15 日内可申请换货； 整机保修 1 年，主要部件保修 3 年。 安装不规范导致的问题需先核实施工责任。 ## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 必要信息\n判断时需要型号、签收时间、安装时间、故障现象、是否由授权人员安装以及检测工单。 缺少检测结论时不得直接承诺退换。 [C1]",
+      "applicable_conditions": [
+        "## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 商品范围\n本合成规则适用于星云商城自营冰箱、洗衣机和空调，测试型号为 HOME-REF-520、HOME-WASH-10 和 HOME-AC-35。 [C1]",
+        "## 星云商城大型家电售后规则 > 星云商城大型家电售后规则 > 签收与安装\n消费者应在签收时检查外包装。 [C1]",
+        "大型家电安装后不适用普通无理由退货； [C1]",
+        "若安装服务人员确认到货破损，应在签收后 48 小时内提交照片和服务单号。 [C1]"
+      ],
+      "inapplicable_conditions": [
+        "大型家电安装后不适用普通无理由退货； [C1]"
+      ],
+      "missing_information": [
+        "具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_29769b1cb4f21caefdec",
+          "doc_id": "synthetic-starmall-appliance-v1",
+          "document": "星云商城大型家电售后规则",
+          "section": "滑动窗口",
+          "version": "v1",
+          "effective_from": "2025-01-01",
+          "effective_to": null,
+          "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-appliance-v1",
+          "synthetic": true
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q071",
+    "category": "hard_negative",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "xiaomi-phone-service-cn-current"
+    ],
+    "latency_ms": 0.06370001938194036,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 办理前提\n三包有效期内的修理、更换或退货，应提供发票和三包凭证，并由小米售后服务中心对性能故障进行检测确认。 ## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 收货后 7 日\n自购买收货日起 7 日内，移动电话主机出现规定性能故障并经检测确认，可根据消费者选择免费退货、换货或修理。 该条款针对性能故障，不应被解释为所有使用状态下都能无理由退货。 ## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 第 8 日至第 15 日\n自购买收货日起第 8 日至第 15 日内，主机出现规定性能故障并经检测确认，可免费换货或修理； 此阶段的故障处理摘要不包含退货。 ## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 十二个月维修\n自购买收货日起 12 个月内，移动电话主机出现规定性能故障并经检测确认，可免费修理。 电池、充电器、外接有线耳机和数据接口卡等附件另按附件性能故障及更换规则处理。 [C1]",
+      "applicable_conditions": [
+        "## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 办理前提\n三包有效期内的修理、更换或退货，应提供发票和三包凭证，并由小米售后服务中心对性能故障进行检测确认。 [C1]",
+        "## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 收货后 7 日\n自购买收货日起 7 日内，移动电话主机出现规定性能故障并经检测确认，可根据消费者选择免费退货、换货或修理。 [C1]",
+        "该条款针对性能故障，不应被解释为所有使用状态下都能无理由退货。 [C1]",
+        "## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 第 8 日至第 15 日\n自购买收货日起第 8 日至第 15 日内，主机出现规定性能故障并经检测确认，可免费换货或修理； [C1]",
+        "## 小米手机售后三包服务政策事实摘要 > 小米手机售后三包服务政策事实摘要 > 十二个月维修\n自购买收货日起 12 个月内，移动电话主机出现规定性能故障并经检测确认，可免费修理。 [C1]"
+      ],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期",
+        "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_2b5b3c1118ba2590d298",
+          "doc_id": "xiaomi-phone-service-cn-current",
+          "document": "小米手机售后三包服务政策事实摘要",
+          "section": "滑动窗口",
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://order.mi.com/service/security",
+          "synthetic": false
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  },
+  {
+    "id": "Q072",
+    "category": "hard_negative",
+    "answerable": true,
+    "degraded": false,
+    "generator": "extractive-v1",
+    "refused": false,
+    "correct_refusal": 1.0,
+    "cited_docs": [
+      "synthetic-starmall-electronics-v2"
+    ],
+    "latency_ms": 0.060699996538460255,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "answer": {
+      "policy_explanation": "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 适用期与范围\n本合成规则自 2025 年 1 月 1 日起适用，覆盖星云商城自营手机、平板和智能手表，型号包括 NEBULA-P2、NEBULA-T2 和 NEBULA-W1。 ## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 无理由退货\n签收后 10 个自然日内，商品外观无损、配件齐全且账号已经退出时可以申请无理由退货。 设备允许完成首次激活，但累计使用时间不得超过 2 小时； 超过时需人工确认折损方案。 ## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 质量问题换货\n签收后 20 个自然日内，经授权检测点确认存在非人为硬件性能故障，可以申请同型号换货。 无库存时转人工选择维修或退款方案。 ## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 排除条件\n人为进液、跌落破损、刷入非官方系统、序列号被涂改或缺失关键配件，不适用无理由退货或免费换货。 [C1]",
+      "applicable_conditions": [
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 适用期与范围\n本合成规则自 2025 年 1 月 1 日起适用，覆盖星云商城自营手机、平板和智能手表，型号包括 NEBULA-P2、NEBULA-T2 和 NEBULA-W1。 [C1]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 无理由退货\n签收后 10 个自然日内，商品外观无损、配件齐全且账号已经退出时可以申请无理由退货。 [C1]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 质量问题换货\n签收后 20 个自然日内，经授权检测点确认存在非人为硬件性能故障，可以申请同型号换货。 [C1]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 排除条件\n人为进液、跌落破损、刷入非官方系统、序列号被涂改或缺失关键配件，不适用无理由退货或免费换货。 [C1]"
+      ],
+      "inapplicable_conditions": [
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 质量问题换货\n签收后 20 个自然日内，经授权检测点确认存在非人为硬件性能故障，可以申请同型号换货。 [C1]",
+        "## 星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 排除条件\n人为进液、跌落破损、刷入非官方系统、序列号被涂改或缺失关键配件，不适用无理由退货或免费换货。 [C1]"
+      ],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [
+        {
+          "citation_id": "C1",
+          "chunk_id": "chk_66e6918aba959868a71b",
+          "doc_id": "synthetic-starmall-electronics-v2",
+          "document": "星云商城电子产品售后规则 v2",
+          "section": "滑动窗口",
+          "version": "v2",
+          "effective_from": "2025-01-01",
+          "effective_to": null,
+          "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-electronics-v2",
+          "synthetic": true
+        }
+      ],
+      "refused": false,
+      "refusal_reason": null,
+      "generator": "extractive-v1"
+    }
+  }
+]

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>售后政策检索台</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/lucide.min.js" defer></script>
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark" aria-hidden="true">PR</div>
+    <div>
+      <h1>售后政策检索台</h1>
+      <p id="healthText">正在检查索引...</p>
+    </div>
+    <div class="status" id="statusBadge"><span></span>未连接</div>
+  </header>
+
+  <main>
+    <section class="query-band" aria-label="查询条件">
+      <div class="query-main">
+        <label for="question">售后问题</label>
+        <textarea id="question" rows="3" maxlength="1000">我在华为官方渠道买的 AM115 有线耳机，保修多久？</textarea>
+      </div>
+      <div class="filters">
+        <label>平台
+          <select id="platform">
+            <option value="">不限</option>
+            <option value="apple_store_cn">Apple Store 中国</option>
+            <option value="apple_cn">Apple 中国</option>
+            <option value="huawei_cn" selected>华为中国</option>
+            <option value="xiaomi_cn">小米中国</option>
+            <option value="starmall">星云商城（合成）</option>
+          </select>
+        </label>
+        <label>商品类别
+          <select id="category">
+            <option value="">不限</option>
+            <option value="phone">手机</option>
+            <option value="tablet">平板</option>
+            <option value="computer">电脑</option>
+            <option value="accessory" selected>配件</option>
+            <option value="wearable">穿戴</option>
+            <option value="appliance">大家电</option>
+            <option value="consumable">耗材</option>
+            <option value="custom">定制商品</option>
+          </select>
+        </label>
+        <label>依据日期
+          <input id="asOfDate" type="date">
+        </label>
+      </div>
+      <details class="customer-details">
+        <summary>订单与商品情况</summary>
+        <div class="filters">
+          <label>型号<input id="model" type="text" maxlength="80" placeholder="AM115 / iPhone / NEBULA-P2"></label>
+          <label>购买日期<input id="purchaseDate" type="date"></label>
+          <label>签收日期<input id="receiptDate" type="date"></label>
+          <label>版本<input id="version" type="text" maxlength="80" placeholder="v1 / v2 / v2.4"></label>
+          <label>诉求<select id="requestType"><option value="">未提供</option><option value="退款">退款</option><option value="换货">换货</option><option value="维修">维修</option></select></label>
+          <label>拆封状态<select id="opened"><option value="">未知</option><option value="true">已拆封</option><option value="false">未拆封</option></select></label>
+          <label>激活状态<select id="activated"><option value="">未知</option><option value="true">已激活</option><option value="false">未激活</option></select></label>
+          <label>使用状态<select id="used"><option value="">未知</option><option value="true">已使用</option><option value="false">未使用</option></select></label>
+        </div>
+      </details>
+      <div class="mode-row">
+        <fieldset>
+          <legend>检索模式</legend>
+          <div class="segmented">
+            <label><input type="radio" name="mode" value="bm25"><span>BM25</span></label>
+            <label><input type="radio" name="mode" value="dense"><span>Dense</span></label>
+            <label><input type="radio" name="mode" value="hybrid"><span>Hybrid</span></label>
+            <label><input type="radio" name="mode" value="hybrid_rerank" checked><span>Hybrid + Rerank</span></label>
+          </div>
+        </fieldset>
+        <button id="searchButton" type="button"><i data-lucide="search"></i><span>检索并回答</span></button>
+      </div>
+    </section>
+
+    <section class="result-layout">
+      <article class="answer-panel">
+        <div class="section-heading">
+          <div><span class="eyebrow">ANSWER</span><h2>证据回答</h2></div>
+          <span id="timing"></span>
+        </div>
+        <div id="degradation" class="notice hidden"></div>
+        <div id="answerEmpty" class="empty-state">暂无回答</div>
+        <div id="answerContent" class="hidden">
+          <p id="policyExplanation" class="answer-text"></p>
+          <div class="answer-columns">
+            <div><h3>适用条件</h3><ul id="applicable"></ul></div>
+            <div><h3>不适用条件</h3><ul id="inapplicable"></ul></div>
+          </div>
+          <div class="missing"><h3>仍需确认</h3><ul id="missing"></ul></div>
+          <div><h3>引用</h3><ol id="citations" class="citations"></ol></div>
+        </div>
+      </article>
+
+      <aside class="trace-panel">
+        <div class="section-heading"><div><span class="eyebrow">TRACE</span><h2>检索轨迹</h2></div><span id="modeBadge"></span></div>
+        <div class="legend"><span class="bm25-dot"></span>BM25 <span class="dense-dot"></span>Dense <span class="rerank-dot"></span>Rerank</div>
+        <div id="candidateList" class="candidate-list"><div class="empty-state">暂无候选</div></div>
+      </aside>
+    </section>
+  </main>
+  <footer>客服辅助意见不构成售后承诺或法律裁决。实际受理以销售方与授权服务中心确认为准。</footer>
+</body>
+</html>

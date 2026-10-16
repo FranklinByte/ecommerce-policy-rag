@@ -1,0 +1,80 @@
+{
+  "created_at": "2026-10-16T06:21:03.325026+00:00",
+  "checks": {
+    "ruff-format": {
+      "command": [
+        "D:\\workEnvironment\\Career\\Rag&AgentCourses\\auxiliaryProgram\\1\\ecommerce-policy-rag\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "src",
+        "tests",
+        "scripts"
+      ],
+      "exit_code": 0
+    },
+    "ruff": {
+      "command": [
+        "D:\\workEnvironment\\Career\\Rag&AgentCourses\\auxiliaryProgram\\1\\ecommerce-policy-rag\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "tests",
+        "scripts"
+      ],
+      "exit_code": 0
+    },
+    "mypy": {
+      "command": [
+        "D:\\workEnvironment\\Career\\Rag&AgentCourses\\auxiliaryProgram\\1\\ecommerce-policy-rag\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mypy",
+        "src"
+      ],
+      "exit_code": 0
+    },
+    "dependencies": {
+      "command": [
+        "D:\\workEnvironment\\Career\\Rag&AgentCourses\\auxiliaryProgram\\1\\ecommerce-policy-rag\\.venv\\Scripts\\uv.exe",
+        "pip",
+        "check",
+        "--python",
+        "D:\\workEnvironment\\Career\\Rag&AgentCourses\\auxiliaryProgram\\1\\ecommerce-policy-rag\\.venv\\Scripts\\python.exe"
+      ],
+      "exit_code": 0
+    },
+    "pytest": {
+      "command": [
+        "D:\\workEnvironment\\Career\\Rag&AgentCourses\\auxiliaryProgram\\1\\ecommerce-policy-rag\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "--cov=policy_rag",
+        "--cov-branch",
+        "--cov-report=term-missing",
+        "--cov-report=json:D:\\workEnvironment\\Career\\Rag&AgentCourses\\auxiliaryProgram\\1\\ecommerce-policy-rag\\eval-results\\maintenance-2026-10-16\\coverage.json",
+        "--junitxml=D:\\workEnvironment\\Career\\Rag&AgentCourses\\auxiliaryProgram\\1\\ecommerce-policy-rag\\eval-results\\maintenance-2026-10-16\\pytest.xml"
+      ],
+      "exit_code": 0
+    },
+    "corpus": {
+      "command": [
+        "D:\\workEnvironment\\Career\\Rag&AgentCourses\\auxiliaryProgram\\1\\ecommerce-policy-rag\\.venv\\Scripts\\python.exe",
+        "-m",
+        "policy_rag.cli",
+        "verify-corpus"
+      ],
+      "exit_code": 0
+    }
+  },
+  "real_provider": "not_executed",
+  "real_github": "not_executed",
+  "docker": "not_rerun",
+  "cloud_ci": "not_executed",
+  "coverage": {
+    "combined_percent": 93.73368146214099,
+    "branch_percent": 89.04494382022472
+  },
+  "passed": true
+}

@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.png binary
+data/** -text
+eval-results/** -text
+freeze*.json -text

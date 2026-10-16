@@ -1,0 +1,693 @@
+{
+  "retrieval": [],
+  "generation": [
+    {
+      "id": "Q011",
+      "category": "exact",
+      "answerable": true,
+      "degraded": false,
+      "generator": "refusal-policy-v1",
+      "refused": true,
+      "correct_refusal": 0.0,
+      "cited_docs": [],
+      "latency_ms": 0.06049999501556158,
+      "citation_precision": null,
+      "citation_recall": 0.0,
+      "answer": {
+        "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+        "applicable_conditions": [],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "商品类别与具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期"
+        ],
+        "citations": [],
+        "refused": true,
+        "refusal_reason": "检索到同一政策系列的多个版本，请明确版本或提供可核实的适用日期。",
+        "generator": "refusal-policy-v1"
+      }
+    },
+    {
+      "id": "Q013",
+      "category": "colloquial",
+      "answerable": true,
+      "degraded": false,
+      "generator": "refusal-policy-v1",
+      "refused": true,
+      "correct_refusal": 0.0,
+      "cited_docs": [],
+      "latency_ms": 0.04700000863522291,
+      "citation_precision": null,
+      "citation_recall": 0.0,
+      "answer": {
+        "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+        "applicable_conditions": [],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "实际购买平台或销售渠道",
+          "商品类别与具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期"
+        ],
+        "citations": [],
+        "refused": true,
+        "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+        "generator": "refusal-policy-v1"
+      }
+    },
+    {
+      "id": "Q014",
+      "category": "colloquial",
+      "answerable": true,
+      "degraded": false,
+      "generator": "refusal-policy-v1",
+      "refused": true,
+      "correct_refusal": 0.0,
+      "cited_docs": [],
+      "latency_ms": 0.043500098399817944,
+      "citation_precision": null,
+      "citation_recall": 0.0,
+      "answer": {
+        "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+        "applicable_conditions": [],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "实际购买平台或销售渠道",
+          "商品类别与具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期"
+        ],
+        "citations": [],
+        "refused": true,
+        "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+        "generator": "refusal-policy-v1"
+      }
+    },
+    {
+      "id": "Q015",
+      "category": "colloquial",
+      "answerable": true,
+      "degraded": false,
+      "generator": "refusal-policy-v1",
+      "refused": true,
+      "correct_refusal": 0.0,
+      "cited_docs": [],
+      "latency_ms": 0.04169996827840805,
+      "citation_precision": null,
+      "citation_recall": 0.0,
+      "answer": {
+        "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+        "applicable_conditions": [],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期"
+        ],
+        "citations": [],
+        "refused": true,
+        "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+        "generator": "refusal-policy-v1"
+      }
+    },
+    {
+      "id": "Q017",
+      "category": "colloquial",
+      "answerable": true,
+      "degraded": false,
+      "generator": "refusal-policy-v1",
+      "refused": true,
+      "correct_refusal": 0.0,
+      "cited_docs": [],
+      "latency_ms": 0.04290009383112192,
+      "citation_precision": null,
+      "citation_recall": 0.0,
+      "answer": {
+        "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+        "applicable_conditions": [],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "商品类别与具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期"
+        ],
+        "citations": [],
+        "refused": true,
+        "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+        "generator": "refusal-policy-v1"
+      }
+    },
+    {
+      "id": "Q018",
+      "category": "colloquial",
+      "answerable": true,
+      "degraded": false,
+      "generator": "refusal-policy-v1",
+      "refused": true,
+      "correct_refusal": 0.0,
+      "cited_docs": [],
+      "latency_ms": 0.12670003343373537,
+      "citation_precision": null,
+      "citation_recall": 0.0,
+      "answer": {
+        "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+        "applicable_conditions": [],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "实际购买平台或销售渠道",
+          "商品类别与具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期"
+        ],
+        "citations": [],
+        "refused": true,
+        "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+        "generator": "refusal-policy-v1"
+      }
+    },
+    {
+      "id": "Q019",
+      "category": "colloquial",
+      "answerable": true,
+      "degraded": false,
+      "generator": "refusal-policy-v1",
+      "refused": true,
+      "correct_refusal": 0.0,
+      "cited_docs": [],
+      "latency_ms": 0.042899977415800095,
+      "citation_precision": null,
+      "citation_recall": 0.0,
+      "answer": {
+        "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+        "applicable_conditions": [],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "实际购买平台或销售渠道",
+          "商品类别与具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期"
+        ],
+        "citations": [],
+        "refused": true,
+        "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+        "generator": "refusal-policy-v1"
+      }
+    },
+    {
+      "id": "Q020",
+      "category": "colloquial",
+      "answerable": true,
+      "degraded": false,
+      "generator": "refusal-policy-v1",
+      "refused": true,
+      "correct_refusal": 0.0,
+      "cited_docs": [],
+      "latency_ms": 0.04039995837956667,
+      "citation_precision": null,
+      "citation_recall": 0.0,
+      "answer": {
+        "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+        "applicable_conditions": [],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "实际购买平台或销售渠道",
+          "商品类别与具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期"
+        ],
+        "citations": [],
+        "refused": true,
+        "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+        "generator": "refusal-policy-v1"
+      }
+    },
+    {
+      "id": "Q021",
+      "category": "colloquial",
+      "answerable": true,
+      "degraded": false,
+      "generator": "refusal-policy-v1",
+      "refused": true,
+      "correct_refusal": 0.0,
+      "cited_docs": [],
+      "latency_ms": 0.03559992182999849,
+      "citation_precision": null,
+      "citation_recall": 0.0,
+      "answer": {
+        "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+        "applicable_conditions": [],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修"
+        ],
+        "citations": [],
+        "refused": true,
+        "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+        "generator": "refusal-policy-v1"
+      }
+    },
+    {
+      "id": "Q022",
+      "category": "colloquial",
+      "answerable": true,
+      "degraded": false,
+      "generator": "refusal-policy-v1",
+      "refused": true,
+      "correct_refusal": 0.0,
+      "cited_docs": [],
+      "latency_ms": 0.06659992504864931,
+      "citation_precision": null,
+      "citation_recall": 0.0,
+      "answer": {
+        "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+        "applicable_conditions": [],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "商品类别与具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期"
+        ],
+        "citations": [],
+        "refused": true,
+        "refusal_reason": "检索到同一政策系列的多个版本，请明确版本或提供可核实的适用日期。",
+        "generator": "refusal-policy-v1"
+      }
+    },
+    {
+      "id": "Q034",
+      "category": "multi_condition",
+      "answerable": true,
+      "degraded": false,
+      "generator": "refusal-policy-v1",
+      "refused": true,
+      "correct_refusal": 0.0,
+      "cited_docs": [],
+      "latency_ms": 0.057399971410632133,
+      "citation_precision": null,
+      "citation_recall": 0.0,
+      "answer": {
+        "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+        "applicable_conditions": [],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "商品类别与具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期"
+        ],
+        "citations": [],
+        "refused": true,
+        "refusal_reason": "检索到同一政策系列的多个版本，请明确版本或提供可核实的适用日期。",
+        "generator": "refusal-policy-v1"
+      }
+    },
+    {
+      "id": "Q035",
+      "category": "multi_condition",
+      "answerable": true,
+      "degraded": false,
+      "generator": "refusal-policy-v1",
+      "refused": true,
+      "correct_refusal": 0.0,
+      "cited_docs": [],
+      "latency_ms": 0.05309993866831064,
+      "citation_precision": null,
+      "citation_recall": 0.0,
+      "answer": {
+        "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+        "applicable_conditions": [],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "商品类别与具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期"
+        ],
+        "citations": [],
+        "refused": true,
+        "refusal_reason": "检索到同一政策系列的多个版本，请明确版本或提供可核实的适用日期。",
+        "generator": "refusal-policy-v1"
+      }
+    },
+    {
+      "id": "Q037",
+      "category": "cross_document",
+      "answerable": true,
+      "degraded": false,
+      "generator": "extractive-v1",
+      "refused": false,
+      "correct_refusal": 1.0,
+      "cited_docs": [
+        "apple-hardware-warranty-cn-current"
+      ],
+      "latency_ms": 0.25070004630833864,
+      "citation_precision": 1.0,
+      "citation_recall": 0.5,
+      "answer": {
+        "policy_explanation": "iPhone 整机及包装内 Apple 品牌附件，自原始购买日起享有 1 年保修。 维修或更换后的部件、附件，适用原保修剩余期限或维修更换日起 90 天，以较长者为准。 [C1]",
+        "applicable_conditions": [
+          "iPhone 整机及包装内 Apple 品牌附件，自原始购买日起享有 1 年保修。 [C1]",
+          "维修或更换后的部件、附件，适用原保修剩余期限或维修更换日起 90 天，以较长者为准。 [C1]"
+        ],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "实际购买平台或销售渠道",
+          "商品类别与具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期",
+          "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+        ],
+        "citations": [
+          {
+            "citation_id": "C1",
+            "chunk_id": "chk_adc58aeef5cc0cb23200",
+            "doc_id": "apple-hardware-warranty-cn-current",
+            "document": "Apple 产品在中国大陆的硬件保修政策事实摘要",
+            "section": "Apple 产品在中国大陆的硬件保修政策事实摘要 > Apple 产品在中国大陆的硬件保修政策事实摘要 > iPhone",
+            "version": "snapshot-2026-09-06",
+            "effective_from": null,
+            "effective_to": null,
+            "source_url": "https://www.apple.com.cn/support/warranties/index.html",
+            "additional_source_urls": [
+              "https://www.apple.com.cn/legal/statutory-warranty/",
+              "https://www.apple.com.cn/legal/warranty/products/warranty-china.html"
+            ],
+            "synthetic": false
+          }
+        ],
+        "refused": false,
+        "refusal_reason": null,
+        "generator": "extractive-v1"
+      }
+    },
+    {
+      "id": "Q039",
+      "category": "cross_document",
+      "answerable": true,
+      "degraded": false,
+      "generator": "extractive-v1",
+      "refused": false,
+      "correct_refusal": 1.0,
+      "cited_docs": [
+        "huawei-phone-warranty-cn-current"
+      ],
+      "latency_ms": 0.19179994706064463,
+      "citation_precision": 1.0,
+      "citation_recall": 0.5,
+      "answer": {
+        "policy_explanation": "线上购买从签收次日起计算。 7 日内手机主机出现经检测确认的非人为性能故障，可选择退货、换同型号同规格产品或免费维修。 第 8 日至第 15 日内出现同类故障，可换货或免费维修，但摘要中的该阶段不含退货选项。 [C1]",
+        "applicable_conditions": [],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "实际购买平台或销售渠道",
+          "商品类别与具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期",
+          "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+        ],
+        "citations": [
+          {
+            "citation_id": "C1",
+            "chunk_id": "chk_e509a28391b6f29b603d",
+            "doc_id": "huawei-phone-warranty-cn-current",
+            "document": "华为中国大陆手机售后政策事实摘要",
+            "section": "华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 七日与十五日规则",
+            "version": "snapshot-2026-09-06",
+            "effective_from": null,
+            "effective_to": null,
+            "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+            "additional_source_urls": [],
+            "synthetic": false
+          }
+        ],
+        "refused": false,
+        "refusal_reason": null,
+        "generator": "extractive-v1"
+      }
+    },
+    {
+      "id": "Q040",
+      "category": "cross_document",
+      "answerable": true,
+      "degraded": false,
+      "generator": "refusal-policy-v1",
+      "refused": true,
+      "correct_refusal": 0.0,
+      "cited_docs": [],
+      "latency_ms": 0.03929995000362396,
+      "citation_precision": null,
+      "citation_recall": 0.0,
+      "answer": {
+        "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+        "applicable_conditions": [],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "实际购买平台或销售渠道",
+          "商品类别与具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期"
+        ],
+        "citations": [],
+        "refused": true,
+        "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+        "generator": "refusal-policy-v1"
+      }
+    },
+    {
+      "id": "Q041",
+      "category": "cross_document",
+      "answerable": true,
+      "degraded": false,
+      "generator": "refusal-policy-v1",
+      "refused": true,
+      "correct_refusal": 0.0,
+      "cited_docs": [],
+      "latency_ms": 0.056999968364834785,
+      "citation_precision": null,
+      "citation_recall": 0.0,
+      "answer": {
+        "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+        "applicable_conditions": [],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "商品类别与具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期"
+        ],
+        "citations": [],
+        "refused": true,
+        "refusal_reason": "检索到同一政策系列的多个版本，请明确版本或提供可核实的适用日期。",
+        "generator": "refusal-policy-v1"
+      }
+    },
+    {
+      "id": "Q042",
+      "category": "cross_document",
+      "answerable": true,
+      "degraded": false,
+      "generator": "extractive-v1",
+      "refused": false,
+      "correct_refusal": 1.0,
+      "cited_docs": [
+        "huawei-accessory-warranty-cn-current",
+        "huawei-accessory-warranty-cn-current",
+        "huawei-accessory-warranty-cn-current"
+      ],
+      "latency_ms": 0.4475000314414501,
+      "citation_precision": 1.0,
+      "citation_recall": 0.5,
+      "answer": {
+        "policy_explanation": "二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。 PC 电源适配器及其数据线为 24 个月，PC 扩展坞为 12 个月。 普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。 [C1]\n可拆卸电池的保修期为 6 个月。 具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 [C2]\n金属表带为 90 天； 真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。 磁吸车载支架和 VR 体验盒无维保，折叠手机车载支架为 15 天。 [C3]",
+        "applicable_conditions": [
+          "可拆卸电池的保修期为 6 个月。 [C2]"
+        ],
+        "inapplicable_conditions": [
+          "二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。 [C1]",
+          "普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。 [C1]",
+          "具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。 [C2]",
+          "磁吸车载支架和 VR 体验盒无维保，折叠手机车载支架为 15 天。 [C3]"
+        ],
+        "missing_information": [
+          "商品类别与具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期",
+          "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+        ],
+        "citations": [
+          {
+            "citation_id": "C1",
+            "chunk_id": "chk_88c2e539f3cf2cfc6583",
+            "doc_id": "huawei-accessory-warranty-cn-current",
+            "document": "华为配件保修政策事实摘要",
+            "section": "华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件",
+            "version": "snapshot-2026-09-06",
+            "effective_from": null,
+            "effective_to": null,
+            "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+            "additional_source_urls": [],
+            "synthetic": false
+          },
+          {
+            "citation_id": "C2",
+            "chunk_id": "chk_aaee5e9bff85d9ebba75",
+            "doc_id": "huawei-accessory-warranty-cn-current",
+            "document": "华为配件保修政策事实摘要",
+            "section": "华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 手机随包装配件",
+            "version": "snapshot-2026-09-06",
+            "effective_from": null,
+            "effective_to": null,
+            "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+            "additional_source_urls": [],
+            "synthetic": false
+          },
+          {
+            "citation_id": "C3",
+            "chunk_id": "chk_d04c4b68913e67e31e8a",
+            "doc_id": "huawei-accessory-warranty-cn-current",
+            "document": "华为配件保修政策事实摘要",
+            "section": "华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 表带与特殊配件",
+            "version": "snapshot-2026-09-06",
+            "effective_from": null,
+            "effective_to": null,
+            "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+            "additional_source_urls": [],
+            "synthetic": false
+          }
+        ],
+        "refused": false,
+        "refusal_reason": null,
+        "generator": "extractive-v1"
+      }
+    },
+    {
+      "id": "Q068",
+      "category": "hard_negative",
+      "answerable": true,
+      "degraded": false,
+      "generator": "refusal-policy-v1",
+      "refused": true,
+      "correct_refusal": 0.0,
+      "cited_docs": [],
+      "latency_ms": 0.037100049667060375,
+      "citation_precision": null,
+      "citation_recall": 0.0,
+      "answer": {
+        "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+        "applicable_conditions": [],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期"
+        ],
+        "citations": [],
+        "refused": true,
+        "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+        "generator": "refusal-policy-v1"
+      }
+    },
+    {
+      "id": "Q069",
+      "category": "hard_negative",
+      "answerable": true,
+      "degraded": false,
+      "generator": "refusal-policy-v1",
+      "refused": true,
+      "correct_refusal": 0.0,
+      "cited_docs": [],
+      "latency_ms": 0.05619996227324009,
+      "citation_precision": null,
+      "citation_recall": 0.0,
+      "answer": {
+        "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+        "applicable_conditions": [],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "商品类别与具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期"
+        ],
+        "citations": [],
+        "refused": true,
+        "refusal_reason": "检索到同一政策系列的多个版本，请明确版本或提供可核实的适用日期。",
+        "generator": "refusal-policy-v1"
+      }
+    }
+  ]
+}

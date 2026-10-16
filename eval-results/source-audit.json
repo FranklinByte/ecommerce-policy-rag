@@ -1,0 +1,92 @@
+[
+  {
+    "doc_id": "apple-store-returns-cn-current",
+    "url": "https://www.apple.com.cn/shop/help/returns_refund",
+    "format": ".html",
+    "sha256": "3c6e2a750ca0f58af4d5ee2a7a0861230c1b26c0239308896033b98fb7c8f580",
+    "hash_matches_manifest": true,
+    "bytes": 182944,
+    "sections": 17,
+    "extracted_characters": 4666,
+    "supporting_sources": []
+  },
+  {
+    "doc_id": "apple-hardware-warranty-cn-current",
+    "url": "https://www.apple.com.cn/support/warranties/index.html",
+    "format": ".html",
+    "sha256": "9979e6f43c9b56ab78ef608b56685c82e537ac8f5620a69b61ca1d6c818c3e63",
+    "hash_matches_manifest": true,
+    "bytes": 18859,
+    "sections": 18,
+    "extracted_characters": 1839,
+    "supporting_sources": [
+      {
+        "url": "https://www.apple.com.cn/legal/statutory-warranty/",
+        "sha256": "2aa761bdfd982fd09088c251570fe4ce81b1335e067429143acdc7e0a7a61b09",
+        "hash_matches_manifest": true
+      },
+      {
+        "url": "https://www.apple.com.cn/legal/warranty/products/warranty-china.html",
+        "sha256": "80bcd76715cef2f4147549adae19b5d1744d9d46f1343e8a25451cdd261bf5ec",
+        "hash_matches_manifest": true
+      }
+    ]
+  },
+  {
+    "doc_id": "huawei-phone-warranty-cn-current",
+    "url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+    "format": ".html",
+    "sha256": "0dafdf714ad8e2a65d03c76ececd59cc5b3bd301d699c8fd33f473d7a82918f5",
+    "hash_matches_manifest": true,
+    "bytes": 136340,
+    "sections": 1,
+    "extracted_characters": 2453,
+    "supporting_sources": []
+  },
+  {
+    "doc_id": "huawei-accessory-warranty-cn-current",
+    "url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+    "format": ".html",
+    "sha256": "8b7378db65d98fb8d7d31356fb055131004efbee7b319a3ad3c47a1d40844e8d",
+    "hash_matches_manifest": true,
+    "bytes": 142311,
+    "sections": 1,
+    "extracted_characters": 2499,
+    "supporting_sources": []
+  },
+  {
+    "doc_id": "xiaomi-phone-service-cn-current",
+    "url": "https://order.mi.com/service/security",
+    "format": ".html",
+    "sha256": "4f0d8d1511349b20c6469afd11d8bb411aa3a81290be8048133c06f580109c31",
+    "hash_matches_manifest": true,
+    "bytes": 60282,
+    "sections": 5,
+    "extracted_characters": 2820,
+    "supporting_sources": []
+  },
+  {
+    "doc_id": "applecare-plus-cn-v2.3",
+    "url": "https://www.apple.com.cn/legal/sales-support/applecare/applecareplus/2309/230912_applecareplusch.pdf",
+    "format": ".pdf",
+    "sha256": "f913c12748c010b6e8d73ee2864e383968b6825b41f47ffea2cc20ba6496ddba",
+    "hash_matches_manifest": true,
+    "bytes": 271973,
+    "sections": 10,
+    "extracted_characters": 13351,
+    "supporting_sources": [],
+    "pdf_pages": 10
+  },
+  {
+    "doc_id": "applecare-plus-cn-v2.4",
+    "url": "https://www.apple.com.cn/legal/sales-support/applecare/applecareplus/2310/231017_applecareplusch.pdf",
+    "format": ".pdf",
+    "sha256": "184d9b676baca5b09619f7006859843234e8eb9b4bc5fed360709ab55889ae62",
+    "hash_matches_manifest": true,
+    "bytes": 288613,
+    "sections": 10,
+    "extracted_characters": 14039,
+    "supporting_sources": [],
+    "pdf_pages": 10
+  }
+]

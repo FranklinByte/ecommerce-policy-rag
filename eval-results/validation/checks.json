@@ -1,0 +1,70 @@
+{
+  "checks": [
+    {
+      "command": [
+        "D:\\workEnvironment\\Career\\Rag&AgentCourses\\auxiliaryProgram\\1\\ecommerce-policy-rag\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "src",
+        "tests",
+        "scripts"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-09-06T15:05:19.892363+00:00",
+      "finished_at": "2026-09-06T15:05:22.275733+00:00"
+    },
+    {
+      "command": [
+        "D:\\workEnvironment\\Career\\Rag&AgentCourses\\auxiliaryProgram\\1\\ecommerce-policy-rag\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "tests",
+        "scripts"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-09-06T15:05:22.275733+00:00",
+      "finished_at": "2026-09-06T15:05:22.385600+00:00"
+    },
+    {
+      "command": [
+        "D:\\workEnvironment\\Career\\Rag&AgentCourses\\auxiliaryProgram\\1\\ecommerce-policy-rag\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mypy",
+        "src/policy_rag"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-09-06T15:05:22.385600+00:00",
+      "finished_at": "2026-09-06T15:06:21.812850+00:00"
+    },
+    {
+      "command": [
+        "D:\\workEnvironment\\Career\\Rag&AgentCourses\\auxiliaryProgram\\1\\ecommerce-policy-rag\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "--cov-report=json:eval-results/coverage.json",
+        "--junitxml=eval-results/pytest.xml",
+        "-o",
+        "faulthandler_timeout=60"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-09-06T15:06:21.812850+00:00",
+      "finished_at": "2026-09-06T15:09:56.697550+00:00"
+    },
+    {
+      "command": [
+        "D:\\workEnvironment\\Career\\Rag&AgentCourses\\auxiliaryProgram\\1\\ecommerce-policy-rag\\.venv\\Scripts\\python.exe",
+        "-m",
+        "policy_rag.cli",
+        "verify-corpus"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-09-06T15:09:56.697550+00:00",
+      "finished_at": "2026-09-06T15:09:58.210392+00:00"
+    }
+  ],
+  "cloud_ci": "not_executed"
+}

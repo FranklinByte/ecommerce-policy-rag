@@ -1,0 +1,170 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 655B 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.01kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.12.10-slim-bookworm
+#3 ...
+
+#4 [internal] load metadata for ghcr.io/astral-sh/uv:0.8.17
+#4 DONE 2.4s
+
+#3 [internal] load metadata for docker.io/library/python:3.12.10-slim-bookworm
+#3 DONE 2.5s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 161B done
+#5 DONE 0.0s
+
+#6 [uv 1/1] FROM ghcr.io/astral-sh/uv:0.8.17@sha256:e4644cb5bd56fdc2c5ea3ee0525d9d21eed1603bccd6a21f887a938be7e85be1
+#6 DONE 0.0s
+
+#7 [stage-1 1/9] FROM docker.io/library/python:3.12.10-slim-bookworm@sha256:fd95fa221297a88e1cf49c55ec1828edd7c5a428187e67b5d1805692d11588db
+#7 DONE 0.0s
+
+#8 [internal] load build context
+#8 transferring context: 10.76kB done
+#8 DONE 0.0s
+
+#9 [stage-1 2/9] COPY --from=uv /uv /uvx /bin/
+#9 CACHED
+
+#10 [stage-1 3/9] WORKDIR /app
+#10 CACHED
+
+#11 [stage-1 4/9] COPY pyproject.toml uv.lock README.md ./
+#11 DONE 0.0s
+
+#12 [stage-1 5/9] RUN uv sync --frozen --no-dev --no-install-project
+#12 0.374 Using CPython 3.12.10 interpreter at: /usr/local/bin/python3
+#12 0.375 Creating virtual environment at: .venv
+#12 1.498 Downloading torch (175.4MiB)
+#12 2.105 Downloading pygments (1.2MiB)
+#12 2.105 Downloading scipy (33.7MiB)
+#12 2.105 Downloading networkx (2.0MiB)
+#12 2.106 Downloading hf-xet (4.3MiB)
+#12 2.106 Downloading grpcio (6.7MiB)
+#12 2.269 Downloading pillow (6.6MiB)
+#12 2.270 Downloading numpy (15.8MiB)
+#12 2.333 Downloading sympy (6.0MiB)
+#12 2.364 Downloading pydantic-core (1.9MiB)
+#12 2.364 Downloading transformers (10.7MiB)
+#12 2.364 Downloading tokenizers (3.0MiB)
+#12 2.365 Downloading scikit-learn (8.7MiB)
+#12 4.508  Downloading pygments
+#12 5.038  Downloading pydantic-core
+#12 5.077  Downloading networkx
+#12 6.468  Downloading tokenizers
+#12 7.830  Downloading hf-xet
+#12 8.604  Downloading sympy
+#12 8.856  Downloading grpcio
+#12 8.873  Downloading pillow
+#12 9.423  Downloading scikit-learn
+#12 10.09  Downloading transformers
+#12 10.97  Downloading numpy
+#12 11.50    Building jieba==0.42.1
+#12 14.02  Downloading scipy
+#12 16.35       Built jieba==0.42.1
+#12 29.86  Downloading torch
+#12 29.86 Prepared 67 packages in 29.46s
+#12 31.00 Installed 67 packages in 1.14s
+#12 31.00  + annotated-types==0.8.0
+#12 31.00  + anyio==4.15.1
+#12 31.00  + beautifulsoup4==4.13.5
+#12 31.00  + certifi==2026.7.22
+#12 31.00  + charset-normalizer==3.5.1
+#12 31.00  + click==8.5.0
+#12 31.00  + cloudpickle==3.1.2
+#12 31.00  + fastapi==0.116.1
+#12 31.00  + filelock==3.32.5
+#12 31.00  + fsspec==2026.7.0
+#12 31.00  + grpcio==1.83.1
+#12 31.00  + h11==0.16.0
+#12 31.00  + h2==4.4.1
+#12 31.00  + hf-xet==1.6.0
+#12 31.00  + hpack==4.2.0
+#12 31.00  + httpcore==1.0.9
+#12 31.00  + httpx==0.28.1
+#12 31.00  + huggingface-hub==0.36.2
+#12 31.00  + hyperframe==6.1.0
+#12 31.00  + idna==3.19
+#12 31.00  + jieba==0.42.1
+#12 31.00  + jinja2==3.1.6
+#12 31.00  + joblib==1.6.0
+#12 31.00  + markdown-it-py==4.2.0
+#12 31.00  + markupsafe==3.0.3
+#12 31.00  + mdurl==0.1.2
+#12 31.00  + mpmath==1.3.0
+#12 31.00  + narwhals==2.25.0
+#12 31.00  + networkx==3.6.1
+#12 31.00  + numpy==2.2.6
+#12 31.00  + packaging==26.3
+#12 31.00  + pillow==12.3.0
+#12 31.00  + portalocker==3.2.0
+#12 31.00  + protobuf==7.36.1
+#12 31.00  + psutil==7.0.0
+#12 31.00  + pydantic==2.11.7
+#12 31.00  + pydantic-core==2.33.2
+#12 31.00  + pydantic-settings==2.10.1
+#12 31.00  + pygments==2.21.0
+#12 31.00  + pypdf==6.0.0
+#12 31.00  + python-dotenv==1.2.3
+#12 31.00  + pyyaml==6.0.2
+#12 31.00  + qdrant-client==1.15.1
+#12 31.00  + regex==2026.9.3
+#12 31.00  + requests==2.34.2
+#12 31.00  + rich==15.0.0
+#12 31.00  + safetensors==0.8.0
+#12 31.00  + scikit-learn==1.9.0
+#12 31.00  + scipy==1.18.1
+#12 31.00  + sentence-transformers==5.1.0
+#12 31.00  + setuptools==84.0.0
+#12 31.00  + shellingham==1.5.4
+#12 31.00  + soupsieve==2.9.2
+#12 31.00  + starlette==0.47.3
+#12 31.00  + structlog==25.4.0
+#12 31.00  + sympy==1.14.0
+#12 31.00  + tenacity==9.1.2
+#12 31.00  + threadpoolctl==3.6.0
+#12 31.00  + tokenizers==0.21.4
+#12 31.00  + torch==2.8.0+cpu
+#12 31.00  + tqdm==4.70.0
+#12 31.00  + transformers==4.55.4
+#12 31.00  + typer==0.16.1
+#12 31.00  + typing-extensions==4.16.0
+#12 31.00  + typing-inspection==0.4.4
+#12 31.00  + urllib3==2.7.0
+#12 31.00  + uvicorn==0.35.0
+#12 DONE 31.4s
+
+#13 [stage-1 6/9] COPY src ./src
+#13 DONE 0.0s
+
+#14 [stage-1 7/9] COPY data ./data
+#14 DONE 0.0s
+
+#15 [stage-1 8/9] COPY scripts/container_start.py ./scripts/container_start.py
+#15 DONE 0.0s
+
+#16 [stage-1 9/9] RUN uv sync --frozen --no-dev &&     groupadd --gid 10001 policy &&     useradd --uid 10001 --gid policy --create-home policy &&     mkdir -p /app/data/index /app/model-cache /app/eval-results &&     chown -R policy:policy /app/data/index /app/model-cache /app/eval-results
+#16 0.323    Building ecommerce-policy-rag @ file:///app
+#16 4.961       Built ecommerce-policy-rag @ file:///app
+#16 4.963 Prepared 1 package in 4.64s
+#16 4.964 Installed 1 package in 1ms
+#16 4.964  + ecommerce-policy-rag==0.1.0 (from file:///app)
+#16 DONE 5.0s
+
+#17 exporting to image
+#17 exporting layers
+#17 exporting layers 6.3s done
+#17 writing image sha256:82900917ec4367779e092e5466354c3ab6697b1c7b21eb042f410e2c6de68c89 done
+#17 naming to docker.io/library/ecommerce-policy-rag:0.1.0 done
+#17 DONE 6.4s
+
+#18 resolving provenance for metadata file
+#18 DONE 0.0s
+ Image ecommerce-policy-rag:0.1.0 Building 
+ Image ecommerce-policy-rag:0.1.0 Built 

@@ -1,0 +1,1140 @@
+{
+  "url": "http://127.0.0.1:8010",
+  "time": "2026-09-06T15:06:01.467313+00:00",
+  "api": [
+    {
+      "request_id": "62de8800-2de4-4920-8356-0ee983e785ca",
+      "requested_mode": "bm25",
+      "effective_mode": "bm25",
+      "degraded": false,
+      "degradation_reasons": [],
+      "index_version": "3f486391b47a73c00982",
+      "retrieval_ms": 1467.1088999602944,
+      "generation_ms": 0.3532000118866563,
+      "candidates": [
+        {
+          "chunk_id": "chk_4272344a0d58d65e0ffe",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "title": "华为配件保修政策事实摘要",
+          "text": "条款路径：华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 耳机与线缆的精确型号\n独立销售的蓝牙耳机一般为 12 个月。指定有线耳机型号 AM115、AM116、AM12、AM12 plus、AM13、CM115、CM116 为 90 天；未列入指定范围的其他有线耳机为 12 个月。独立销售线缆和转接头通常为 12 个月。",
+          "section_path": [
+            "华为配件保修政策事实摘要",
+            "华为配件保修政策事实摘要",
+            "耳机与线缆的精确型号"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "accessory",
+            "wearable",
+            "computer",
+            "tablet"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 1,
+          "final_rank": 1,
+          "scores": {
+            "bm25": 16.073669514121057,
+            "dense": null,
+            "rrf": null,
+            "rerank": null,
+            "evidence": 0.8659052566934878
+          }
+        },
+        {
+          "chunk_id": "chk_cd8f2f6dd116c2d394ca",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "title": "华为中国大陆手机售后政策事实摘要",
+          "text": "条款路径：华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证\n手机主机通常保修 1 年；随包装数据线和充电头为 1 年，有线耳机为 90 天。发票、电子三包凭证或签收记录可作为凭证。无法提供有效凭证时，页面说明可按出厂日期顺延 90 日推定起算日。",
+          "section_path": [
+            "华为中国大陆手机售后政策事实摘要",
+            "华为中国大陆手机售后政策事实摘要",
+            "保修期限与凭证"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "phone",
+            "accessory"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 2,
+          "final_rank": 2,
+          "scores": {
+            "bm25": 11.359736098843815,
+            "dense": null,
+            "rrf": null,
+            "rerank": null,
+            "evidence": 0.7582780093953817
+          }
+        },
+        {
+          "chunk_id": "chk_aaee5e9bff85d9ebba75",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "title": "华为配件保修政策事实摘要",
+          "text": "条款路径：华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 手机随包装配件\n可拆卸电池的保修期为 6 个月。具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。",
+          "section_path": [
+            "华为配件保修政策事实摘要",
+            "华为配件保修政策事实摘要",
+            "手机随包装配件"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "accessory",
+            "wearable",
+            "computer",
+            "tablet"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 3,
+          "final_rank": 3,
+          "scores": {
+            "bm25": 2.8765022732349417,
+            "dense": null,
+            "rrf": null,
+            "rerank": null,
+            "evidence": 0.30201857209126937
+          }
+        },
+        {
+          "chunk_id": "chk_77847f383794afd080d7",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "title": "华为中国大陆手机售后政策事实摘要",
+          "text": "条款路径：华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 维修后期限\n保内更换整机时按三包规则重新计算；更换部件时延续主机原保修期，若主机剩余不足 30 天则按 30 天。保外维修更换的部件或附件有 90 天有限保修。",
+          "section_path": [
+            "华为中国大陆手机售后政策事实摘要",
+            "华为中国大陆手机售后政策事实摘要",
+            "维修后期限"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "phone",
+            "accessory"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 4,
+          "final_rank": 4,
+          "scores": {
+            "bm25": 2.6085634742759156,
+            "dense": null,
+            "rrf": null,
+            "rerank": null,
+            "evidence": 0.2782456506098102
+          }
+        },
+        {
+          "chunk_id": "chk_28cf6897b7065e012639",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "title": "华为配件保修政策事实摘要",
+          "text": "条款路径：华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 排除情形\n易损保护壳和贴膜、非原厂配件、超期、无法判定保修期、人为损坏、未经授权拆修、SN 或防拆标识损坏等不在免费换修范围。",
+          "section_path": [
+            "华为配件保修政策事实摘要",
+            "华为配件保修政策事实摘要",
+            "排除情形"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "accessory",
+            "wearable",
+            "computer",
+            "tablet"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 5,
+          "final_rank": 5,
+          "scores": {
+            "bm25": 1.697494897133522,
+            "dense": null,
+            "rrf": null,
+            "rerank": null,
+            "evidence": 0.1911864531868227
+          }
+        }
+      ],
+      "answer": {
+        "policy_explanation": "独立销售的蓝牙耳机一般为 12 个月。 指定有线耳机型号 AM115、AM116、AM12、AM12 plus、AM13、CM115、CM116 为 90 天； 未列入指定范围的其他有线耳机为 12 个月。 独立销售线缆和转接头通常为 12 个月。 [C1]\n手机主机通常保修 1 年； 随包装数据线和充电头为 1 年，有线耳机为 90 天。 发票、电子三包凭证或签收记录可作为凭证。 无法提供有效凭证时，页面说明可按出厂日期顺延 90 日推定起算日。 [C2]",
+        "applicable_conditions": [
+          "手机主机通常保修 1 年； [C2]",
+          "发票、电子三包凭证或签收记录可作为凭证。 [C2]",
+          "无法提供有效凭证时，页面说明可按出厂日期顺延 90 日推定起算日。 [C2]"
+        ],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期",
+          "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+        ],
+        "citations": [
+          {
+            "citation_id": "C1",
+            "chunk_id": "chk_4272344a0d58d65e0ffe",
+            "doc_id": "huawei-accessory-warranty-cn-current",
+            "document": "华为配件保修政策事实摘要",
+            "section": "华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 耳机与线缆的精确型号",
+            "version": "snapshot-2026-09-06",
+            "effective_from": null,
+            "effective_to": null,
+            "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+            "additional_source_urls": [],
+            "synthetic": false
+          },
+          {
+            "citation_id": "C2",
+            "chunk_id": "chk_cd8f2f6dd116c2d394ca",
+            "doc_id": "huawei-phone-warranty-cn-current",
+            "document": "华为中国大陆手机售后政策事实摘要",
+            "section": "华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证",
+            "version": "snapshot-2026-09-06",
+            "effective_from": null,
+            "effective_to": null,
+            "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+            "additional_source_urls": [],
+            "synthetic": false
+          }
+        ],
+        "refused": false,
+        "refusal_reason": null,
+        "generator": "extractive-v1"
+      }
+    },
+    {
+      "request_id": "a70d6bac-faef-46a5-84ae-966976e78eb6",
+      "requested_mode": "dense",
+      "effective_mode": "dense",
+      "degraded": false,
+      "degradation_reasons": [],
+      "index_version": "3f486391b47a73c00982",
+      "retrieval_ms": 29637.320399982855,
+      "generation_ms": 0.3139000618830323,
+      "candidates": [
+        {
+          "chunk_id": "chk_4272344a0d58d65e0ffe",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "title": "华为配件保修政策事实摘要",
+          "text": "条款路径：华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 耳机与线缆的精确型号\n独立销售的蓝牙耳机一般为 12 个月。指定有线耳机型号 AM115、AM116、AM12、AM12 plus、AM13、CM115、CM116 为 90 天；未列入指定范围的其他有线耳机为 12 个月。独立销售线缆和转接头通常为 12 个月。",
+          "section_path": [
+            "华为配件保修政策事实摘要",
+            "华为配件保修政策事实摘要",
+            "耳机与线缆的精确型号"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "accessory",
+            "wearable",
+            "computer",
+            "tablet"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 1,
+          "final_rank": 1,
+          "scores": {
+            "bm25": null,
+            "dense": 0.7781460340437356,
+            "rrf": null,
+            "rerank": null,
+            "evidence": 0.7781460340437356
+          }
+        },
+        {
+          "chunk_id": "chk_cd8f2f6dd116c2d394ca",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "title": "华为中国大陆手机售后政策事实摘要",
+          "text": "条款路径：华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证\n手机主机通常保修 1 年；随包装数据线和充电头为 1 年，有线耳机为 90 天。发票、电子三包凭证或签收记录可作为凭证。无法提供有效凭证时，页面说明可按出厂日期顺延 90 日推定起算日。",
+          "section_path": [
+            "华为中国大陆手机售后政策事实摘要",
+            "华为中国大陆手机售后政策事实摘要",
+            "保修期限与凭证"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "phone",
+            "accessory"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 2,
+          "final_rank": 2,
+          "scores": {
+            "bm25": null,
+            "dense": 0.6958470917318371,
+            "rrf": null,
+            "rerank": null,
+            "evidence": 0.6958470917318371
+          }
+        },
+        {
+          "chunk_id": "chk_d04c4b68913e67e31e8a",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "title": "华为配件保修政策事实摘要",
+          "text": "条款路径：华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天；真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。磁吸车载支架和 VR 体验盒无维保，折叠手机车载支架为 15 天。",
+          "section_path": [
+            "华为配件保修政策事实摘要",
+            "华为配件保修政策事实摘要",
+            "表带与特殊配件"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "accessory",
+            "wearable",
+            "computer",
+            "tablet"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 3,
+          "final_rank": 3,
+          "scores": {
+            "bm25": null,
+            "dense": 0.5634705417339606,
+            "rrf": null,
+            "rerank": null,
+            "evidence": 0.5634705417339606
+          }
+        },
+        {
+          "chunk_id": "chk_77847f383794afd080d7",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "title": "华为中国大陆手机售后政策事实摘要",
+          "text": "条款路径：华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 维修后期限\n保内更换整机时按三包规则重新计算；更换部件时延续主机原保修期，若主机剩余不足 30 天则按 30 天。保外维修更换的部件或附件有 90 天有限保修。",
+          "section_path": [
+            "华为中国大陆手机售后政策事实摘要",
+            "华为中国大陆手机售后政策事实摘要",
+            "维修后期限"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "phone",
+            "accessory"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 4,
+          "final_rank": 4,
+          "scores": {
+            "bm25": null,
+            "dense": 0.5598705121228189,
+            "rrf": null,
+            "rerank": null,
+            "evidence": 0.5598705121228189
+          }
+        },
+        {
+          "chunk_id": "chk_88c2e539f3cf2cfc6583",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "title": "华为配件保修政策事实摘要",
+          "text": "条款路径：华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件\n二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。PC 电源适配器及其数据线为 24 个月，PC 扩展坞为 12 个月。普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。",
+          "section_path": [
+            "华为配件保修政策事实摘要",
+            "华为配件保修政策事实摘要",
+            "PC 与平板配件"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "accessory",
+            "wearable",
+            "computer",
+            "tablet"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 5,
+          "final_rank": 5,
+          "scores": {
+            "bm25": null,
+            "dense": 0.553293399105617,
+            "rrf": null,
+            "rerank": null,
+            "evidence": 0.553293399105617
+          }
+        }
+      ],
+      "answer": {
+        "policy_explanation": "独立销售的蓝牙耳机一般为 12 个月。 指定有线耳机型号 AM115、AM116、AM12、AM12 plus、AM13、CM115、CM116 为 90 天； 未列入指定范围的其他有线耳机为 12 个月。 独立销售线缆和转接头通常为 12 个月。 [C1]\n手机主机通常保修 1 年； 随包装数据线和充电头为 1 年，有线耳机为 90 天。 发票、电子三包凭证或签收记录可作为凭证。 无法提供有效凭证时，页面说明可按出厂日期顺延 90 日推定起算日。 [C2]",
+        "applicable_conditions": [
+          "手机主机通常保修 1 年； [C2]",
+          "发票、电子三包凭证或签收记录可作为凭证。 [C2]",
+          "无法提供有效凭证时，页面说明可按出厂日期顺延 90 日推定起算日。 [C2]"
+        ],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期",
+          "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+        ],
+        "citations": [
+          {
+            "citation_id": "C1",
+            "chunk_id": "chk_4272344a0d58d65e0ffe",
+            "doc_id": "huawei-accessory-warranty-cn-current",
+            "document": "华为配件保修政策事实摘要",
+            "section": "华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 耳机与线缆的精确型号",
+            "version": "snapshot-2026-09-06",
+            "effective_from": null,
+            "effective_to": null,
+            "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+            "additional_source_urls": [],
+            "synthetic": false
+          },
+          {
+            "citation_id": "C2",
+            "chunk_id": "chk_cd8f2f6dd116c2d394ca",
+            "doc_id": "huawei-phone-warranty-cn-current",
+            "document": "华为中国大陆手机售后政策事实摘要",
+            "section": "华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证",
+            "version": "snapshot-2026-09-06",
+            "effective_from": null,
+            "effective_to": null,
+            "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+            "additional_source_urls": [],
+            "synthetic": false
+          }
+        ],
+        "refused": false,
+        "refusal_reason": null,
+        "generator": "extractive-v1"
+      }
+    },
+    {
+      "request_id": "f4cfae58-d8cf-40c1-9f07-6009ec0ec662",
+      "requested_mode": "hybrid",
+      "effective_mode": "hybrid",
+      "degraded": false,
+      "degradation_reasons": [],
+      "index_version": "3f486391b47a73c00982",
+      "retrieval_ms": 47.70849994383752,
+      "generation_ms": 0.26869995053857565,
+      "candidates": [
+        {
+          "chunk_id": "chk_4272344a0d58d65e0ffe",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "title": "华为配件保修政策事实摘要",
+          "text": "条款路径：华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 耳机与线缆的精确型号\n独立销售的蓝牙耳机一般为 12 个月。指定有线耳机型号 AM115、AM116、AM12、AM12 plus、AM13、CM115、CM116 为 90 天；未列入指定范围的其他有线耳机为 12 个月。独立销售线缆和转接头通常为 12 个月。",
+          "section_path": [
+            "华为配件保修政策事实摘要",
+            "华为配件保修政策事实摘要",
+            "耳机与线缆的精确型号"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "accessory",
+            "wearable",
+            "computer",
+            "tablet"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 1,
+          "final_rank": 1,
+          "scores": {
+            "bm25": 16.073669514121057,
+            "dense": 0.7781460340437356,
+            "rrf": 0.03278688524590164,
+            "rerank": null,
+            "evidence": 0.8398230808317505
+          }
+        },
+        {
+          "chunk_id": "chk_cd8f2f6dd116c2d394ca",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "title": "华为中国大陆手机售后政策事实摘要",
+          "text": "条款路径：华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证\n手机主机通常保修 1 年；随包装数据线和充电头为 1 年，有线耳机为 90 天。发票、电子三包凭证或签收记录可作为凭证。无法提供有效凭证时，页面说明可按出厂日期顺延 90 日推定起算日。",
+          "section_path": [
+            "华为中国大陆手机售后政策事实摘要",
+            "华为中国大陆手机售后政策事实摘要",
+            "保修期限与凭证"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "phone",
+            "accessory"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 2,
+          "final_rank": 2,
+          "scores": {
+            "bm25": 11.359736098843815,
+            "dense": 0.6958470917318371,
+            "rrf": 0.03225806451612903,
+            "rerank": null,
+            "evidence": 0.752743392281442
+          }
+        },
+        {
+          "chunk_id": "chk_77847f383794afd080d7",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "title": "华为中国大陆手机售后政策事实摘要",
+          "text": "条款路径：华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 维修后期限\n保内更换整机时按三包规则重新计算；更换部件时延续主机原保修期，若主机剩余不足 30 天则按 30 天。保外维修更换的部件或附件有 90 天有限保修。",
+          "section_path": [
+            "华为中国大陆手机售后政策事实摘要",
+            "华为中国大陆手机售后政策事实摘要",
+            "维修后期限"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "phone",
+            "accessory"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 3,
+          "final_rank": 3,
+          "scores": {
+            "bm25": 2.6085634742759156,
+            "dense": 0.5598705121228189,
+            "rrf": 0.03125,
+            "rerank": null,
+            "evidence": 0.47246477322968317
+          }
+        },
+        {
+          "chunk_id": "chk_d04c4b68913e67e31e8a",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "title": "华为配件保修政策事实摘要",
+          "text": "条款路径：华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 表带与特殊配件\n金属表带为 90 天；真皮、橡胶、氟胶、硅胶、小牛皮、尼龙编织、陶瓷、硬胶和复合材质等其他表带为 15 天。磁吸车载支架和 VR 体验盒无维保，折叠手机车载支架为 15 天。",
+          "section_path": [
+            "华为配件保修政策事实摘要",
+            "华为配件保修政策事实摘要",
+            "表带与特殊配件"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "accessory",
+            "wearable",
+            "computer",
+            "tablet"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 4,
+          "final_rank": 4,
+          "scores": {
+            "bm25": 0.566402893294963,
+            "dense": 0.5634705417339606,
+            "rrf": 0.030798389007344232,
+            "rerank": null,
+            "evidence": 0.37825529046496514
+          }
+        },
+        {
+          "chunk_id": "chk_aaee5e9bff85d9ebba75",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "title": "华为配件保修政策事实摘要",
+          "text": "条款路径：华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 手机随包装配件\n可拆卸电池的保修期为 6 个月。具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。",
+          "section_path": [
+            "华为配件保修政策事实摘要",
+            "华为配件保修政策事实摘要",
+            "手机随包装配件"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "accessory",
+            "wearable",
+            "computer",
+            "tablet"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 5,
+          "final_rank": 5,
+          "scores": {
+            "bm25": 2.8765022732349417,
+            "dense": 0.5199398810867535,
+            "rrf": 0.03057889822595705,
+            "rerank": null,
+            "evidence": 0.4631469435192793
+          }
+        }
+      ],
+      "answer": {
+        "policy_explanation": "独立销售的蓝牙耳机一般为 12 个月。 指定有线耳机型号 AM115、AM116、AM12、AM12 plus、AM13、CM115、CM116 为 90 天； 未列入指定范围的其他有线耳机为 12 个月。 独立销售线缆和转接头通常为 12 个月。 [C1]\n手机主机通常保修 1 年； 随包装数据线和充电头为 1 年，有线耳机为 90 天。 发票、电子三包凭证或签收记录可作为凭证。 无法提供有效凭证时，页面说明可按出厂日期顺延 90 日推定起算日。 [C2]",
+        "applicable_conditions": [
+          "手机主机通常保修 1 年； [C2]",
+          "发票、电子三包凭证或签收记录可作为凭证。 [C2]",
+          "无法提供有效凭证时，页面说明可按出厂日期顺延 90 日推定起算日。 [C2]"
+        ],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期",
+          "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+        ],
+        "citations": [
+          {
+            "citation_id": "C1",
+            "chunk_id": "chk_4272344a0d58d65e0ffe",
+            "doc_id": "huawei-accessory-warranty-cn-current",
+            "document": "华为配件保修政策事实摘要",
+            "section": "华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 耳机与线缆的精确型号",
+            "version": "snapshot-2026-09-06",
+            "effective_from": null,
+            "effective_to": null,
+            "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+            "additional_source_urls": [],
+            "synthetic": false
+          },
+          {
+            "citation_id": "C2",
+            "chunk_id": "chk_cd8f2f6dd116c2d394ca",
+            "doc_id": "huawei-phone-warranty-cn-current",
+            "document": "华为中国大陆手机售后政策事实摘要",
+            "section": "华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证",
+            "version": "snapshot-2026-09-06",
+            "effective_from": null,
+            "effective_to": null,
+            "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+            "additional_source_urls": [],
+            "synthetic": false
+          }
+        ],
+        "refused": false,
+        "refusal_reason": null,
+        "generator": "extractive-v1"
+      }
+    },
+    {
+      "request_id": "82ea8769-5636-4947-b947-c210912a9509",
+      "requested_mode": "hybrid_rerank",
+      "effective_mode": "hybrid_rerank",
+      "degraded": false,
+      "degradation_reasons": [],
+      "index_version": "3f486391b47a73c00982",
+      "retrieval_ms": 6683.514200034551,
+      "generation_ms": 0.23090001195669174,
+      "candidates": [
+        {
+          "chunk_id": "chk_4272344a0d58d65e0ffe",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "title": "华为配件保修政策事实摘要",
+          "text": "条款路径：华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 耳机与线缆的精确型号\n独立销售的蓝牙耳机一般为 12 个月。指定有线耳机型号 AM115、AM116、AM12、AM12 plus、AM13、CM115、CM116 为 90 天；未列入指定范围的其他有线耳机为 12 个月。独立销售线缆和转接头通常为 12 个月。",
+          "section_path": [
+            "华为配件保修政策事实摘要",
+            "华为配件保修政策事实摘要",
+            "耳机与线缆的精确型号"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "accessory",
+            "wearable",
+            "computer",
+            "tablet"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 1,
+          "final_rank": 1,
+          "scores": {
+            "bm25": 16.073669514121057,
+            "dense": 0.7781460340437356,
+            "rrf": 0.03278688524590164,
+            "rerank": 0.9943047740631872,
+            "evidence": 0.9943047740631872
+          }
+        },
+        {
+          "chunk_id": "chk_cd8f2f6dd116c2d394ca",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "title": "华为中国大陆手机售后政策事实摘要",
+          "text": "条款路径：华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 保修期限与凭证\n手机主机通常保修 1 年；随包装数据线和充电头为 1 年，有线耳机为 90 天。发票、电子三包凭证或签收记录可作为凭证。无法提供有效凭证时，页面说明可按出厂日期顺延 90 日推定起算日。",
+          "section_path": [
+            "华为中国大陆手机售后政策事实摘要",
+            "华为中国大陆手机售后政策事实摘要",
+            "保修期限与凭证"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "phone",
+            "accessory"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 2,
+          "final_rank": 2,
+          "scores": {
+            "bm25": 11.359736098843815,
+            "dense": 0.6958470917318371,
+            "rrf": 0.03225806451612903,
+            "rerank": 0.30774311516714087,
+            "evidence": 0.30774311516714087
+          }
+        },
+        {
+          "chunk_id": "chk_aaee5e9bff85d9ebba75",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "title": "华为配件保修政策事实摘要",
+          "text": "条款路径：华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 手机随包装配件\n可拆卸电池的保修期为 6 个月。具体随机配件还应结合所属主机政策核对，不能把独立销售配件的期限机械套用到随包装配件。",
+          "section_path": [
+            "华为配件保修政策事实摘要",
+            "华为配件保修政策事实摘要",
+            "手机随包装配件"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "accessory",
+            "wearable",
+            "computer",
+            "tablet"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 5,
+          "final_rank": 3,
+          "scores": {
+            "bm25": 2.8765022732349417,
+            "dense": 0.5199398810867535,
+            "rrf": 0.03057889822595705,
+            "rerank": 0.020691845225633002,
+            "evidence": 0.020691845225633002
+          }
+        },
+        {
+          "chunk_id": "chk_77847f383794afd080d7",
+          "doc_id": "huawei-phone-warranty-cn-current",
+          "title": "华为中国大陆手机售后政策事实摘要",
+          "text": "条款路径：华为中国大陆手机售后政策事实摘要 > 华为中国大陆手机售后政策事实摘要 > 维修后期限\n保内更换整机时按三包规则重新计算；更换部件时延续主机原保修期，若主机剩余不足 30 天则按 30 天。保外维修更换的部件或附件有 90 天有限保修。",
+          "section_path": [
+            "华为中国大陆手机售后政策事实摘要",
+            "华为中国大陆手机售后政策事实摘要",
+            "维修后期限"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "phone",
+            "accessory"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 3,
+          "final_rank": 4,
+          "scores": {
+            "bm25": 2.6085634742759156,
+            "dense": 0.5598705121228189,
+            "rrf": 0.03125,
+            "rerank": 0.020256644676814838,
+            "evidence": 0.020256644676814838
+          }
+        },
+        {
+          "chunk_id": "chk_88c2e539f3cf2cfc6583",
+          "doc_id": "huawei-accessory-warranty-cn-current",
+          "title": "华为配件保修政策事实摘要",
+          "text": "条款路径：华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > PC 与平板配件\n二合一 PC 或平板键盘、手写笔和鼠标一般为 12 个月，其中笔尖不予保修。PC 电源适配器及其数据线为 24 个月，PC 扩展坞为 12 个月。普通内胆包、背包和收纳包不予保修，真皮内胆包为 30 天。",
+          "section_path": [
+            "华为配件保修政策事实摘要",
+            "华为配件保修政策事实摘要",
+            "PC 与平板配件"
+          ],
+          "platform": "huawei_cn",
+          "product_categories": [
+            "accessory",
+            "wearable",
+            "computer",
+            "tablet"
+          ],
+          "version": "snapshot-2026-09-06",
+          "effective_from": null,
+          "effective_to": null,
+          "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+          "additional_source_urls": [],
+          "policy_family": null,
+          "synthetic": false,
+          "initial_rank": 7,
+          "final_rank": 5,
+          "scores": {
+            "bm25": 0.6936443738114604,
+            "dense": 0.553293399105617,
+            "rrf": 0.030536130536130537,
+            "rerank": 0.005213488843016958,
+            "evidence": 0.005213488843016958
+          }
+        }
+      ],
+      "answer": {
+        "policy_explanation": "独立销售的蓝牙耳机一般为 12 个月。 指定有线耳机型号 AM115、AM116、AM12、AM12 plus、AM13、CM115、CM116 为 90 天； 未列入指定范围的其他有线耳机为 12 个月。 独立销售线缆和转接头通常为 12 个月。 [C1]",
+        "applicable_conditions": [],
+        "inapplicable_conditions": [],
+        "missing_information": [
+          "具体型号",
+          "购买日期或签收日期",
+          "是否拆封及包装、配件是否完整",
+          "是否激活",
+          "是否使用、是否存在人为损坏",
+          "诉求类型：退款、换货或维修",
+          "查询所依据的日期",
+          "来源未公布确定的生效日期，当前适用性须向实际销售方确认"
+        ],
+        "citations": [
+          {
+            "citation_id": "C1",
+            "chunk_id": "chk_4272344a0d58d65e0ffe",
+            "doc_id": "huawei-accessory-warranty-cn-current",
+            "document": "华为配件保修政策事实摘要",
+            "section": "华为配件保修政策事实摘要 > 华为配件保修政策事实摘要 > 耳机与线缆的精确型号",
+            "version": "snapshot-2026-09-06",
+            "effective_from": null,
+            "effective_to": null,
+            "source_url": "https://consumer.huawei.com/cn/support/warranty-policy/accessories/",
+            "additional_source_urls": [],
+            "synthetic": false
+          }
+        ],
+        "refused": false,
+        "refusal_reason": null,
+        "generator": "extractive-v1"
+      }
+    }
+  ],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "horizontal_overflow": false,
+      "page_errors": [],
+      "pixel_stddev": [
+        56.76415516815325,
+        52.26002349661205,
+        52.77297949323248
+      ],
+      "screenshot": "query-1440.png"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "horizontal_overflow": false,
+      "page_errors": [],
+      "pixel_stddev": [
+        61.49163801471684,
+        54.04478048993689,
+        55.52168367361909
+      ],
+      "screenshot": "query-390.png"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "horizontal_overflow": false,
+      "page_errors": [],
+      "pixel_stddev": [
+        61.295829626999776,
+        53.971284464189594,
+        55.410579267308194
+      ],
+      "screenshot": "query-360.png"
+    }
+  ],
+  "health": {
+    "status": "ok",
+    "index_ready": true,
+    "index_version": "3f486391b47a73c00982",
+    "embedding_model": "BAAI/bge-small-zh-v1.5",
+    "reranker_model": "BAAI/bge-reranker-base",
+    "qdrant_backend": "local:D:\\workEnvironment\\Career\\Rag&AgentCourses\\auxiliaryProgram\\1\\ecommerce-policy-rag\\data\\index\\structure\\versions\\3f486391b47a73c00982_5d02ade4\\qdrant",
+    "details": {
+      "chunk_strategy": "structure"
+    }
+  },
+  "date_filter": {
+    "request_id": "b35e3057-6768-4f64-b9c6-913cdf6dd134",
+    "requested_mode": "hybrid_rerank",
+    "effective_mode": "hybrid_rerank",
+    "degraded": false,
+    "degradation_reasons": [],
+    "index_version": "3f486391b47a73c00982",
+    "retrieval_ms": 1343.7759999651462,
+    "generation_ms": 0.04710000939667225,
+    "candidates": [
+      {
+        "chunk_id": "chk_274e7004d0ad94717b18",
+        "doc_id": "synthetic-starmall-electronics-v2",
+        "title": "星云商城电子产品售后规则 v2",
+        "text": "条款路径：星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 无理由退货\n签收后 10 个自然日内，商品外观无损、配件齐全且账号已经退出时可以申请无理由退货。设备允许完成首次激活，但累计使用时间不得超过 2 小时；超过时需人工确认折损方案。",
+        "section_path": [
+          "星云商城电子产品售后规则 v2",
+          "星云商城电子产品售后规则 v2",
+          "无理由退货"
+        ],
+        "platform": "starmall",
+        "product_categories": [
+          "phone",
+          "tablet",
+          "wearable"
+        ],
+        "version": "v2",
+        "effective_from": "2025-01-01",
+        "effective_to": null,
+        "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-electronics-v2",
+        "additional_source_urls": [],
+        "policy_family": "synthetic-starmall-electronics",
+        "synthetic": true,
+        "initial_rank": 1,
+        "final_rank": 1,
+        "scores": {
+          "bm25": 4.029590294673719,
+          "dense": 0.5399200345079078,
+          "rrf": 0.03252247488101534,
+          "rerank": 0.27843082883061304,
+          "evidence": 0.27843082883061304
+        }
+      },
+      {
+        "chunk_id": "chk_f394d936c78538ef92a2",
+        "doc_id": "synthetic-starmall-electronics-v2",
+        "title": "星云商城电子产品售后规则 v2",
+        "text": "条款路径：星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 排除条件\n人为进液、跌落破损、刷入非官方系统、序列号被涂改或缺失关键配件，不适用无理由退货或免费换货。",
+        "section_path": [
+          "星云商城电子产品售后规则 v2",
+          "星云商城电子产品售后规则 v2",
+          "排除条件"
+        ],
+        "platform": "starmall",
+        "product_categories": [
+          "phone",
+          "tablet",
+          "wearable"
+        ],
+        "version": "v2",
+        "effective_from": "2025-01-01",
+        "effective_to": null,
+        "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-electronics-v2",
+        "additional_source_urls": [],
+        "policy_family": "synthetic-starmall-electronics",
+        "synthetic": true,
+        "initial_rank": 3,
+        "final_rank": 2,
+        "scores": {
+          "bm25": 1.4898576358038143,
+          "dense": 0.46435040404094224,
+          "rrf": 0.031746031746031744,
+          "rerank": 0.22114436963536876,
+          "evidence": 0.22114436963536876
+        }
+      },
+      {
+        "chunk_id": "chk_ff9b1e42f3ce2c173d8f",
+        "doc_id": "synthetic-starmall-electronics-v2",
+        "title": "星云商城电子产品售后规则 v2",
+        "text": "条款路径：星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 适用期与范围\n本合成规则自 2025 年 1 月 1 日起适用，覆盖星云商城自营手机、平板和智能手表，型号包括 NEBULA-P2、NEBULA-T2 和 NEBULA-W1。",
+        "section_path": [
+          "星云商城电子产品售后规则 v2",
+          "星云商城电子产品售后规则 v2",
+          "适用期与范围"
+        ],
+        "platform": "starmall",
+        "product_categories": [
+          "phone",
+          "tablet",
+          "wearable"
+        ],
+        "version": "v2",
+        "effective_from": "2025-01-01",
+        "effective_to": null,
+        "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-electronics-v2",
+        "additional_source_urls": [],
+        "policy_family": "synthetic-starmall-electronics",
+        "synthetic": true,
+        "initial_rank": 2,
+        "final_rank": 3,
+        "scores": {
+          "bm25": 7.0703390159548025,
+          "dense": 0.4816934399823639,
+          "rrf": 0.03252247488101534,
+          "rerank": 0.15593582246924476,
+          "evidence": 0.15593582246924476
+        }
+      },
+      {
+        "chunk_id": "chk_a8dbd6539afbb11fcbc7",
+        "doc_id": "synthetic-starmall-electronics-v2",
+        "title": "星云商城电子产品售后规则 v2",
+        "text": "条款路径：星云商城电子产品售后规则 v2 > 星云商城电子产品售后规则 v2 > 质量问题换货\n签收后 20 个自然日内，经授权检测点确认存在非人为硬件性能故障，可以申请同型号换货。无库存时转人工选择维修或退款方案。",
+        "section_path": [
+          "星云商城电子产品售后规则 v2",
+          "星云商城电子产品售后规则 v2",
+          "质量问题换货"
+        ],
+        "platform": "starmall",
+        "product_categories": [
+          "phone",
+          "tablet",
+          "wearable"
+        ],
+        "version": "v2",
+        "effective_from": "2025-01-01",
+        "effective_to": null,
+        "source_url": "urn:synthetic:ecommerce-policy-rag:starmall-electronics-v2",
+        "additional_source_urls": [],
+        "policy_family": "synthetic-starmall-electronics",
+        "synthetic": true,
+        "initial_rank": 4,
+        "final_rank": 4,
+        "scores": {
+          "bm25": null,
+          "dense": 0.46363646473043973,
+          "rrf": 0.015625,
+          "rerank": 0.14398151114248822,
+          "evidence": 0.14398151114248822
+        }
+      }
+    ],
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "最高相关证据低于配置阈值，需补充信息或人工确认。",
+      "generator": "refusal-policy-v1"
+    }
+  },
+  "no_evidence": {
+    "request_id": "cb5ec3a5-2b86-464d-8658-7394ba127586",
+    "requested_mode": "hybrid_rerank",
+    "effective_mode": "hybrid_rerank",
+    "degraded": false,
+    "degradation_reasons": [],
+    "index_version": "3f486391b47a73c00982",
+    "retrieval_ms": 43.02250000182539,
+    "generation_ms": 0.03830005880445242,
+    "candidates": [],
+    "answer": {
+      "policy_explanation": "现有证据不足，无法可靠判断该售后请求。",
+      "applicable_conditions": [],
+      "inapplicable_conditions": [],
+      "missing_information": [
+        "商品类别与具体型号",
+        "购买日期或签收日期",
+        "是否拆封及包装、配件是否完整",
+        "是否激活",
+        "是否使用、是否存在人为损坏",
+        "诉求类型：退款、换货或维修",
+        "查询所依据的日期"
+      ],
+      "citations": [],
+      "refused": true,
+      "refusal_reason": "没有检索到满足元数据条件的政策证据。",
+      "generator": "refusal-policy-v1"
+    }
+  }
+}

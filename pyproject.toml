@@ -1,0 +1,94 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ecommerce-policy-rag"
+version = "0.1.0"
+description = "Version-aware hybrid RAG for ecommerce after-sales policy retrieval"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = { text = "MIT" }
+authors = [{ name = "Kellan" }]
+dependencies = [
+  "beautifulsoup4==4.13.5",
+  "fastapi==0.116.1",
+  "httpx==0.28.1",
+  "jieba==0.42.1",
+  "numpy==2.2.6",
+  "psutil==7.0.0",
+  "pydantic==2.11.7",
+  "pydantic-settings==2.10.1",
+  "pypdf==6.0.0",
+  "PyYAML==6.0.2",
+  "qdrant-client==1.15.1",
+  "sentence-transformers==5.1.0",
+  "torch==2.8.0",
+  "transformers==4.55.4",
+  "structlog==25.4.0",
+  "tenacity==9.1.2",
+  "typer==0.16.1",
+  "uvicorn==0.35.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "mypy==1.17.1",
+  "pytest==8.4.2",
+  "pytest-cov==6.2.1",
+  "respx==0.22.0",
+  "ruff==0.12.11",
+  "types-beautifulsoup4==4.12.0.20250516",
+  "types-PyYAML==6.0.12.20250516",
+  "types-psutil==7.2.2.20260906",
+  "playwright==1.55.0",
+  "pypdfium2==4.30.0",
+]
+
+[project.scripts]
+policy-rag = "policy_rag.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/policy_rag"]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.pytest.ini_options]
+addopts = "-q --strict-markers --cov=policy_rag --cov-report=term-missing --cov-fail-under=80"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["policy_rag"]
+
+[tool.coverage.report]
+exclude_also = [
+  "if TYPE_CHECKING:",
+  "if __name__ == .__main__.:",
+  "raise NotImplementedError",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+ignore = ["B008", "RUF001"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+packages = ["policy_rag"]
+warn_unused_ignores = true
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = ["jieba", "sentence_transformers", "qdrant_client.*"]
+ignore_missing_imports = true

@@ -1,0 +1,872 @@
+{
+  "created_at": "2026-09-06T14:54:25.359535+00:00",
+  "dataset_sha256": "12c192a737cfd690b334d2a766e80ace18599ae541744c0008604914fe0d4616",
+  "config_sha256": "031a0b1c9e64de3dff99e6b4cd4c53ab06c122bdcdfd0adbb6e3b96ef08b5cd0",
+  "config": {
+    "schema_version": "1",
+    "dataset": "data/eval/queries.jsonl",
+    "strategies": [
+      "structure",
+      "sliding"
+    ],
+    "modes": [
+      "bm25",
+      "dense",
+      "hybrid",
+      "hybrid_rerank"
+    ],
+    "top_k": 5,
+    "candidate_k": 10,
+    "chunk_size": 520,
+    "chunk_overlap": 80,
+    "rrf_k": 60,
+    "repetitions": 1,
+    "warmup_query": "华为配件保修期限",
+    "annotation": "AI-assisted fixed regression; not independently human-reviewed",
+    "retrieval_unit": "unique_document_rank_deduplicated_from_top_5_chunks",
+    "generation_backend": "extractive-v1",
+    "thresholds": {
+      "sparse": 0.75,
+      "dense": 0.6,
+      "cross_encoder": 0.42
+    },
+    "threshold_selection": "engineering defaults frozen before first benchmark; no claim of calibration"
+  },
+  "source_hashes": {
+    "src/policy_rag/__init__.py": "5b454d0d3b91b1772e7a33a8bc1b6b0670a891e3b4263b9a3bccaecfe588bfc1",
+    "src/policy_rag/api.py": "d2c68e8eb0f3d1d1706cc29d303898a6b31b026b3fe42ac1538125a91b7e205a",
+    "src/policy_rag/chunking.py": "a25cf54e80034fbf82c32757826c1150153cbca73f2927c48259b704dfe6fbf4",
+    "src/policy_rag/cli.py": "45cc743bdca029cb6f170e256f2b3196b3151df7b2d055d42278b3eb76ba42df",
+    "src/policy_rag/config.py": "7992633880206abbfb86ad15e4856d303ea070f8cc4dbeaff076225408da63be",
+    "src/policy_rag/corpus.py": "58191cbd5df06ca0ff1532ecdbcae4c38c052077a383da171f3835581fd94932",
+    "src/policy_rag/evaluation.py": "f5fbe8c8c6cbaff803b975a0204d90c63c4a8903b95247b442dcf20609a0fd8d",
+    "src/policy_rag/generation.py": "87bd53a9ef70ab91682f54df59455520f8ee2e7fad18d4044c2f4eba68d865c6",
+    "src/policy_rag/indexing.py": "f6ec4c003aa989c55325e2a356155636553cc3ff28bfa07bfd0cd82abab298e9",
+    "src/policy_rag/loaders.py": "f60805a4aa115a644f11aea6e10da36f41a40758e396ba4b3847e1d6a80a02e7",
+    "src/policy_rag/logging.py": "fcbef8ddacaedefe4d2eaf0c29b99ca4270b5609cd4a587cb7938b669a05cd10",
+    "src/policy_rag/models.py": "47c04ec6dd8a0b1cf0cb620bf63aa589325a8c215b9d1e24724d226cecba4a43",
+    "src/policy_rag/paths.py": "78faa6d26b0dc2b02bda2a516c9eedaf9037117f9d60375b65ebff818ada831b",
+    "src/policy_rag/retrieval/__init__.py": "98751c8acfd7b8768588956fed379b00bf86d911084c099a916a46588be50093",
+    "src/policy_rag/retrieval/bm25.py": "42ac57fe6b051150c53fafaf28052aa375d453d630b75ea96f32e27c31fed64a",
+    "src/policy_rag/retrieval/dense.py": "0fc28e158fa6be20a3b7b05222a6c299aeb02d47b8c0795dcaef4b649d6f80f9",
+    "src/policy_rag/retrieval/embedding.py": "e33fc146d0bcac2c90441f0fd87a6d9c31e1cceb5e5a1a3d678ed2d2ad93581a",
+    "src/policy_rag/retrieval/reranker.py": "87e570ecc7a7d2d4ca62a8df1f0a8a784d52f1744f91683aa2d05d3a7ebeac40",
+    "src/policy_rag/retrieval/service.py": "5b08ac118933563f475db7dd95e1f8b0d8db1e0c02cae732eb2192ebabd2d1f0",
+    "src/policy_rag/retrieval/tokenizer.py": "a55de015ed888c39016cd23d8c5c0940207cf3c3405ab6bc458fce29500504a1",
+    "src/policy_rag/service.py": "13f733566d99acee889385d56c2668cecc101d4675aea388fb3d6cadf2cce3c4",
+    "src/policy_rag/sources.py": "86eb3e48048fdbcfdae6345f9866735715bb42d2666224ffdb0d8fcac393e148"
+  },
+  "dependency_lock_sha256": "63413e6a33f1f1785259ab9c9e64d0aed9645f90473a637eda56173fa0eb22d6",
+  "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+  "reranker_revision": "2cfc18c9415c912f9d8155881c133215df768a70",
+  "python": "3.12.10",
+  "os": "Windows-11-10.0.26200-SP0",
+  "cpu_count": 24,
+  "torch_threads": 4,
+  "annotation": "AI-assisted fixed regression; NOT independently human-reviewed; NOT model generalization evidence",
+  "generation_backend": "extractive-v1",
+  "llm_generation_evaluation": "not_executed_no_provider_requested",
+  "llm_factual_correctness": "not_evaluated; citation relevance is not semantic entailment",
+  "experiments": {
+    "structure-bm25": {
+      "status": "completed",
+      "queries": 72,
+      "degraded_queries": 0,
+      "retrieval": {
+        "recall@1": 0.8833333333333333,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr@5": 0.9722222222222222,
+        "ndcg@5": 0.9790679491056152
+      },
+      "retrieval_p50_ms": 0.44160004472360015,
+      "retrieval_p95_ms": 0.9138199733570218,
+      "generation": {
+        "citation_precision_when_cited": 0.9411764705882353,
+        "citation_recall_all_answerable": 0.55,
+        "citation_coverage_answerable": 0.5666666666666667,
+        "no_answer_refusal_accuracy": 0.9166666666666666,
+        "answerable_acceptance_rate": 0.5666666666666667,
+        "answerability_accuracy": 0.625,
+        "generation_p50_ms": 0.01055002212524414,
+        "generation_p95_ms": 0.08755996823310853
+      },
+      "by_category": {
+        "colloquial": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 0.9027777777777778
+        },
+        "cross_document": {
+          "queries": 8,
+          "recall@5": 1.0,
+          "mrr@5": 0.9375
+        },
+        "exact": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "hard_negative": {
+          "queries": 6,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "multi_condition": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "no_answer": {
+          "queries": 12,
+          "recall@5": null,
+          "mrr@5": null
+        },
+        "version_conflict": {
+          "queries": 10,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        }
+      },
+      "warmup_ms": 509.55899991095066,
+      "index": {
+        "schema_version": "1",
+        "index_version": "3f486391b47a73c00982",
+        "strategy": "structure",
+        "chunk_size": 520,
+        "chunk_overlap": 80,
+        "collection_name": "ecommerce_policy_structure_3f486391b47a73c00982_5d02ade4",
+        "data_directory": "versions/3f486391b47a73c00982_5d02ade4",
+        "qdrant_backend": "local",
+        "embedding_model": "BAAI/bge-small-zh-v1.5",
+        "reranker_model": "BAAI/bge-reranker-base",
+        "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+        "reranker_revision": "2cfc18c9415c912f9d8155881c133215df768a70",
+        "vector_dimension": 512,
+        "source_manifest_sha256": "e43b1db3e0f5dd2e66320a5cc39ac3db6beefa9c5b09ac4fd575dbd382a9808c",
+        "document_hashes": {
+          "apple-store-returns-cn-current": "5e74fb9100937231468daf391c23f387221c5474fbb7cac233ab9b28ecfeef55",
+          "apple-hardware-warranty-cn-current": "936e8ce223340c82a276fd56151e160ec6ade023009709d2256459061363307f",
+          "huawei-phone-warranty-cn-current": "0844818b9e3dec5f00b284f6e4b80352b312f1e9e86eea44bd01a486fbfad441",
+          "huawei-accessory-warranty-cn-current": "48b7a50efd4a1a25d21850bc92ba5c4fe498ac690cc2fada788aa41726c5d58d",
+          "xiaomi-phone-service-cn-current": "839078a4028b306f993e9f2be55f9eb8a8a11cbcf4a87fcca959fff2599b7820",
+          "applecare-plus-cn-v2.3": "3cad43e3f25c12b71bc4de6bcbe17ef85194816f99925b1b9839fec7d5b1202a",
+          "applecare-plus-cn-v2.4": "d06271b56dc9a8ec133d9fd77b00cd69f29e5873abf1f35830d21ea54584467a",
+          "synthetic-starmall-electronics-v1": "3b46ddf40f68feca65b25463277110ab4648f182df27a3b79b36e8f5600ff138",
+          "synthetic-starmall-electronics-v2": "22c6adac7e0a96e637a1b9cb0d96de73ff6fcce33ef8043ccb4e30131e54082c",
+          "synthetic-starmall-appliance-v1": "6ef253ac4d5119f0333e0a7349190ff89a85ceeb959fbde5ef7880a7e4a7badc",
+          "synthetic-starmall-consumables-v1": "36abba1383a331871943f58c5b757ff37f181aeac5d6425f416847135377e777"
+        },
+        "document_count": 11,
+        "chunk_count": 43,
+        "created_at": "2026-09-06T14:45:41.359926Z",
+        "index_seconds": 28.622060600086115,
+        "peak_rss_mb": 706.46875,
+        "index_size_bytes": 402670,
+        "chunk_hashes_sha256": "30870ad654e509793d099138512d3a4354940b7373c877417bb1b29043746605",
+        "bm25_sha256": "ffa578f5a463ae58bdadff23117287380ffc99d250b46540e7667b2ece466670"
+      },
+      "rss_mb_after": 169.28515625
+    },
+    "structure-dense": {
+      "status": "completed",
+      "queries": 72,
+      "degraded_queries": 0,
+      "retrieval": {
+        "recall@1": 0.8666666666666667,
+        "recall@3": 0.9916666666666667,
+        "recall@5": 0.9916666666666667,
+        "mrr@5": 0.9666666666666667,
+        "ndcg@5": 0.9699893809516184
+      },
+      "retrieval_p50_ms": 49.773150065448135,
+      "retrieval_p95_ms": 62.65291000017896,
+      "generation": {
+        "citation_precision_when_cited": 0.9233333333333333,
+        "citation_recall_all_answerable": 0.825,
+        "citation_coverage_answerable": 0.8333333333333334,
+        "no_answer_refusal_accuracy": 1.0,
+        "answerable_acceptance_rate": 0.8333333333333334,
+        "answerability_accuracy": 0.8611111111111112,
+        "generation_p50_ms": 0.21884997840970755,
+        "generation_p95_ms": 0.5484799679834399
+      },
+      "by_category": {
+        "colloquial": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 0.9583333333333334
+        },
+        "cross_document": {
+          "queries": 8,
+          "recall@5": 1.0,
+          "mrr@5": 0.9375
+        },
+        "exact": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 0.9583333333333334
+        },
+        "hard_negative": {
+          "queries": 6,
+          "recall@5": 0.9166666666666666,
+          "mrr@5": 1.0
+        },
+        "multi_condition": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 0.9583333333333334
+        },
+        "no_answer": {
+          "queries": 12,
+          "recall@5": null,
+          "mrr@5": null
+        },
+        "version_conflict": {
+          "queries": 10,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        }
+      },
+      "warmup_ms": 25225.202100002207,
+      "index": {
+        "schema_version": "1",
+        "index_version": "3f486391b47a73c00982",
+        "strategy": "structure",
+        "chunk_size": 520,
+        "chunk_overlap": 80,
+        "collection_name": "ecommerce_policy_structure_3f486391b47a73c00982_5d02ade4",
+        "data_directory": "versions/3f486391b47a73c00982_5d02ade4",
+        "qdrant_backend": "local",
+        "embedding_model": "BAAI/bge-small-zh-v1.5",
+        "reranker_model": "BAAI/bge-reranker-base",
+        "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+        "reranker_revision": "2cfc18c9415c912f9d8155881c133215df768a70",
+        "vector_dimension": 512,
+        "source_manifest_sha256": "e43b1db3e0f5dd2e66320a5cc39ac3db6beefa9c5b09ac4fd575dbd382a9808c",
+        "document_hashes": {
+          "apple-store-returns-cn-current": "5e74fb9100937231468daf391c23f387221c5474fbb7cac233ab9b28ecfeef55",
+          "apple-hardware-warranty-cn-current": "936e8ce223340c82a276fd56151e160ec6ade023009709d2256459061363307f",
+          "huawei-phone-warranty-cn-current": "0844818b9e3dec5f00b284f6e4b80352b312f1e9e86eea44bd01a486fbfad441",
+          "huawei-accessory-warranty-cn-current": "48b7a50efd4a1a25d21850bc92ba5c4fe498ac690cc2fada788aa41726c5d58d",
+          "xiaomi-phone-service-cn-current": "839078a4028b306f993e9f2be55f9eb8a8a11cbcf4a87fcca959fff2599b7820",
+          "applecare-plus-cn-v2.3": "3cad43e3f25c12b71bc4de6bcbe17ef85194816f99925b1b9839fec7d5b1202a",
+          "applecare-plus-cn-v2.4": "d06271b56dc9a8ec133d9fd77b00cd69f29e5873abf1f35830d21ea54584467a",
+          "synthetic-starmall-electronics-v1": "3b46ddf40f68feca65b25463277110ab4648f182df27a3b79b36e8f5600ff138",
+          "synthetic-starmall-electronics-v2": "22c6adac7e0a96e637a1b9cb0d96de73ff6fcce33ef8043ccb4e30131e54082c",
+          "synthetic-starmall-appliance-v1": "6ef253ac4d5119f0333e0a7349190ff89a85ceeb959fbde5ef7880a7e4a7badc",
+          "synthetic-starmall-consumables-v1": "36abba1383a331871943f58c5b757ff37f181aeac5d6425f416847135377e777"
+        },
+        "document_count": 11,
+        "chunk_count": 43,
+        "created_at": "2026-09-06T14:45:41.359926Z",
+        "index_seconds": 28.622060600086115,
+        "peak_rss_mb": 706.46875,
+        "index_size_bytes": 402670,
+        "chunk_hashes_sha256": "30870ad654e509793d099138512d3a4354940b7373c877417bb1b29043746605",
+        "bm25_sha256": "ffa578f5a463ae58bdadff23117287380ffc99d250b46540e7667b2ece466670"
+      },
+      "rss_mb_after": 531.18359375
+    },
+    "structure-hybrid": {
+      "status": "completed",
+      "queries": 72,
+      "degraded_queries": 0,
+      "retrieval": {
+        "recall@1": 0.8833333333333333,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr@5": 0.975,
+        "ndcg@5": 0.9812501116651395
+      },
+      "retrieval_p50_ms": 52.76749999029562,
+      "retrieval_p95_ms": 70.50035001011565,
+      "generation": {
+        "citation_precision_when_cited": 0.9397163120567376,
+        "citation_recall_all_answerable": 0.7833333333333333,
+        "citation_coverage_answerable": 0.7833333333333333,
+        "no_answer_refusal_accuracy": 1.0,
+        "answerable_acceptance_rate": 0.7833333333333333,
+        "answerability_accuracy": 0.8194444444444444,
+        "generation_p50_ms": 0.18174998695030808,
+        "generation_p95_ms": 0.3589500032830984
+      },
+      "by_category": {
+        "colloquial": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 0.9583333333333334
+        },
+        "cross_document": {
+          "queries": 8,
+          "recall@5": 1.0,
+          "mrr@5": 0.9375
+        },
+        "exact": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 0.9583333333333334
+        },
+        "hard_negative": {
+          "queries": 6,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "multi_condition": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "no_answer": {
+          "queries": 12,
+          "recall@5": null,
+          "mrr@5": null
+        },
+        "version_conflict": {
+          "queries": 10,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        }
+      },
+      "warmup_ms": 59.857500018551946,
+      "index": {
+        "schema_version": "1",
+        "index_version": "3f486391b47a73c00982",
+        "strategy": "structure",
+        "chunk_size": 520,
+        "chunk_overlap": 80,
+        "collection_name": "ecommerce_policy_structure_3f486391b47a73c00982_5d02ade4",
+        "data_directory": "versions/3f486391b47a73c00982_5d02ade4",
+        "qdrant_backend": "local",
+        "embedding_model": "BAAI/bge-small-zh-v1.5",
+        "reranker_model": "BAAI/bge-reranker-base",
+        "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+        "reranker_revision": "2cfc18c9415c912f9d8155881c133215df768a70",
+        "vector_dimension": 512,
+        "source_manifest_sha256": "e43b1db3e0f5dd2e66320a5cc39ac3db6beefa9c5b09ac4fd575dbd382a9808c",
+        "document_hashes": {
+          "apple-store-returns-cn-current": "5e74fb9100937231468daf391c23f387221c5474fbb7cac233ab9b28ecfeef55",
+          "apple-hardware-warranty-cn-current": "936e8ce223340c82a276fd56151e160ec6ade023009709d2256459061363307f",
+          "huawei-phone-warranty-cn-current": "0844818b9e3dec5f00b284f6e4b80352b312f1e9e86eea44bd01a486fbfad441",
+          "huawei-accessory-warranty-cn-current": "48b7a50efd4a1a25d21850bc92ba5c4fe498ac690cc2fada788aa41726c5d58d",
+          "xiaomi-phone-service-cn-current": "839078a4028b306f993e9f2be55f9eb8a8a11cbcf4a87fcca959fff2599b7820",
+          "applecare-plus-cn-v2.3": "3cad43e3f25c12b71bc4de6bcbe17ef85194816f99925b1b9839fec7d5b1202a",
+          "applecare-plus-cn-v2.4": "d06271b56dc9a8ec133d9fd77b00cd69f29e5873abf1f35830d21ea54584467a",
+          "synthetic-starmall-electronics-v1": "3b46ddf40f68feca65b25463277110ab4648f182df27a3b79b36e8f5600ff138",
+          "synthetic-starmall-electronics-v2": "22c6adac7e0a96e637a1b9cb0d96de73ff6fcce33ef8043ccb4e30131e54082c",
+          "synthetic-starmall-appliance-v1": "6ef253ac4d5119f0333e0a7349190ff89a85ceeb959fbde5ef7880a7e4a7badc",
+          "synthetic-starmall-consumables-v1": "36abba1383a331871943f58c5b757ff37f181aeac5d6425f416847135377e777"
+        },
+        "document_count": 11,
+        "chunk_count": 43,
+        "created_at": "2026-09-06T14:45:41.359926Z",
+        "index_seconds": 28.622060600086115,
+        "peak_rss_mb": 706.46875,
+        "index_size_bytes": 402670,
+        "chunk_hashes_sha256": "30870ad654e509793d099138512d3a4354940b7373c877417bb1b29043746605",
+        "bm25_sha256": "ffa578f5a463ae58bdadff23117287380ffc99d250b46540e7667b2ece466670"
+      },
+      "rss_mb_after": 533.8984375
+    },
+    "structure-hybrid_rerank": {
+      "status": "completed",
+      "queries": 72,
+      "degraded_queries": 0,
+      "retrieval": {
+        "recall@1": 0.8916666666666667,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr@5": 0.975,
+        "ndcg@5": 0.9809537356517062
+      },
+      "retrieval_p50_ms": 3443.252550030593,
+      "retrieval_p95_ms": 3844.1961549862754,
+      "generation": {
+        "citation_precision_when_cited": 0.946969696969697,
+        "citation_recall_all_answerable": 0.7083333333333334,
+        "citation_coverage_answerable": 0.7333333333333333,
+        "no_answer_refusal_accuracy": 1.0,
+        "answerable_acceptance_rate": 0.7333333333333333,
+        "answerability_accuracy": 0.7777777777777778,
+        "generation_p50_ms": 0.17265003407374024,
+        "generation_p95_ms": 0.3860749769955874
+      },
+      "by_category": {
+        "colloquial": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 0.9583333333333334
+        },
+        "cross_document": {
+          "queries": 8,
+          "recall@5": 1.0,
+          "mrr@5": 0.9375
+        },
+        "exact": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "hard_negative": {
+          "queries": 6,
+          "recall@5": 1.0,
+          "mrr@5": 0.9166666666666666
+        },
+        "multi_condition": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "no_answer": {
+          "queries": 12,
+          "recall@5": null,
+          "mrr@5": null
+        },
+        "version_conflict": {
+          "queries": 10,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        }
+      },
+      "warmup_ms": 8454.096899949946,
+      "index": {
+        "schema_version": "1",
+        "index_version": "3f486391b47a73c00982",
+        "strategy": "structure",
+        "chunk_size": 520,
+        "chunk_overlap": 80,
+        "collection_name": "ecommerce_policy_structure_3f486391b47a73c00982_5d02ade4",
+        "data_directory": "versions/3f486391b47a73c00982_5d02ade4",
+        "qdrant_backend": "local",
+        "embedding_model": "BAAI/bge-small-zh-v1.5",
+        "reranker_model": "BAAI/bge-reranker-base",
+        "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+        "reranker_revision": "2cfc18c9415c912f9d8155881c133215df768a70",
+        "vector_dimension": 512,
+        "source_manifest_sha256": "e43b1db3e0f5dd2e66320a5cc39ac3db6beefa9c5b09ac4fd575dbd382a9808c",
+        "document_hashes": {
+          "apple-store-returns-cn-current": "5e74fb9100937231468daf391c23f387221c5474fbb7cac233ab9b28ecfeef55",
+          "apple-hardware-warranty-cn-current": "936e8ce223340c82a276fd56151e160ec6ade023009709d2256459061363307f",
+          "huawei-phone-warranty-cn-current": "0844818b9e3dec5f00b284f6e4b80352b312f1e9e86eea44bd01a486fbfad441",
+          "huawei-accessory-warranty-cn-current": "48b7a50efd4a1a25d21850bc92ba5c4fe498ac690cc2fada788aa41726c5d58d",
+          "xiaomi-phone-service-cn-current": "839078a4028b306f993e9f2be55f9eb8a8a11cbcf4a87fcca959fff2599b7820",
+          "applecare-plus-cn-v2.3": "3cad43e3f25c12b71bc4de6bcbe17ef85194816f99925b1b9839fec7d5b1202a",
+          "applecare-plus-cn-v2.4": "d06271b56dc9a8ec133d9fd77b00cd69f29e5873abf1f35830d21ea54584467a",
+          "synthetic-starmall-electronics-v1": "3b46ddf40f68feca65b25463277110ab4648f182df27a3b79b36e8f5600ff138",
+          "synthetic-starmall-electronics-v2": "22c6adac7e0a96e637a1b9cb0d96de73ff6fcce33ef8043ccb4e30131e54082c",
+          "synthetic-starmall-appliance-v1": "6ef253ac4d5119f0333e0a7349190ff89a85ceeb959fbde5ef7880a7e4a7badc",
+          "synthetic-starmall-consumables-v1": "36abba1383a331871943f58c5b757ff37f181aeac5d6425f416847135377e777"
+        },
+        "document_count": 11,
+        "chunk_count": 43,
+        "created_at": "2026-09-06T14:45:41.359926Z",
+        "index_seconds": 28.622060600086115,
+        "peak_rss_mb": 706.46875,
+        "index_size_bytes": 402670,
+        "chunk_hashes_sha256": "30870ad654e509793d099138512d3a4354940b7373c877417bb1b29043746605",
+        "bm25_sha256": "ffa578f5a463ae58bdadff23117287380ffc99d250b46540e7667b2ece466670"
+      },
+      "rss_mb_after": 1224.2265625
+    },
+    "sliding-bm25": {
+      "status": "completed",
+      "queries": 72,
+      "degraded_queries": 0,
+      "retrieval": {
+        "recall@1": 0.8916666666666667,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr@5": 0.9833333333333333,
+        "ndcg@5": 0.9863596716048517
+      },
+      "retrieval_p50_ms": 1.4461000100709498,
+      "retrieval_p95_ms": 4.190649971133098,
+      "generation": {
+        "citation_precision_when_cited": 0.92,
+        "citation_recall_all_answerable": 0.4,
+        "citation_coverage_answerable": 0.4166666666666667,
+        "no_answer_refusal_accuracy": 0.9166666666666666,
+        "answerable_acceptance_rate": 0.4166666666666667,
+        "answerability_accuracy": 0.5,
+        "generation_p50_ms": 0.031150004360824823,
+        "generation_p95_ms": 0.6525099743157626
+      },
+      "by_category": {
+        "colloquial": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 0.9166666666666666
+        },
+        "cross_document": {
+          "queries": 8,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "exact": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "hard_negative": {
+          "queries": 6,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "multi_condition": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "no_answer": {
+          "queries": 12,
+          "recall@5": null,
+          "mrr@5": null
+        },
+        "version_conflict": {
+          "queries": 10,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        }
+      },
+      "warmup_ms": 3.045500023290515,
+      "index": {
+        "schema_version": "1",
+        "index_version": "89b08a6e18b92a6e8c10",
+        "strategy": "sliding",
+        "chunk_size": 520,
+        "chunk_overlap": 80,
+        "collection_name": "ecommerce_policy_sliding_89b08a6e18b92a6e8c10_ce9aaac1",
+        "data_directory": "versions/89b08a6e18b92a6e8c10_ce9aaac1",
+        "qdrant_backend": "local",
+        "embedding_model": "BAAI/bge-small-zh-v1.5",
+        "reranker_model": "BAAI/bge-reranker-base",
+        "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+        "reranker_revision": "2cfc18c9415c912f9d8155881c133215df768a70",
+        "vector_dimension": 512,
+        "source_manifest_sha256": "e43b1db3e0f5dd2e66320a5cc39ac3db6beefa9c5b09ac4fd575dbd382a9808c",
+        "document_hashes": {
+          "apple-store-returns-cn-current": "5e74fb9100937231468daf391c23f387221c5474fbb7cac233ab9b28ecfeef55",
+          "apple-hardware-warranty-cn-current": "936e8ce223340c82a276fd56151e160ec6ade023009709d2256459061363307f",
+          "huawei-phone-warranty-cn-current": "0844818b9e3dec5f00b284f6e4b80352b312f1e9e86eea44bd01a486fbfad441",
+          "huawei-accessory-warranty-cn-current": "48b7a50efd4a1a25d21850bc92ba5c4fe498ac690cc2fada788aa41726c5d58d",
+          "xiaomi-phone-service-cn-current": "839078a4028b306f993e9f2be55f9eb8a8a11cbcf4a87fcca959fff2599b7820",
+          "applecare-plus-cn-v2.3": "3cad43e3f25c12b71bc4de6bcbe17ef85194816f99925b1b9839fec7d5b1202a",
+          "applecare-plus-cn-v2.4": "d06271b56dc9a8ec133d9fd77b00cd69f29e5873abf1f35830d21ea54584467a",
+          "synthetic-starmall-electronics-v1": "3b46ddf40f68feca65b25463277110ab4648f182df27a3b79b36e8f5600ff138",
+          "synthetic-starmall-electronics-v2": "22c6adac7e0a96e637a1b9cb0d96de73ff6fcce33ef8043ccb4e30131e54082c",
+          "synthetic-starmall-appliance-v1": "6ef253ac4d5119f0333e0a7349190ff89a85ceeb959fbde5ef7880a7e4a7badc",
+          "synthetic-starmall-consumables-v1": "36abba1383a331871943f58c5b757ff37f181aeac5d6425f416847135377e777"
+        },
+        "document_count": 11,
+        "chunk_count": 16,
+        "created_at": "2026-09-06T14:45:45.490588Z",
+        "index_seconds": 3.9858843999681994,
+        "peak_rss_mb": 750.15234375,
+        "index_size_bytes": 220424,
+        "chunk_hashes_sha256": "db17eb6740a65acbbbb9c06cf4c60f7102f94a42d314d62e60adc134ac2d767a",
+        "bm25_sha256": "bfe557b429f335f1236732c62431daacaefe86540d8a64dab5ec61052e25ae6b"
+      },
+      "rss_mb_after": 1226.5703125
+    },
+    "sliding-dense": {
+      "status": "completed",
+      "queries": 72,
+      "degraded_queries": 0,
+      "retrieval": {
+        "recall@1": 0.9,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr@5": 0.9833333333333333,
+        "ndcg@5": 0.9874012824389486
+      },
+      "retrieval_p50_ms": 51.587849971838295,
+      "retrieval_p95_ms": 68.70074999169448,
+      "generation": {
+        "citation_precision_when_cited": 0.9607843137254902,
+        "citation_recall_all_answerable": 0.5666666666666667,
+        "citation_coverage_answerable": 0.5666666666666667,
+        "no_answer_refusal_accuracy": 1.0,
+        "answerable_acceptance_rate": 0.5666666666666667,
+        "answerability_accuracy": 0.6388888888888888,
+        "generation_p50_ms": 0.07790001109242439,
+        "generation_p95_ms": 0.5585150094702841
+      },
+      "by_category": {
+        "colloquial": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 0.9583333333333334
+        },
+        "cross_document": {
+          "queries": 8,
+          "recall@5": 1.0,
+          "mrr@5": 0.9375
+        },
+        "exact": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "hard_negative": {
+          "queries": 6,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "multi_condition": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "no_answer": {
+          "queries": 12,
+          "recall@5": null,
+          "mrr@5": null
+        },
+        "version_conflict": {
+          "queries": 10,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        }
+      },
+      "warmup_ms": 59.44240000098944,
+      "index": {
+        "schema_version": "1",
+        "index_version": "89b08a6e18b92a6e8c10",
+        "strategy": "sliding",
+        "chunk_size": 520,
+        "chunk_overlap": 80,
+        "collection_name": "ecommerce_policy_sliding_89b08a6e18b92a6e8c10_ce9aaac1",
+        "data_directory": "versions/89b08a6e18b92a6e8c10_ce9aaac1",
+        "qdrant_backend": "local",
+        "embedding_model": "BAAI/bge-small-zh-v1.5",
+        "reranker_model": "BAAI/bge-reranker-base",
+        "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+        "reranker_revision": "2cfc18c9415c912f9d8155881c133215df768a70",
+        "vector_dimension": 512,
+        "source_manifest_sha256": "e43b1db3e0f5dd2e66320a5cc39ac3db6beefa9c5b09ac4fd575dbd382a9808c",
+        "document_hashes": {
+          "apple-store-returns-cn-current": "5e74fb9100937231468daf391c23f387221c5474fbb7cac233ab9b28ecfeef55",
+          "apple-hardware-warranty-cn-current": "936e8ce223340c82a276fd56151e160ec6ade023009709d2256459061363307f",
+          "huawei-phone-warranty-cn-current": "0844818b9e3dec5f00b284f6e4b80352b312f1e9e86eea44bd01a486fbfad441",
+          "huawei-accessory-warranty-cn-current": "48b7a50efd4a1a25d21850bc92ba5c4fe498ac690cc2fada788aa41726c5d58d",
+          "xiaomi-phone-service-cn-current": "839078a4028b306f993e9f2be55f9eb8a8a11cbcf4a87fcca959fff2599b7820",
+          "applecare-plus-cn-v2.3": "3cad43e3f25c12b71bc4de6bcbe17ef85194816f99925b1b9839fec7d5b1202a",
+          "applecare-plus-cn-v2.4": "d06271b56dc9a8ec133d9fd77b00cd69f29e5873abf1f35830d21ea54584467a",
+          "synthetic-starmall-electronics-v1": "3b46ddf40f68feca65b25463277110ab4648f182df27a3b79b36e8f5600ff138",
+          "synthetic-starmall-electronics-v2": "22c6adac7e0a96e637a1b9cb0d96de73ff6fcce33ef8043ccb4e30131e54082c",
+          "synthetic-starmall-appliance-v1": "6ef253ac4d5119f0333e0a7349190ff89a85ceeb959fbde5ef7880a7e4a7badc",
+          "synthetic-starmall-consumables-v1": "36abba1383a331871943f58c5b757ff37f181aeac5d6425f416847135377e777"
+        },
+        "document_count": 11,
+        "chunk_count": 16,
+        "created_at": "2026-09-06T14:45:45.490588Z",
+        "index_seconds": 3.9858843999681994,
+        "peak_rss_mb": 750.15234375,
+        "index_size_bytes": 220424,
+        "chunk_hashes_sha256": "db17eb6740a65acbbbb9c06cf4c60f7102f94a42d314d62e60adc134ac2d767a",
+        "bm25_sha256": "bfe557b429f335f1236732c62431daacaefe86540d8a64dab5ec61052e25ae6b"
+      },
+      "rss_mb_after": 1226.890625
+    },
+    "sliding-hybrid": {
+      "status": "completed",
+      "queries": 72,
+      "degraded_queries": 0,
+      "retrieval": {
+        "recall@1": 0.9083333333333333,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr@5": 0.9916666666666667,
+        "ndcg@5": 0.9925108423786607
+      },
+      "retrieval_p50_ms": 51.94489995483309,
+      "retrieval_p95_ms": 70.44709996553138,
+      "generation": {
+        "citation_precision_when_cited": 0.9747474747474747,
+        "citation_recall_all_answerable": 0.55,
+        "citation_coverage_answerable": 0.55,
+        "no_answer_refusal_accuracy": 1.0,
+        "answerable_acceptance_rate": 0.55,
+        "answerability_accuracy": 0.625,
+        "generation_p50_ms": 0.06210000719875097,
+        "generation_p95_ms": 0.557400065008551
+      },
+      "by_category": {
+        "colloquial": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 0.9583333333333334
+        },
+        "cross_document": {
+          "queries": 8,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "exact": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "hard_negative": {
+          "queries": 6,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "multi_condition": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "no_answer": {
+          "queries": 12,
+          "recall@5": null,
+          "mrr@5": null
+        },
+        "version_conflict": {
+          "queries": 10,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        }
+      },
+      "warmup_ms": 44.06569991260767,
+      "index": {
+        "schema_version": "1",
+        "index_version": "89b08a6e18b92a6e8c10",
+        "strategy": "sliding",
+        "chunk_size": 520,
+        "chunk_overlap": 80,
+        "collection_name": "ecommerce_policy_sliding_89b08a6e18b92a6e8c10_ce9aaac1",
+        "data_directory": "versions/89b08a6e18b92a6e8c10_ce9aaac1",
+        "qdrant_backend": "local",
+        "embedding_model": "BAAI/bge-small-zh-v1.5",
+        "reranker_model": "BAAI/bge-reranker-base",
+        "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+        "reranker_revision": "2cfc18c9415c912f9d8155881c133215df768a70",
+        "vector_dimension": 512,
+        "source_manifest_sha256": "e43b1db3e0f5dd2e66320a5cc39ac3db6beefa9c5b09ac4fd575dbd382a9808c",
+        "document_hashes": {
+          "apple-store-returns-cn-current": "5e74fb9100937231468daf391c23f387221c5474fbb7cac233ab9b28ecfeef55",
+          "apple-hardware-warranty-cn-current": "936e8ce223340c82a276fd56151e160ec6ade023009709d2256459061363307f",
+          "huawei-phone-warranty-cn-current": "0844818b9e3dec5f00b284f6e4b80352b312f1e9e86eea44bd01a486fbfad441",
+          "huawei-accessory-warranty-cn-current": "48b7a50efd4a1a25d21850bc92ba5c4fe498ac690cc2fada788aa41726c5d58d",
+          "xiaomi-phone-service-cn-current": "839078a4028b306f993e9f2be55f9eb8a8a11cbcf4a87fcca959fff2599b7820",
+          "applecare-plus-cn-v2.3": "3cad43e3f25c12b71bc4de6bcbe17ef85194816f99925b1b9839fec7d5b1202a",
+          "applecare-plus-cn-v2.4": "d06271b56dc9a8ec133d9fd77b00cd69f29e5873abf1f35830d21ea54584467a",
+          "synthetic-starmall-electronics-v1": "3b46ddf40f68feca65b25463277110ab4648f182df27a3b79b36e8f5600ff138",
+          "synthetic-starmall-electronics-v2": "22c6adac7e0a96e637a1b9cb0d96de73ff6fcce33ef8043ccb4e30131e54082c",
+          "synthetic-starmall-appliance-v1": "6ef253ac4d5119f0333e0a7349190ff89a85ceeb959fbde5ef7880a7e4a7badc",
+          "synthetic-starmall-consumables-v1": "36abba1383a331871943f58c5b757ff37f181aeac5d6425f416847135377e777"
+        },
+        "document_count": 11,
+        "chunk_count": 16,
+        "created_at": "2026-09-06T14:45:45.490588Z",
+        "index_seconds": 3.9858843999681994,
+        "peak_rss_mb": 750.15234375,
+        "index_size_bytes": 220424,
+        "chunk_hashes_sha256": "db17eb6740a65acbbbb9c06cf4c60f7102f94a42d314d62e60adc134ac2d767a",
+        "bm25_sha256": "bfe557b429f335f1236732c62431daacaefe86540d8a64dab5ec61052e25ae6b"
+      },
+      "rss_mb_after": 1227.05078125
+    },
+    "sliding-hybrid_rerank": {
+      "status": "completed",
+      "queries": 72,
+      "degraded_queries": 0,
+      "retrieval": {
+        "recall@1": 0.9,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr@5": 0.9833333333333333,
+        "ndcg@5": 0.9847253087438882
+      },
+      "retrieval_p50_ms": 4035.4816999752074,
+      "retrieval_p95_ms": 10647.675719938707,
+      "generation": {
+        "citation_precision_when_cited": 0.9184397163120568,
+        "citation_recall_all_answerable": 0.7666666666666667,
+        "citation_coverage_answerable": 0.7833333333333333,
+        "no_answer_refusal_accuracy": 1.0,
+        "answerable_acceptance_rate": 0.7833333333333333,
+        "answerability_accuracy": 0.8194444444444444,
+        "generation_p50_ms": 0.2597499988041818,
+        "generation_p95_ms": 0.6065100256819278
+      },
+      "by_category": {
+        "colloquial": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 0.9583333333333334
+        },
+        "cross_document": {
+          "queries": 8,
+          "recall@5": 1.0,
+          "mrr@5": 0.9375
+        },
+        "exact": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "hard_negative": {
+          "queries": 6,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "multi_condition": {
+          "queries": 12,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        },
+        "no_answer": {
+          "queries": 12,
+          "recall@5": null,
+          "mrr@5": null
+        },
+        "version_conflict": {
+          "queries": 10,
+          "recall@5": 1.0,
+          "mrr@5": 1.0
+        }
+      },
+      "warmup_ms": 10917.062400025316,
+      "index": {
+        "schema_version": "1",
+        "index_version": "89b08a6e18b92a6e8c10",
+        "strategy": "sliding",
+        "chunk_size": 520,
+        "chunk_overlap": 80,
+        "collection_name": "ecommerce_policy_sliding_89b08a6e18b92a6e8c10_ce9aaac1",
+        "data_directory": "versions/89b08a6e18b92a6e8c10_ce9aaac1",
+        "qdrant_backend": "local",
+        "embedding_model": "BAAI/bge-small-zh-v1.5",
+        "reranker_model": "BAAI/bge-reranker-base",
+        "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+        "reranker_revision": "2cfc18c9415c912f9d8155881c133215df768a70",
+        "vector_dimension": 512,
+        "source_manifest_sha256": "e43b1db3e0f5dd2e66320a5cc39ac3db6beefa9c5b09ac4fd575dbd382a9808c",
+        "document_hashes": {
+          "apple-store-returns-cn-current": "5e74fb9100937231468daf391c23f387221c5474fbb7cac233ab9b28ecfeef55",
+          "apple-hardware-warranty-cn-current": "936e8ce223340c82a276fd56151e160ec6ade023009709d2256459061363307f",
+          "huawei-phone-warranty-cn-current": "0844818b9e3dec5f00b284f6e4b80352b312f1e9e86eea44bd01a486fbfad441",
+          "huawei-accessory-warranty-cn-current": "48b7a50efd4a1a25d21850bc92ba5c4fe498ac690cc2fada788aa41726c5d58d",
+          "xiaomi-phone-service-cn-current": "839078a4028b306f993e9f2be55f9eb8a8a11cbcf4a87fcca959fff2599b7820",
+          "applecare-plus-cn-v2.3": "3cad43e3f25c12b71bc4de6bcbe17ef85194816f99925b1b9839fec7d5b1202a",
+          "applecare-plus-cn-v2.4": "d06271b56dc9a8ec133d9fd77b00cd69f29e5873abf1f35830d21ea54584467a",
+          "synthetic-starmall-electronics-v1": "3b46ddf40f68feca65b25463277110ab4648f182df27a3b79b36e8f5600ff138",
+          "synthetic-starmall-electronics-v2": "22c6adac7e0a96e637a1b9cb0d96de73ff6fcce33ef8043ccb4e30131e54082c",
+          "synthetic-starmall-appliance-v1": "6ef253ac4d5119f0333e0a7349190ff89a85ceeb959fbde5ef7880a7e4a7badc",
+          "synthetic-starmall-consumables-v1": "36abba1383a331871943f58c5b757ff37f181aeac5d6425f416847135377e777"
+        },
+        "document_count": 11,
+        "chunk_count": 16,
+        "created_at": "2026-09-06T14:45:45.490588Z",
+        "index_seconds": 3.9858843999681994,
+        "peak_rss_mb": 750.15234375,
+        "index_size_bytes": 220424,
+        "chunk_hashes_sha256": "db17eb6740a65acbbbb9c06cf4c60f7102f94a42d314d62e60adc134ac2d767a",
+        "bm25_sha256": "bfe557b429f335f1236732c62431daacaefe86540d8a64dab5ec61052e25ae6b"
+      },
+      "rss_mb_after": 1329.0078125
+    }
+  }
+}

@@ -1,0 +1,48 @@
+......................................................                   [100%]
+============================== warnings summary ===============================
+.venv\Lib\site-packages\typer\__init__.py:24
+  D:\workEnvironment\Career\Rag&AgentCourses\auxiliaryProgram\1\ecommerce-policy-rag\.venv\Lib\site-packages\typer\__init__.py:24: DeprecationWarning: 'click.utils.get_binary_stream' is deprecated and will be removed in Click 9.0.
+    from click.utils import get_binary_stream as get_binary_stream
+
+.venv\Lib\site-packages\typer\__init__.py:25
+  D:\workEnvironment\Career\Rag&AgentCourses\auxiliaryProgram\1\ecommerce-policy-rag\.venv\Lib\site-packages\typer\__init__.py:25: DeprecationWarning: 'click.utils.get_text_stream' is deprecated and will be removed in Click 9.0.
+    from click.utils import get_text_stream as get_text_stream
+
+.venv\Lib\site-packages\starlette\testclient.py:51
+  D:\workEnvironment\Career\Rag&AgentCourses\auxiliaryProgram\1\ecommerce-policy-rag\.venv\Lib\site-packages\starlette\testclient.py:51: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: D:\workEnvironment\Career\Rag&AgentCourses\auxiliaryProgram\1\ecommerce-policy-rag\eval-results\pytest.xml -
+=============================== tests coverage ================================
+______________ coverage: platform win32, python 3.12.10-final-0 _______________
+
+Name                                    Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------------------------
+src\policy_rag\__init__.py                  1      0      0      0   100%
+src\policy_rag\api.py                      89     13     12      0    83%   105-117
+src\policy_rag\chunking.py                 83      5     38      4    93%   24->26, 41->44, 50-53, 63
+src\policy_rag\cli.py                      65     21      8      1    64%   30-32, 45-59, 67-70, 88-91, 97, 111-131
+src\policy_rag\config.py                   72      5     18      1    89%   88-92
+src\policy_rag\corpus.py                   45      0      8      0   100%
+src\policy_rag\evaluation.py              148      2     32      2    98%   86, 167
+src\policy_rag\generation.py              117      1     40      2    98%   85, 92->94
+src\policy_rag\indexing.py                 80      1     10      1    98%   159
+src\policy_rag\loaders.py                  90      3     32      3    95%   55, 75, 78
+src\policy_rag\logging.py                   9      0      0      0   100%
+src\policy_rag\models.py                  195      0      8      0   100%
+src\policy_rag\paths.py                     5      0      0      0   100%
+src\policy_rag\retrieval\__init__.py        0      0      0      0   100%
+src\policy_rag\retrieval\bm25.py           76      0     30      0   100%
+src\policy_rag\retrieval\dense.py          73      3     24      3    94%   45, 82-83, 84->exit
+src\policy_rag\retrieval\embedding.py      43      9      2      1    78%   46, 50-64, 81
+src\policy_rag\retrieval\reranker.py       42      9      4      1    78%   42, 46-62, 81
+src\policy_rag\retrieval\service.py       142      7     42      6    93%   78, 84, 86, 89, 131-132, 135->exit, 153
+src\policy_rag\retrieval\tokenizer.py      22      0      4      0   100%
+src\policy_rag\service.py                  72      1     22      1    98%   138
+src\policy_rag\sources.py                  84      1     22      1    98%   129
+-----------------------------------------------------------------------------------
+TOTAL                                    1553     81    356     27    94%
+Coverage JSON written to file eval-results/coverage.json
+Required test coverage of 80% reached. Total coverage: 93.71%
+54 passed, 3 warnings in 55.43s
